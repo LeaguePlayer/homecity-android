@@ -2,6 +2,7 @@ package ru.hotel72.activities.adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.*;
 import android.widget.*;
 import ru.hotel72.R;
@@ -12,6 +13,7 @@ import ru.hotel72.domains.extension.FlatListExtension;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,20 +26,21 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
 
     private Context context;
     private ArrayList<Flat> flats;
-    private final ImageDownloader imgDownloader;
     private ViewHolder holder;
     private GalleryAdapter galleryAdapter;
+    private HashMap<Integer, GalleryAdapter> galleryCache = new HashMap<Integer, GalleryAdapter>();
+
+    private GestureDetector gestureDetector;
+    private View.OnTouchListener gestureListener;
 
     public FlatsListAdapter(Context context, int textViewResourceId, ArrayList<Flat> flats) {
         super(context, textViewResourceId, flats);
         this.context = context;
         this.flats = flats;
-        this.imgDownloader = new ImageDownloader(context);
     }
 
-    public static class ViewHolder{
+    private static class ViewHolder{
         public TextView cost;
-//        public ImageView imageView;
         public Gallery gallery;
     }
 
@@ -51,7 +54,6 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
             holder = new ViewHolder();
             holder.cost = (TextView) convertView.findViewById(R.id.cost);
             holder.gallery = (Gallery) convertView.findViewById(R.id.gallery);
-//            holder.imageView = (ImageView) convertView.findViewById(R.id.imageView);
 
             convertView.setTag(holder);
         } else {
@@ -64,8 +66,14 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
             if (flat.cost != Double.NaN && holder.cost != null) {
                 holder.cost.setText(flat.cost.toString());
             }
-            galleryAdapter = new GalleryAdapter(context, R.layout.gallary_item, flat.photos);
-//            imgDownloader.DisplayImage(url, imgUrl, (Activity)getContext(), holder.imageView);
+            if(galleryCache.containsKey(flat.id)){
+                galleryAdapter = galleryCache.get(flat.id);
+            }
+            else {
+                galleryAdapter = new GalleryAdapter(context, R.layout.gallary_item, flat.photos);
+                galleryCache.put(flat.id, galleryAdapter);
+            }
+
             holder.gallery.setAdapter(galleryAdapter);
             gestureDetector = new GestureDetector(new MyGestureDetector());
             gestureListener = new View.OnTouchListener() {
@@ -89,56 +97,5 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
             flats.add(object);
         }
     }
-
-    private class GalleryAdapter extends ArrayAdapter<Photo> {
-        private ArrayList<Photo> photos;
-
-        public GalleryAdapter(Context context, int textViewResourceId, ArrayList<Photo> photos) {
-            super(context, textViewResourceId, photos);
-
-            this.photos = photos;
-        }
-
-        @Override
-        public View getView(int position, View convertView, ViewGroup parent) {
-
-            ImageView image = new ImageView(context);
-            String imgUrl = photos.get(position).url;
-            String url = String.format("http://hotel72.ru/index.php/api/GetFile?filename=%s&for=%s", imgUrl, "original");
-            image.setTag(url);
-            imgDownloader.DisplayImage(url, imgUrl, (Activity)getContext(), image);
-
-            return image;
-        }
-    }
-
-    private static final int SWIPE_MAX_OFF_PATH = 250;
-    private GestureDetector gestureDetector;
-    private View.OnTouchListener gestureListener;
-
-    private class MyGestureDetector extends GestureDetector.SimpleOnGestureListener {
-        @Override
-        public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
-            try {
-                if (Math.abs(e1.getY() - e2.getY()) > SWIPE_MAX_OFF_PATH)
-                    return false;
-            } catch (Exception e) {
-            }
-            return false;
-        }
-
-    }
-
-    private class MyOnItemClickListener implements AdapterView.OnItemClickListener {
-        private Context context;
-
-        public MyOnItemClickListener(Context context){
-            this.context = context;
-        }
-
-        @Override
-        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-        }
-
-    }
 }
+

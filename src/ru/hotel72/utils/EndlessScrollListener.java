@@ -1,8 +1,11 @@
 package ru.hotel72.utils;
 
 import android.content.Context;
+import android.view.View;
 import android.widget.AbsListView;
+import android.widget.ListView;
 import ru.hotel72.accessData.GetFlatsTask;
+import ru.hotel72.activities.FlatListActivity;
 
 /**
  * Created with IntelliJ IDEA.
@@ -14,6 +17,8 @@ import ru.hotel72.accessData.GetFlatsTask;
 public class EndlessScrollListener implements AbsListView.OnScrollListener {
     private Context context;
     private int visibleThreshold = 5;
+    private ListView list;
+    private View footer;
     private int currentPage = 0;
     private int previousTotal = 0;
     private boolean loading = true;
@@ -21,9 +26,11 @@ public class EndlessScrollListener implements AbsListView.OnScrollListener {
     public EndlessScrollListener(Context context) {
         this.context = context;
     }
-    public EndlessScrollListener(Context context, int visibleThreshold) {
+    public EndlessScrollListener(Context context, int visibleThreshold, ListView list, View footer) {
         this.context = context;
         this.visibleThreshold = visibleThreshold;
+        this.list = list;
+        this.footer = footer;
     }
 
     @Override
@@ -43,6 +50,7 @@ public class EndlessScrollListener implements AbsListView.OnScrollListener {
         if (!loading && firstVisibleItem + visibleItemCount >= totalItemCount) {
             new GetFlatsTask(context, visibleThreshold).execute(currentPage);
             loading = true;
+            list.addFooterView(footer);
         }
     }
 }

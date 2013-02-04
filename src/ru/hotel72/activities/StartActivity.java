@@ -13,14 +13,14 @@ import ru.hotel72.R;
  * Time: 0:15
  * To change this template use File | Settings | File Templates.
  */
-public class Test extends BaseActivity {
-    private Test context;
+public class StartActivity extends BaseActivity {
+    private StartActivity context;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.context = this;
 
-        setContentView(R.layout.test);
+        setContentView(R.layout.start);
 
         Button btn = (Button)findViewById(R.id.button);
         btn.setOnClickListener(onClickListener);

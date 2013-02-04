@@ -38,17 +38,26 @@ public class FlatListActivity extends BaseActivity {
         footer = getLayoutInflater().inflate(R.layout.endless_list_footer, null);
         flatList.addFooterView(footer);
         flatList.setAdapter(flatsListAdapter);
-        flatList.setOnScrollListener(new EndlessScrollListener(this, visibleThreshold));
+        flatList.setOnScrollListener(new EndlessScrollListener(this, visibleThreshold, flatList, footer));
     }
 
-    public void UpdateFlatsList(ArrayList<Flat> flats){
-        if(flats.size() < visibleThreshold){
-            flatList.removeFooterView(footer);
-        }
+    public void UpdateFlatsList(ArrayList<Flat> newFlats) {
+        final int prevSize = this.flats.size();
+        flatList.removeFooterView(footer);
 
-        for(Flat flat : flats){
-            this.flats.add(flat);
+        for (Flat flat : newFlats) {
+            flatsListAdapter.add(flat);
         }
-        flatsListAdapter.notifyDataSetChanged();
+//            flatsListAdapter.notifyDataSetChanged();
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                for (int i = prevSize, j = flats.size(); i < j; i++) {
+                    View view = flatList.getChildAt(i);
+                    flatList.getAdapter().getView(i, view, flatList);
+                }
+            }
+        });
+
     }
 }

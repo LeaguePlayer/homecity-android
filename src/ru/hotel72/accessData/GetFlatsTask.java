@@ -5,9 +5,7 @@ import android.os.AsyncTask;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import ru.hotel72.R;
 import ru.hotel72.activities.FlatListActivity;
-import ru.hotel72.activities.Test;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.domains.Photo;
 
@@ -21,7 +19,7 @@ import java.util.ArrayList;
  * To change this template use File | Settings | File Templates.
  */
 
-public class GetFlatsTask extends AsyncTask<Integer, Void, Boolean> {
+public class GetFlatsTask extends AsyncTask<Integer, Void, Void> {
 
     private Context context;
     private int visibleItemCount;
@@ -36,14 +34,14 @@ public class GetFlatsTask extends AsyncTask<Integer, Void, Boolean> {
     }
 
     @Override
-    protected Boolean doInBackground(Integer... integers) {
+    protected Void doInBackground(Integer... integers) {
         tryGetFlats(integers[0]);
-        return true;
+        return null;
     }
 
     @Override
-    protected void onPostExecute(Boolean aBoolean) {
-        super.onPostExecute(aBoolean);
+    protected void onPostExecute(Void aVoid) {
+        super.onPostExecute(aVoid);
         FlatListActivity activity = (FlatListActivity) context;
         activity.UpdateFlatsList(flats);
     }
