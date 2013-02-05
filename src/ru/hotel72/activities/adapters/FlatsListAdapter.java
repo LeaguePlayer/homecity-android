@@ -75,7 +75,7 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
             }
 
             holder.gallery.setAdapter(galleryAdapter);
-            gestureDetector = new GestureDetector(new MyGestureDetector());
+            gestureDetector = new GestureDetector(new MyGestureDetector(context));
             gestureListener = new View.OnTouchListener() {
                 public boolean onTouch(View v, MotionEvent event) {
                     return gestureDetector.onTouchEvent(event);

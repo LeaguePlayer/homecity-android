@@ -38,26 +38,34 @@ public class FlatListActivity extends BaseActivity {
         footer = getLayoutInflater().inflate(R.layout.endless_list_footer, null);
         flatList.addFooterView(footer);
         flatList.setAdapter(flatsListAdapter);
-        flatList.setOnScrollListener(new EndlessScrollListener(this, visibleThreshold, flatList, footer));
+        flatList.setOnScrollListener(new EndlessScrollListener(this, visibleThreshold));
     }
 
     public void UpdateFlatsList(ArrayList<Flat> newFlats) {
-        final int prevSize = this.flats.size();
-        flatList.removeFooterView(footer);
+//        final int prevSize = this.flats.size();
+
+        if (newFlats.size() < this.visibleThreshold) {
+            flatList.removeFooterView(footer);
+        }
 
         for (Flat flat : newFlats) {
-            flatsListAdapter.add(flat);
+            this.flats.add(flat);
         }
-//            flatsListAdapter.notifyDataSetChanged();
-        runOnUiThread(new Runnable() {
-            @Override
-            public void run() {
-                for (int i = prevSize, j = flats.size(); i < j; i++) {
-                    View view = flatList.getChildAt(i);
-                    flatList.getAdapter().getView(i, view, flatList);
-                }
-            }
-        });
+
+        flatsListAdapter.notifyDataSetChanged();
+
+//        for (Flat flat : newFlats) {
+//            flatsListAdapter.add(flat);
+//        }
+//        runOnUiThread(new Runnable() {
+//            @Override
+//            public void run() {
+//                for (int i = prevSize, j = flats.size(); i < j; i++) {
+//                    View view = flatList.getChildAt(i);
+//                    flatList.getAdapter().getView(i, view, flatList);
+//                }
+//            }
+//        });
 
     }
 }

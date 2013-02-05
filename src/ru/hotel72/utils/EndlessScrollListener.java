@@ -17,20 +17,16 @@ import ru.hotel72.activities.FlatListActivity;
 public class EndlessScrollListener implements AbsListView.OnScrollListener {
     private Context context;
     private int visibleThreshold = 5;
-    private ListView list;
-    private View footer;
     private int currentPage = 0;
-    private int previousTotal = 0;
-    private boolean loading = true;
+    private int previousTotal = 1;
+    private boolean loading = false;
 
     public EndlessScrollListener(Context context) {
         this.context = context;
     }
-    public EndlessScrollListener(Context context, int visibleThreshold, ListView list, View footer) {
+    public EndlessScrollListener(Context context, int visibleThreshold) {
         this.context = context;
         this.visibleThreshold = visibleThreshold;
-        this.list = list;
-        this.footer = footer;
     }
 
     @Override
@@ -50,7 +46,6 @@ public class EndlessScrollListener implements AbsListView.OnScrollListener {
         if (!loading && firstVisibleItem + visibleItemCount >= totalItemCount) {
             new GetFlatsTask(context, visibleThreshold).execute(currentPage);
             loading = true;
-            list.addFooterView(footer);
         }
     }
 }
