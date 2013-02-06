@@ -38,8 +38,6 @@ public class ImageDownloader {
             cacheDir = context.getCacheDir();
         if (!cacheDir.exists())
             cacheDir.mkdirs();
-
-        clearCache(); //todo удалить
     }
 
     final int stub_id = R.drawable.icon;

@@ -1,18 +1,13 @@
 package ru.hotel72.activities.adapters;
 
-import android.app.Activity;
 import android.content.Context;
-import android.graphics.Bitmap;
 import android.view.*;
 import android.widget.*;
 import ru.hotel72.R;
-import ru.hotel72.accessData.ImageDownloader;
 import ru.hotel72.domains.Flat;
-import ru.hotel72.domains.Photo;
 import ru.hotel72.domains.extension.FlatListExtension;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.HashMap;
 
 /**
@@ -32,11 +27,13 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
 
     private GestureDetector gestureDetector;
     private View.OnTouchListener gestureListener;
+    private final HotelOnItemClickListener onClickListener;
 
     public FlatsListAdapter(Context context, int textViewResourceId, ArrayList<Flat> flats) {
         super(context, textViewResourceId, flats);
         this.context = context;
         this.flats = flats;
+        this.onClickListener = new HotelOnItemClickListener(context);
     }
 
     private static class ViewHolder{
@@ -75,13 +72,14 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
             }
 
             holder.gallery.setAdapter(galleryAdapter);
-            gestureDetector = new GestureDetector(new MyGestureDetector(context));
+            gestureDetector = new GestureDetector(new HotelGestureDetector(context));
             gestureListener = new View.OnTouchListener() {
                 public boolean onTouch(View v, MotionEvent event) {
                     return gestureDetector.onTouchEvent(event);
                 }
             };
             holder.gallery.setOnTouchListener(gestureListener);
+            holder.gallery.setOnItemClickListener(new HotelOnItemClickListener(context));
         }
 
         return convertView;

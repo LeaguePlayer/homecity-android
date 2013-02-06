@@ -21,7 +21,7 @@ import java.util.ArrayList;
 public class FlatListActivity extends BaseActivity {
     private FlatsListAdapter flatsListAdapter;
     private ListView flatList;
-    private ArrayList<Flat> flats = new ArrayList<Flat>();
+    private static ArrayList<Flat> flats = new ArrayList<Flat>();
 
     private static int visibleThreshold = 5;
     private static View footer;
@@ -30,7 +30,12 @@ public class FlatListActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        flatsListAdapter = new FlatsListAdapter(this, R.layout.flat_list_item, flats);
+        Object obj = getLastNonConfigurationInstance();
+        if (null != obj) {
+            flatsListAdapter = (FlatsListAdapter) obj;
+        } else {
+            flatsListAdapter = new FlatsListAdapter(this, R.layout.flat_list_item, flats);
+        }
 
         setContentView(R.layout.flat_list);
         flatList = (ListView)findViewById(R.id.flatList);
@@ -39,6 +44,11 @@ public class FlatListActivity extends BaseActivity {
         flatList.addFooterView(footer);
         flatList.setAdapter(flatsListAdapter);
         flatList.setOnScrollListener(new EndlessScrollListener(this, visibleThreshold));
+    }
+
+    @Override
+    public Object onRetainNonConfigurationInstance() {
+        return flatsListAdapter;
     }
 
     public void UpdateFlatsList(ArrayList<Flat> newFlats) {

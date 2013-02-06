@@ -2,11 +2,11 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:orientation="vertical"
-                android:layout_width="fill_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
     <Gallery
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="257dp"
             android:id="@+id/gallery"
             android:layout_alignParentLeft="true"
@@ -17,6 +17,6 @@
             android:layout_height="wrap_content"
             android:text="cost"
             android:id="@+id/cost"
-            android:layout_alignLeft="@+id/gallery" android:layout_below="@+id/gallery"/>
+            android:layout_alignLeft="@+id/gallery" android:layout_alignBottom="@+id/gallery"/>
 
 </RelativeLayout>
