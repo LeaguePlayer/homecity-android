@@ -29,20 +29,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1a9bb44-c342-43e7-b21e-22e2c923f520" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\src\ru\hotel72\activities\adapters\MyGestureDetector.java" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\src\ru\hotel72\activities\adapters\MyOnItemClickListener.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/hotel72/activities/FlatListActivity.java" afterPath="$PROJECT_DIR$/src/ru/hotel72/activities/FlatListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatsListAdapter.java" afterPath="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatsListAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ru/hotel72/accessData/ImageDownloader.java" afterPath="$PROJECT_DIR$/src/ru/hotel72/accessData/ImageDownloader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/flat_list_item.xml" afterPath="$PROJECT_DIR$/res/layout/flat_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/gallary_item.xml" afterPath="$PROJECT_DIR$/res/layout/gallary_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="hotel72.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/GetFlatsTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360002014802" ignored="false" />
-    <file path="/Dummy.txt" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360169783789" ignored="false" />
+    <file path="/Dummy.txt" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360169857908" ignored="false" />
     <file path="/fragment.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360081135322" ignored="false" />
     <file path="/BaseActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1358788146975" ignored="false" />
     <file path="/Flat.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359047585174" ignored="false" />
@@ -67,6 +59,7 @@
     <file path="/a.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359737365329" ignored="false" />
     <file path="/GalleryAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359997497277" ignored="false" />
     <file path="/HotelOnItemClickListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360089977398" ignored="false" />
+    <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360169916563" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,7 +137,7 @@
       <file leaf-file-name="FlatListActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatListActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="47" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.4983315">
+            <state line="30" column="94" selection-start="887" selection-end="887" vertical-scroll-proportion="0.30923247">
               <folding />
             </state>
           </provider>
@@ -657,6 +650,11 @@
       <created>1358695353735</created>
       <updated>1358695353735</updated>
     </task>
+    <task id="LOCAL-00001" summary="123">
+      <created>1360169861770</created>
+      <updated>1360169861770</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -681,7 +679,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -747,7 +745,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <option name="LAST_COMMIT_MESSAGE" value="123" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -760,6 +758,7 @@
     <option name="UPDATE_GROUP_BY_CHANGELIST" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
+    <MESSAGE value="123" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -880,7 +879,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatListActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="47" selection-start="1237" selection-end="1237" vertical-scroll-proportion="0.4983315">
+        <state line="30" column="94" selection-start="887" selection-end="887" vertical-scroll-proportion="0.30923247">
           <folding />
         </state>
       </provider>
