@@ -4,21 +4,27 @@
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top">
+        xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="top"
+        android:background="#ffffff">
     <TextView
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="46dp"
             android:text="Каталог квартир"
             android:id="@+id/textView"
             android:layout_gravity="center_horizontal|top" android:gravity="center"
             android:layout_alignParentLeft="true" android:layout_marginLeft="0dp" android:layout_alignParentTop="true"
-            android:layout_marginTop="0dp"/>
+            android:layout_marginTop="0dp" android:background="@drawable/header" android:textColor="#ffffff"
+            android:shadowColor="#000000"
+            android:shadowDx="-1"
+            android:shadowDy="1"
+            android:shadowRadius="1" android:singleLine="false"/>
     <ListView
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:divider="@null"
-            android:dividerHeight="1dp"
+            android:dividerHeight="0dp"
             android:id="@+id/flatList"
             android:layout_alignLeft="@+id/textView"
+            android:fadingEdge="none"
             android:layout_below="@+id/textView"/>
 </RelativeLayout>

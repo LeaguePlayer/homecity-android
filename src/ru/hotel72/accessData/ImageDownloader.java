@@ -33,14 +33,14 @@ public class ImageDownloader {
 
         //Find the dir to save cached images
         if (android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED))
-            cacheDir = new File(android.os.Environment.getExternalStorageDirectory(), "/download/myApp/avatars/");  //todo поменять
+            cacheDir = new File(android.os.Environment.getExternalStorageDirectory(), context.getString(R.string.imgCachePath));
         else
             cacheDir = context.getCacheDir();
         if (!cacheDir.exists())
             cacheDir.mkdirs();
     }
 
-    final int stub_id = R.drawable.icon;
+    final int stub_id = R.drawable.substrate;
 
     public void DisplayImage(String url, String profilePic, Activity activity, ImageView imageView) {
         if (cache.containsKey(url))

@@ -2,21 +2,32 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:orientation="vertical"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="fill_parent"
+                android:layout_height="264dp"
+                android:background="#ffffff">
 
     <Gallery
             android:layout_width="fill_parent"
-            android:layout_height="257dp"
+            android:layout_height="241dp"
             android:id="@+id/gallery"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"/>
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentTop="false"
+            android:fadingEdge="none"
+            android:layout_alignParentRight="false"
+            android:background="#ffffff"/>
 
     <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="cost"
             android:id="@+id/cost"
-            android:layout_alignLeft="@+id/gallery" android:layout_alignBottom="@+id/gallery"/>
+            android:layout_alignLeft="@+id/gallery" android:layout_alignTop="@+id/gallery"/>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="63dp"
+            android:background="@drawable/gallery_item_footer"
+            android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+            >
+    </RelativeLayout>
 
 </RelativeLayout>

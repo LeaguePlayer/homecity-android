@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="#ffffff">
+
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="46dp" android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" android:background="@drawable/header">
+        <Button
+                android:layout_width="49dp"
+                android:layout_height="36dp"
+                android:text="New Button"
+                android:id="@+id/button"
+                android:layout_alignParentLeft="true" android:layout_marginLeft="7dp"
+                android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>
