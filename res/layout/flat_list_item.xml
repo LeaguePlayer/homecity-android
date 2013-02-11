@@ -8,13 +8,13 @@
 
     <Gallery
             android:layout_width="fill_parent"
-            android:layout_height="241dp"
+            android:layout_height="219dp"
             android:id="@+id/gallery"
             android:layout_alignParentLeft="false"
             android:layout_alignParentTop="false"
             android:fadingEdge="none"
             android:layout_alignParentRight="false"
-            android:background="#ffffff"/>
+            android:background="#ffffff" android:spacing="2dp"/>
 
     <TextView
             android:layout_width="wrap_content"
@@ -26,8 +26,6 @@
             android:layout_width="fill_parent"
             android:layout_height="63dp"
             android:background="@drawable/gallery_item_footer"
-            android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
-            >
+            android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
     </RelativeLayout>
-
 </RelativeLayout>

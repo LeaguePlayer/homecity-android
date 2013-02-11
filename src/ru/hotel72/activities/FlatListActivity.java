@@ -28,6 +28,8 @@ public class FlatListActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
         Object obj = getLastNonConfigurationInstance();
         if (null != obj) {
             flatsListAdapter = (FlatsListAdapter) obj;

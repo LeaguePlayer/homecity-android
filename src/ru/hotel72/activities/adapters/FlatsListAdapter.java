@@ -27,13 +27,11 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
 
     private GestureDetector gestureDetector;
     private View.OnTouchListener gestureListener;
-    private final HotelOnItemClickListener onClickListener;
 
     public FlatsListAdapter(Context context, int textViewResourceId, ArrayList<Flat> flats) {
         super(context, textViewResourceId, flats);
         this.context = context;
         this.flats = flats;
-        this.onClickListener = new HotelOnItemClickListener(context);
     }
 
     private static class ViewHolder{
@@ -43,6 +41,8 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
+        //TODO дописать отрисовку куска бирки для верхней view
 
         if (convertView == null || convertView.getTag() == null) {
             final LayoutInflater mInflate = LayoutInflater.from(context);
@@ -79,7 +79,7 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
                 }
             };
             holder.gallery.setOnTouchListener(gestureListener);
-            holder.gallery.setOnItemClickListener(new HotelOnItemClickListener(context));
+            holder.gallery.setOnItemClickListener(new FlatOnItemClickListener(context, flat));
         }
 
         return convertView;

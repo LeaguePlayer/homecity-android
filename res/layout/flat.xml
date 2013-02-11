@@ -1,20 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" android:background="#ffffff">
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ffffff">
 
 
-    <RelativeLayout
+    <ScrollView
+            android:scrollbars="none"
             android:layout_width="fill_parent"
-            android:layout_height="46dp" android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true" android:background="@drawable/header">
-        <Button
-                android:layout_width="49dp"
-                android:layout_height="36dp"
-                android:text="New Button"
-                android:id="@+id/button"
-                android:layout_alignParentLeft="true" android:layout_marginLeft="7dp"
-                android:layout_centerVertical="true"/>
-    </RelativeLayout>
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <ru.hotel72.utils.HorizontalListView
+                    android:layout_width="fill_parent"
+                    android:layout_height="141dp"
+                    android:layout_marginTop="4dp"
+                    android:id="@+id/gallery"
+                    android:layout_alignLeft="@+id/relativeLayout"
+                    android:layout_below="@+id/relativeLayout"/>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" android:background="@drawable/header" android:id="@+id/relativeLayout"
+                    android:paddingBottom="9dp">
+                <Button
+                        android:layout_width="49dp"
+                        android:layout_height="36dp"
+                        android:text="New Button"
+                        android:id="@+id/button"
+                        android:layout_alignParentLeft="true" android:layout_marginLeft="7dp"
+                        android:layout_centerVertical="true"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/flatViewTitle"
+                        android:id="@+id/textView"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="15dp"
+                        android:textColor="#ffffff"
+                        android:shadowColor="#000000"
+                        android:shadowDx="-1"
+                        android:shadowDy="1"
+                        android:shadowRadius="1"/>
+            </RelativeLayout>
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="46dp"
+                    android:text="Забронировать"
+                    android:id="@+id/booking" android:layout_alignLeft="@+id/relativeLayout"
+                    android:layout_alignParentTop="true" android:layout_marginTop="188dp" android:singleLine="false"/>
+            <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true" android:layout_marginTop="236dp" android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+                <ru.yandex.yandexmapkit.MapView
+                        android:id="@+id/map"
+                        android:layout_width="fill_parent"
+                        android:layout_height="128dp"
+                        android:apiKey="1234567890"
+                        android:layout_marginBottom="8dp"/>
+                <Button
+                        android:layout_width="fill_parent"
+                        android:layout_height="32dp"
+                        android:text="Описание"
+                        android:id="@+id/description" android:gravity="left"/>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/textView" android:layout_gravity="left|center_vertical" android:paddingTop="25dp"
+                        android:paddingBottom="27dp" android:paddingRight="9dp" android:paddingLeft="9dp"/>
+                <Button android:layout_width="fill_parent" android:layout_height="32dp" android:text="Удобства"
+                        android:id="@+id/facilities" android:gravity="left" android:layout_marginBottom="7dp"
+                        android:singleLine="false"/>
+                <Button android:layout_width="fill_parent" android:layout_height="46dp" android:text="Отзывы"
+                        android:id="@+id/opinion" android:gravity="left" android:enabled="false"
+                        android:layout_marginBottom="6dp"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent">
+                    <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Button"
+                            android:id="@+id/button1" android:layout_weight="1" android:layout_marginRight="2dp"/>
+                    <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Button"
+                            android:id="@+id/button2" android:layout_weight="1" android:layout_marginLeft="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/hotel72.iml" filepath="$PROJECT_DIR$/hotel72.iml" />
+      <module fileurl="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/yandexmapkit-library.iml" filepath="$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/yandexmapkit-library.iml" />
     </modules>
   </component>
 </project>
