@@ -1,5 +1,6 @@
 package ru.hotel72.activities;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.GestureDetector;
@@ -26,7 +27,7 @@ import ru.yandex.yandexmapkit.utils.GeoPoint;
  * Time: 23:02
  * To change this template use File | Settings | File Templates.
  */
-public class FlatActivity extends BaseActivity {
+public class FlatActivity extends BaseActivity implements View.OnClickListener {
 
     private Flat flat;
     private GalleryAdapter galleryAdapter;
@@ -41,6 +42,9 @@ public class FlatActivity extends BaseActivity {
         flat = (Flat) DataTransfer.get(flatId);
 
         setContentView(R.layout.flat);
+
+        setButtonsListener();
+
         HorizontalListView gallery = (HorizontalListView) findViewById(R.id.gallery);
 
         Object obj = getLastNonConfigurationInstance();
@@ -72,6 +76,14 @@ public class FlatActivity extends BaseActivity {
         showBalloon(flat.coords);
     }
 
+    private void setButtonsListener() {
+        View a = this.findViewById(R.id.scrollView);
+        View b = a.findViewById(R.id.mainLayout);
+        View c = b.findViewById(R.id.headerLayout);
+        View d = findViewById(R.id.returnBtn);
+        d.setOnClickListener(this);
+    }
+
     public void showBalloon(double[] coords){
         // Load required resources
         Resources res = getResources();
@@ -94,5 +106,16 @@ public class FlatActivity extends BaseActivity {
         mMapController.setZoomToSpan(coords[1] , coords[0]);
         mMapController.setPositionAnimationTo(new GeoPoint(coords[1] , coords[0]));
 
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+            case R.id.returnBtn:
+                Intent intent = new Intent(this, FlatListActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivity(intent);
+            break;
+        }
     }
 }

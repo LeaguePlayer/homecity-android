@@ -13,31 +13,35 @@
             android:id="@+id/scrollView">
         <RelativeLayout
                 android:layout_width="fill_parent"
-                android:layout_height="fill_parent">
+                android:layout_height="fill_parent"
+                android:id="@+id/mainLayout">
             <ru.hotel72.utils.HorizontalListView
                     android:layout_width="fill_parent"
                     android:layout_height="141dp"
                     android:layout_marginTop="4dp"
                     android:id="@+id/gallery"
-                    android:layout_alignLeft="@+id/relativeLayout"
-                    android:layout_below="@+id/relativeLayout"/>
+                    android:layout_alignLeft="@+id/mainLayout"
+                    android:layout_below="@+id/mainLayout"/>
             <RelativeLayout
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true" android:background="@drawable/header" android:id="@+id/relativeLayout"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/header"
+                    android:id="@+id/headerLayout"
                     android:paddingBottom="9dp">
                 <Button
                         android:layout_width="49dp"
                         android:layout_height="36dp"
-                        android:text="New Button"
-                        android:id="@+id/button"
-                        android:layout_alignParentLeft="true" android:layout_marginLeft="7dp"
+                        android:id="@+id/returnBtn"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="7dp"
                         android:layout_centerVertical="true"/>
                 <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/flatViewTitle"
-                        android:id="@+id/textView"
+                        android:id="@+id/headerText"
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
                         android:textSize="15dp"
@@ -51,7 +55,7 @@
                     android:layout_width="fill_parent"
                     android:layout_height="46dp"
                     android:text="Забронировать"
-                    android:id="@+id/booking" android:layout_alignLeft="@+id/relativeLayout"
+                    android:id="@+id/booking" android:layout_alignLeft="@+id/mainLayout"
                     android:layout_alignParentTop="true" android:layout_marginTop="188dp" android:singleLine="false"/>
             <LinearLayout
                     android:orientation="vertical"
@@ -59,15 +63,21 @@
                     android:layout_height="wrap_content" android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true" android:layout_marginTop="236dp" android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp">
-                <ru.yandex.yandexmapkit.MapView
-                        android:id="@+id/map"
+                <LinearLayout
+                        android:orientation="vertical"
                         android:layout_width="fill_parent"
-                        android:layout_height="128dp"
-                        android:apiKey="1234567890"
-                        android:layout_marginBottom="8dp"/>
+                        android:layout_height="128dp">
+                    <ru.yandex.yandexmapkit.MapView
+                            android:id="@+id/map"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:apiKey="1234567890"
+                            android:tag="static"
+                            android:layout_marginBottom="8dp"/>
+                </LinearLayout>
                 <Button
                         android:layout_width="fill_parent"
-                        android:layout_height="32dp"
+                        android:layout_height="46dp"
                         android:text="Описание"
                         android:id="@+id/description" android:gravity="left"/>
                 <TextView
@@ -76,7 +86,7 @@
                         android:text="New Text"
                         android:id="@+id/textView" android:layout_gravity="left|center_vertical" android:paddingTop="25dp"
                         android:paddingBottom="27dp" android:paddingRight="9dp" android:paddingLeft="9dp"/>
-                <Button android:layout_width="fill_parent" android:layout_height="32dp" android:text="Удобства"
+                <Button android:layout_width="fill_parent" android:layout_height="46dp" android:text="Удобства"
                         android:id="@+id/facilities" android:gravity="left" android:layout_marginBottom="7dp"
                         android:singleLine="false"/>
                 <Button android:layout_width="fill_parent" android:layout_height="46dp" android:text="Отзывы"
@@ -85,17 +95,23 @@
                 <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="fill_parent">
+                        android:layout_height="wrap_content">
                     <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="New Button"
-                            android:id="@+id/button1" android:layout_weight="1" android:layout_marginRight="2dp"/>
+                            android:textSize="13dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="46dp"
+                            android:text="Поделиться"
+                            android:id="@+id/share"
+                            android:layout_weight="1"
+                            android:layout_marginRight="2dp" android:singleLine="true"/>
                     <Button
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="New Button"
-                            android:id="@+id/button2" android:layout_weight="1" android:layout_marginLeft="2dp"/>
+                            android:textSize="13dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="46dp"
+                            android:text="Забронировать по телефону"
+                            android:id="@+id/phoneBooking"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="2dp" android:singleLine="true"/>
                 </LinearLayout>
             </LinearLayout>
         </RelativeLayout>

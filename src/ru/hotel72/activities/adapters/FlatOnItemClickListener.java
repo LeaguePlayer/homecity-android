@@ -20,7 +20,7 @@ public class FlatOnItemClickListener implements AdapterView.OnItemClickListener 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         Intent intent = new Intent(context, FlatActivity.class);
-
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         String flatId = "flat" + flat.id;
 
         intent.putExtra("flatId", flatId);

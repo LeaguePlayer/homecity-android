@@ -3,7 +3,7 @@
   <component name="AndroidDesignerProfile">
     <option name="fullProfile">
       <profile>
-        <option name="device" value="3.7in WVGA (Nexus One)" />
+        <option name="device" value="2.7in QVGA slider" />
         <option name="deviceConfiguration" value="Portrait" />
         <option name="dockMode" value="" />
         <option name="localeLanguage" value="en" />
@@ -62,14 +62,14 @@
     <file path="/GalleryAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359997497277" ignored="false" />
     <file path="/HotelOnItemClickListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360349825515" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360169916563" ignored="false" />
-    <file path="/FlatActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360603936052" ignored="false" />
+    <file path="/FlatActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360698216304" ignored="false" />
     <file path="/endless_list_footer.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360178443541" ignored="false" />
     <file path="/flat_list.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360349574659" ignored="false" />
     <file path="/start.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360253925775" ignored="false" />
     <file path="/strings.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360254385239" ignored="false" />
-    <file path="/flat.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360603230730" ignored="false" />
+    <file path="/flat.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360697752517" ignored="false" />
     <file path="/HotelGestureDetector.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360349704115" ignored="false" />
-    <file path="/FlatOnItemClickListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360383992249" ignored="false" />
+    <file path="/FlatOnItemClickListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360695871265" ignored="false" />
     <file path="/DataTransfer.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360386012139" ignored="false" />
     <file path="/HorizontalListView.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360499827412" ignored="false" />
     <file path="/horizontalListItem.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360498430086" ignored="false" />
@@ -154,22 +154,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="flat.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="flat.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/flat.xml">
-          <provider selected="true" editor-type-id="android-designer">
+          <provider editor-type-id="android-designer">
             <state />
           </provider>
-          <provider editor-type-id="text-editor">
-            <state line="66" column="24" selection-start="3491" selection-end="3491" vertical-scroll-proportion="0.0">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="51" selection-start="2040" selection-end="2040" vertical-scroll-proportion="-12.92">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FlatActivity.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FlatActivity.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="36" selection-start="3366" selection-end="3366" vertical-scroll-proportion="0.0">
+            <state line="82" column="17" selection-start="2884" selection-end="2884" vertical-scroll-proportion="0.7586207">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlatOnItemClickListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatOnItemClickListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="31" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -201,15 +210,15 @@
         <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatsListAdapter.java" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/domains/Photo.java" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/domains/Flat.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatOnItemClickListener.java" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/utils/DataTransfer.java" />
         <option value="$PROJECT_DIR$/res/layout/horizontalListItem.xml" />
         <option value="$PROJECT_DIR$/res/layout/gallary_item.xml" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/utils/HorizontalListView.java" />
         <option value="$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatOnItemClickListener.java" />
         <option value="$PROJECT_DIR$/res/layout/flat.xml" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java" />
       </list>
     </option>
   </component>
@@ -327,6 +336,64 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -368,7 +435,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
+    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -585,28 +652,28 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3239061" sideWeight="0.64444447" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32123798" sideWeight="0.64444447" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3239061" sideWeight="0.6766667" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32123798" sideWeight="0.6766667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29" sideWeight="0.45731056" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29" sideWeight="0.45731056" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32444444" sideWeight="0.506937" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32666665" sideWeight="0.48493004" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32333332" sideWeight="0.48932764" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32918552" sideWeight="0.4956943" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.4956943" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23896663" sideWeight="0.20475113" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18249734" sideWeight="0.6766667" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35555556" sideWeight="0.45944503" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18215811" sideWeight="0.6766667" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34888887" sideWeight="0.45944503" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3288889" sideWeight="0.4913886" order="1" side_tool="false" content_ui="tabs" />
@@ -676,13 +743,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/GetImageTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="559" selection-end="559" vertical-scroll-proportion="0.30807248">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/IDE/sdk/platforms/android-8/android.jar!/android/os/AsyncTask.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -718,11 +778,6 @@
     <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/GalleryAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="82" selection-start="1376" selection-end="1376" vertical-scroll-proportion="0.46977547" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatOnItemClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="21" selection-start="659" selection-end="665" vertical-scroll-proportion="0.6165803" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/HorizontalListView.java">
@@ -765,19 +820,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/flat_list.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="36" selection-start="3366" selection-end="3366" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.25812274">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatOnItemClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="31" selection-start="556" selection-end="556" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/flat.xml">
-      <provider selected="true" editor-type-id="android-designer">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state line="66" column="24" selection-start="3491" selection-end="3491" vertical-scroll-proportion="0.0">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="51" selection-start="2040" selection-end="2040" vertical-scroll-proportion="-12.92">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="17" selection-start="2884" selection-end="2884" vertical-scroll-proportion="0.7586207">
           <folding />
         </state>
       </provider>
