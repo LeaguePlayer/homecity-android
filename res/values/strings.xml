@@ -4,4 +4,7 @@
     <string name="imgPathTemplate"></string>
     <string name="loadImgUrlTemplate"></string><string name="flatViewTitle">Каталог квартир</string>
     <string name="dataTransferFlatId">flatId</string>
+    <string name="flatListMenuBtn">Каталог квартир</string>
+    <string name="flatMapMenuBtn">Квартиры на карте</string>
+    <string name="settingsMenuBtn">Настройки</string>
 </resources>

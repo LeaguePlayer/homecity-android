@@ -8,7 +8,17 @@
 
     <Button
             android:layout_width="wrap_content"
-            android:layout_height="257dp"
-            android:text="New Button"
+            android:layout_height="wrap_content"
+            android:text="@string/flatListMenuBtn"
+            android:id="@+id/button" android:layout_gravity="left|center_vertical"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/flatMapMenuBtn"
+            android:id="@+id/button" android:layout_gravity="left|center_vertical"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/settingsMenuBtn"
             android:id="@+id/button" android:layout_gravity="left|center_vertical"/>
 </LinearLayout>

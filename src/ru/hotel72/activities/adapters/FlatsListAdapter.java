@@ -34,8 +34,15 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
         this.flats = flats;
     }
 
+    public void updateContext(Context context){
+        this.context = context;
+    }
+
     private static class ViewHolder{
         public TextView cost;
+        public TextView rooms;
+        public TextView address;
+        public ToggleButton isLiked;
         public Gallery gallery;
     }
 
@@ -50,6 +57,9 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
 
             holder = new ViewHolder();
             holder.cost = (TextView) convertView.findViewById(R.id.cost);
+            holder.rooms = (TextView) convertView.findViewById(R.id.gallery_item_footer).findViewById(R.id.rooms);
+            holder.address = (TextView) convertView.findViewById(R.id.gallery_item_footer).findViewById(R.id.address);
+            holder.isLiked = (ToggleButton) convertView.findViewById(R.id.gallery_item_footer).findViewById(R.id.isLiked);
             holder.gallery = (Gallery) convertView.findViewById(R.id.gallery);
 
             convertView.setTag(holder);
@@ -59,6 +69,11 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
 
         Flat flat = flats.get(position);
         if (flat != null) {
+
+            if(flat.rooms > 0){
+                holder.rooms.setText(flat.rooms.toString() + " комн.");
+            }
+            holder.address.setText(flat.street);
 
             if (flat.cost != Double.NaN && holder.cost != null) {
                 holder.cost.setText(flat.cost.toString());
@@ -70,6 +85,9 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
                 galleryAdapter = new GalleryAdapter(context, R.layout.gallary_item, flat.photos);
                 galleryCache.put(flat.id, galleryAdapter);
             }
+
+            holder.isLiked.setChecked(flat.isLicked);
+            holder.isLiked.setOnClickListener(new LikeOnItemClickListener(context, this, flat));
 
             holder.gallery.setAdapter(galleryAdapter);
             gestureDetector = new GestureDetector(new HotelGestureDetector(context));

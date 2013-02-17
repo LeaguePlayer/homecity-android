@@ -17,16 +17,31 @@ import ru.hotel72.activities.FlatListActivity;
 public class EndlessScrollListener implements AbsListView.OnScrollListener {
     private Context context;
     private int visibleThreshold = 5;
-    private int currentPage = 0;
+    private int currentPage = 1;
     private int previousTotal = 1;
     private boolean loading = false;
+
+    public int getPage(){
+        return currentPage;
+    }
+
+    public int getPreviousTotal(){
+        return previousTotal;
+    }
 
     public EndlessScrollListener(Context context) {
         this.context = context;
     }
-    public EndlessScrollListener(Context context, int visibleThreshold) {
+
+    public EndlessScrollListener(Context context, int visibleThreshold, int currentPage, int previousTotal) {
         this.context = context;
         this.visibleThreshold = visibleThreshold;
+        this.currentPage = currentPage;
+        this.previousTotal = previousTotal;
+    }
+
+    public void updateContext(Context context){
+        this.context = context;
     }
 
     @Override

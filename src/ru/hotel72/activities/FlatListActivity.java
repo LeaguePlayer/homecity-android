@@ -1,5 +1,6 @@
 package ru.hotel72.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
@@ -23,8 +24,12 @@ public class FlatListActivity extends BaseActivity {
     private ListView flatList;
     private static ArrayList<Flat> flats = new ArrayList<Flat>();
 
-    private static int visibleThreshold = 5;
-    private static View footer;
+    private final int visibleThreshold = 5;
+    private View footer;
+    private static int currPosition;
+    private static int page = 1;
+    private static int prevTotal = 1;
+    private EndlessScrollListener endlessScrollListener;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,10 +45,23 @@ public class FlatListActivity extends BaseActivity {
         setContentView(R.layout.flat_list);
         flatList = (ListView)findViewById(R.id.flatList);
 
+        endlessScrollListener = new EndlessScrollListener(this, visibleThreshold, page, prevTotal);
+
         footer = getLayoutInflater().inflate(R.layout.endless_list_footer, null);
+
         flatList.addFooterView(footer);
         flatList.setAdapter(flatsListAdapter);
-        flatList.setOnScrollListener(new EndlessScrollListener(this, visibleThreshold));
+        flatList.setOnScrollListener(endlessScrollListener);
+
+        View view = findViewById(R.id.headerLayout).findViewById(R.id.returnBtn);
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(FlatListActivity.this, StartActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                FlatListActivity.this.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -51,9 +69,22 @@ public class FlatListActivity extends BaseActivity {
         return flatsListAdapter;
     }
 
-    public void UpdateFlatsList(ArrayList<Flat> newFlats) {
-//        final int prevSize = this.flats.size();
+    @Override
+    protected void onPause() {
+        super.onPause();
+        currPosition = flatList.getFirstVisiblePosition();
+        page = endlessScrollListener.getPage();
+        prevTotal = endlessScrollListener.getPreviousTotal();
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+        flatList.setSelection(currPosition);
+
+    }
+
+    public void UpdateFlatsList(ArrayList<Flat> newFlats) {
         if (newFlats.size() < this.visibleThreshold) {
             flatList.removeFooterView(footer);
         }
@@ -63,19 +94,5 @@ public class FlatListActivity extends BaseActivity {
         }
 
         flatsListAdapter.notifyDataSetChanged();
-
-//        for (Flat flat : newFlats) {
-//            flatsListAdapter.add(flat);
-//        }
-//        runOnUiThread(new Runnable() {
-//            @Override
-//            public void run() {
-//                for (int i = prevSize, j = flats.size(); i < j; i++) {
-//                    View view = flatList.getChildAt(i);
-//                    flatList.getAdapter().getView(i, view, flatList);
-//                }
-//            }
-//        });
-
     }
 }

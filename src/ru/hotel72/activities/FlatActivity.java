@@ -1,11 +1,12 @@
 package ru.hotel72.activities;
 
 import android.content.Intent;
-import android.content.res.Resources;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.TextView;
 import ru.hotel72.R;
 import ru.hotel72.activities.adapters.GalleryAdapter;
 import ru.hotel72.activities.adapters.HotelGestureDetector;
@@ -15,8 +16,6 @@ import ru.hotel72.utils.HorizontalListView;
 import ru.yandex.yandexmapkit.MapController;
 import ru.yandex.yandexmapkit.MapView;
 import ru.yandex.yandexmapkit.OverlayManager;
-import ru.yandex.yandexmapkit.overlay.Overlay;
-import ru.yandex.yandexmapkit.overlay.OverlayItem;
 import ru.yandex.yandexmapkit.overlay.balloon.BalloonItem;
 import ru.yandex.yandexmapkit.utils.GeoPoint;
 
@@ -33,18 +32,34 @@ public class FlatActivity extends BaseActivity implements View.OnClickListener {
     private GalleryAdapter galleryAdapter;
     private MapController mMapController;
     private OverlayManager mOverlayManager;
+    private String flatId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        String flatId = getIntent().getStringExtra(getString(R.string.dataTransferFlatId));
+        flatId = getIntent().getStringExtra(getString(R.string.dataTransferFlatId));
         flat = (Flat) DataTransfer.get(flatId);
 
         setContentView(R.layout.flat);
 
-        setButtonsListener();
+        setBtns();
+        setContent();
 
+        initGallery();
+        initMap();
+    }
+
+    private void setContent() {
+        TextView textView = (TextView) this.findViewById(R.id.scrollView)
+                .findViewById(R.id.mainLayout)
+                .findViewById(R.id.infoLayout)
+                .findViewById(R.id.shortDesc);
+
+        textView.setText(flat.short_desc);
+    }
+
+    private void initGallery() {
         HorizontalListView gallery = (HorizontalListView) findViewById(R.id.gallery);
 
         Object obj = getLastNonConfigurationInstance();
@@ -63,49 +78,40 @@ public class FlatActivity extends BaseActivity implements View.OnClickListener {
             }
         };
         gallery.setOnTouchListener(gestureListener);
+    }
 
+    private void initMap() {
         final MapView mapView = (MapView) findViewById(R.id.map);
-
         mMapController = mapView.getMapController();
-
         mOverlayManager = mMapController.getOverlayManager();
-        // Disable determining the user's location
         mOverlayManager.getMyLocation().setEnabled(false);
-
-        // A simple implementation of map objects
         showBalloon(flat.coords);
     }
 
-    private void setButtonsListener() {
-        View a = this.findViewById(R.id.scrollView);
-        View b = a.findViewById(R.id.mainLayout);
-        View c = b.findViewById(R.id.headerLayout);
-        View d = findViewById(R.id.returnBtn);
-        d.setOnClickListener(this);
+    private void setBtns() {
+
+        View mainL = this.findViewById(R.id.scrollView).findViewById(R.id.mainLayout);
+
+        View returnBtn = mainL.findViewById(R.id.headerLayout)
+                .findViewById(R.id.returnBtn);
+
+        returnBtn.setOnClickListener(this);
+
+        View infoLayout = mainL.findViewById(R.id.infoLayout);
+
+        View callBtn = infoLayout.findViewById(R.id.footerLayout).findViewById(R.id.phoneBooking);
+        callBtn.setOnClickListener(this);
+
+        View bookingBtn = mainL.findViewById(R.id.booking);
+        bookingBtn.setOnClickListener(this);
     }
 
     public void showBalloon(double[] coords){
-        // Load required resources
-        Resources res = getResources();
-        // Create a layer of objects for the map
-        Overlay overlay = new Overlay(mMapController);
-
-        // Create an object for the layer
-        OverlayItem kremlin = new OverlayItem(new GeoPoint(coords[1] , coords[0]), res.getDrawable(R.drawable.icon));
         // Create a balloon model for the object
-        BalloonItem balloonKremlin = new BalloonItem(this,kremlin.getGeoPoint());
-        balloonKremlin.setText("Московский Кремль. Здесь можно ещё много о чём написать.");
-        //        // Add the balloon model to the object
-        kremlin.setBalloonItem(balloonKremlin);
-        // Add the object to the layer
-        overlay.addOverlayItem(kremlin);
-
-        // Add the layer to the map
-        mOverlayManager.addOverlay(overlay);
-
-        mMapController.setZoomToSpan(coords[1] , coords[0]);
-        mMapController.setPositionAnimationTo(new GeoPoint(coords[1] , coords[0]));
-
+        BalloonItem balloon = new BalloonItem(this, new GeoPoint(coords[1] , coords[0]));
+        balloon.setText(flat.street);
+        mMapController.showBalloon(balloon);
+        mMapController.setPositionNoAnimationTo(new GeoPoint(coords[1], coords[0]), 15);
     }
 
     @Override
@@ -115,7 +121,21 @@ public class FlatActivity extends BaseActivity implements View.OnClickListener {
                 Intent intent = new Intent(this, FlatListActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
-            break;
+                break;
+
+            case R.id.phoneBooking:
+                Intent callIntent = new Intent(Intent.ACTION_CALL);
+                callIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                callIntent.setData(Uri.parse("tel:" + getString(R.string.bookingNumber)));
+                startActivity(callIntent);
+                break;
+
+            case R.id.booking:
+                Intent bookingIntent = new Intent(this, BookingActivity.class);
+                bookingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                bookingIntent.putExtra("flatId", flatId);
+                startActivity(bookingIntent);
+                break;
         }
     }
 }

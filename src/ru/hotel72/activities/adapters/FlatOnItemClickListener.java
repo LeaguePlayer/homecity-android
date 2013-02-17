@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
 import ru.hotel72.activities.FlatActivity;
+import ru.hotel72.activities.FlatListActivity;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.utils.DataTransfer;
 

@@ -12,9 +12,9 @@
             android:layout_height="wrap_content"
             android:id="@+id/scrollView">
         <RelativeLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:id="@+id/mainLayout">
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/mainLayout">
             <ru.hotel72.utils.HorizontalListView
                     android:layout_width="fill_parent"
                     android:layout_height="141dp"
@@ -55,14 +55,21 @@
                     android:layout_width="fill_parent"
                     android:layout_height="46dp"
                     android:text="Забронировать"
-                    android:id="@+id/booking" android:layout_alignLeft="@+id/mainLayout"
-                    android:layout_alignParentTop="true" android:layout_marginTop="188dp" android:singleLine="false"/>
+                    android:id="@+id/booking"
+                    android:layout_alignLeft="@+id/mainLayout"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="188dp"
+                    android:singleLine="false"/>
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true" android:layout_marginTop="236dp" android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp">
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="236dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:id="@+id/infoLayout">
                 <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="fill_parent"
@@ -84,8 +91,15 @@
                         android:layout_width="fill_parent"
                         android:layout_height="wrap_content"
                         android:text="New Text"
-                        android:id="@+id/textView" android:layout_gravity="left|center_vertical" android:paddingTop="25dp"
+                        android:id="@+id/shortDesc" android:layout_gravity="left|center_vertical"
+                        android:paddingTop="25dp"
                         android:paddingBottom="27dp" android:paddingRight="9dp" android:paddingLeft="9dp"/>
+                <Button android:layout_width="fill_parent"
+                        android:layout_height="46dp"
+                        android:text="Детали"
+                        android:id="@+id/detalies"
+                        android:gravity="left"
+                        android:singleLine="false"/>
                 <Button android:layout_width="fill_parent" android:layout_height="46dp" android:text="Удобства"
                         android:id="@+id/facilities" android:gravity="left" android:layout_marginBottom="7dp"
                         android:singleLine="false"/>
@@ -95,7 +109,8 @@
                 <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="fill_parent"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:id="@+id/footerLayout">
                     <Button
                             android:textSize="13dp"
                             android:layout_width="fill_parent"

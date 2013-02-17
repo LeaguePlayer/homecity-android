@@ -10,20 +10,19 @@ import android.widget.ImageView;
 import ru.hotel72.R;
 import ru.hotel72.accessData.ImageDownloader;
 import ru.hotel72.domains.Photo;
+import ru.hotel72.utils.ImageHelper;
 
 import java.util.ArrayList;
 
 public class GalleryAdapter extends ArrayAdapter<Photo> {
     private Context context;
     private ArrayList<Photo> photos;
-    private ImageDownloader imgDownloader;
     private ViewHolder holder;
 
     public GalleryAdapter(Context context, int textViewResourceId, ArrayList<Photo> photos) {
         super(context, textViewResourceId, photos);
         this.context = context;
         this.photos = photos;
-        this.imgDownloader = new ImageDownloader(context);
     }
 
     public static class ViewHolder{
@@ -48,7 +47,7 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
         String imgUrl = photos.get(position).url;
         String url = String.format("http://hotel72.ru/index.php/api/GetFile?filename=%s&for=%s", imgUrl, "original");
         holder.image.setTag(url);
-        imgDownloader.DisplayImage(url, imgUrl, (Activity)context, holder.image);
+        ImageHelper.getImageDownloader(context).DisplayImage(url, imgUrl, (Activity) context, holder.image);
 
         return convertView;
     }

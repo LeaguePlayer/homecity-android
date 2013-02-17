@@ -5,6 +5,7 @@ import android.os.AsyncTask;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import ru.hotel72.R;
 import ru.hotel72.activities.FlatListActivity;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.domains.Photo;
@@ -23,7 +24,7 @@ public class GetFlatsTask extends AsyncTask<Integer, Void, Void> {
 
     private Context context;
     private int visibleItemCount;
-    private static String getFlatsUrl = "http://hotel72.ru/index.php/api/getJsonHotels?page=%d&rows_count=%d"; //TODO добавить в преверенсис
+    private static String getFlatsUrl = "http://hotel72.ru/index.php/api/getJsonHotels?page=%d&rows_count=%d";
 
     private ArrayList<Flat> flats = new ArrayList<Flat>();
 
@@ -65,6 +66,8 @@ public class GetFlatsTask extends AsyncTask<Integer, Void, Void> {
                 Flat flat = parseMainFlatData(flatJson);
                 flat.photos = parseFlatPhotos(flatJson.getJSONObject(String.valueOf(FlatJsonNames.photos)));
                 flat.coords = parseFlatCoors(flatJson.getJSONArray(String.valueOf(FlatJsonNames.coords)));
+
+                flat.isLicked = GetFlatHelper.likedFlat.contains(flat.id);
 
                 flats.add(flat);
 

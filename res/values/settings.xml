@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="imgCachePath">/hotel72/cache/img</string>
+    <string name="bookingNumber">+73452500407</string>
 </resources>

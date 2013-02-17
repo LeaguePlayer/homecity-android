@@ -26,6 +26,28 @@
             android:layout_width="fill_parent"
             android:layout_height="63dp"
             android:background="@drawable/gallery_item_footer"
+            android:id="@+id/gallery_item_footer"
             android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/rooms"
+                android:textSize="12dp"
+                android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
+                android:layout_margin="18dp" android:layout_marginTop="17dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/address"
+                android:textSize="10dp"
+                android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_marginLeft="18dp" android:layout_marginTop="31dp"/>
+        <ToggleButton
+                android:layout_width="32dp"
+                android:layout_height="31dp"
+                android:id="@+id/isLiked"
+                android:layout_alignParentRight="true" android:layout_alignBaseline="@+id/rooms"/>
     </RelativeLayout>
 </RelativeLayout>

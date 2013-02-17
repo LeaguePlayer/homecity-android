@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:background="#ffffff">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/header"
+            android:id="@+id/headerLayout"
+            android:paddingBottom="9dp">
+        <Button
+                android:layout_width="49dp"
+                android:layout_height="36dp"
+                android:id="@+id/returnBtn"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="7dp"
+                android:layout_centerVertical="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flatViewTitle"
+                android:id="@+id/headerText"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:shadowColor="#000000"
+                android:shadowDx="-1"
+                android:shadowDy="1"
+                android:shadowRadius="1"/>
+    </RelativeLayout>
+
+    <ScrollView
+            android:scrollbars="none"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:layout_alignLeft="@+id/headerLayout"
+            android:layout_below="@+id/headerLayout" android:layout_marginRight="6dp" android:layout_marginLeft="6dp">
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/mainLayout">
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="75dp"
+                    android:id="@+id/subHeader">
+                <ImageView
+                        android:layout_width="55dp"
+                        android:layout_height="55dp"
+                        android:id="@+id/imageView" android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true" android:layout_marginLeft="10dp"
+                        android:layout_marginTop="9dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/rooms"
+                        android:textSize="13dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="16dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/address"
+                        android:textSize="10dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="33dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:id="@+id/cost"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="38dp"
+                        android:textSize="17dp"/>
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="руб"
+                        android:textSize="9dp"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignBottom="@+id/cost"
+                        android:layout_toRightOf="@+id/cost" android:layout_marginLeft="-36dp"
+                        android:layout_marginBottom="2dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="250dp"
+                    android:layout_below="@+id/subHeader"
+                    android:id="@+id/actionLayout"
+                    android:layout_marginTop="21dp">
+                <RelativeLayout android:layout_width="fill_parent"
+                                android:layout_height="62dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentTop="true"
+                                android:id="@+id/inDate"
+                                android:clickable="true"
+                                android:focusable="true"/>
+                <RelativeLayout android:layout_width="fill_parent"
+                                android:layout_height="62dp"
+                                android:id="@+id/outDate"
+                                android:layout_alignLeft="@+id/inDate"
+                                android:layout_below="@+id/inDate"
+                                android:clickable="true"
+                                android:focusable="true"/>
+                <RelativeLayout android:layout_width="fill_parent"
+                                android:layout_height="62dp"
+                                android:id="@+id/visitors"
+                                android:layout_alignLeft="@+id/outDate"
+                                android:layout_below="@+id/outDate"
+                                android:clickable="true"
+                                android:focusable="true"/>
+                <RelativeLayout android:layout_width="fill_parent"
+                                android:layout_height="62dp"
+                                android:id="@+id/cost"
+                                android:layout_alignLeft="@+id/visitors"
+                                android:layout_below="@+id/visitors"
+                                android:clickable="true"
+                                android:focusable="true"/>
+            </RelativeLayout>
+
+            <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/booking"
+                    android:layout_below="@+id/actionLayout"
+                    android:text="Забронировать"
+                    android:layout_marginTop="21dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
