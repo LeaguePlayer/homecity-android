@@ -3,7 +3,7 @@
   <component name="AndroidDesignerProfile">
     <option name="fullProfile">
       <profile>
-        <option name="device" value="2.7in QVGA slider" />
+        <option name="device" value="2.7in QVGA" />
         <option name="deviceConfiguration" value="Portrait" />
         <option name="dockMode" value="" />
         <option name="localeLanguage" value="en" />
@@ -36,7 +36,7 @@
     <ignored path="hotel72.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/GetFlatsTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361108750587" ignored="false" />
-    <file path="/Dummy.txt" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361114110927" ignored="false" />
+    <file path="/Dummy.txt" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361205361780" ignored="false" />
     <file path="/fragment.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361116060166" ignored="false" />
     <file path="/BaseActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1358788146975" ignored="false" />
     <file path="/Flat.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361108702592" ignored="false" />
@@ -46,7 +46,7 @@
     <file path="/flatListItem.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359050860354" ignored="false" />
     <file path="/EndlessScrollListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361113402410" ignored="false" />
     <file path="/flatListActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359286440728" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361073564017" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361210251587" ignored="false" />
     <file path="/FlatsListAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361113022291" ignored="false" />
     <file path="/FlatListExtention.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359289159605" ignored="false" />
     <file path="/FlatListExtension.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359289270546" ignored="false" />
@@ -78,7 +78,7 @@
     <file path="/SplashActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361109753232" ignored="false" />
     <file path="/DBHelper.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361110104887" ignored="false" />
     <file path="/GetFlatHelper.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361107633647" ignored="false" />
-    <file path="/settings.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361107870471" ignored="false" />
+    <file path="/settings.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361211974847" ignored="false" />
     <file path="/LikeOnItemClicklistener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361111653098" ignored="false" />
     <file path="/booking.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361124583494" ignored="false" />
     <file path="/BookingActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361120421998" ignored="false" />
@@ -176,13 +176,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="booking.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="booking.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/res/layout/booking.xml">
           <provider selected="true" editor-type-id="android-designer">
             <state />
           </provider>
           <provider editor-type-id="text-editor">
             <state line="139" column="59" selection-start="7120" selection-end="7120" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="122" column="66" selection-start="5692" selection-end="5692" vertical-scroll-proportion="0.8484849">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="strings.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="39" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="21" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -232,9 +262,8 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="27" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-11.36">
+            <state line="52" column="45" selection-start="1006" selection-end="2479" vertical-scroll-proportion="-12.24">
               <folding>
-                <element signature="tag#RelativeLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
                 <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
                 <element signature="tag#Button#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
                 <element signature="tag#Button#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
@@ -272,8 +301,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/GetFlatsTask.java" />
-        <option value="$PROJECT_DIR$/res/layout/flat_list_item.xml" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/LikeOnItemClicklistener.java" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/activities/SplashActivity.java" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/DBHelper.java" />
@@ -282,12 +309,14 @@
         <option value="$PROJECT_DIR$/src/ru/hotel72/utils/EndlessScrollListener.java" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatListActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/flat.xml" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/utils/ImageHelper.java" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/GalleryAdapter.java" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/activities/BookingActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/booking.xml" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/settings.xml" />
       </list>
     </option>
   </component>
@@ -570,7 +599,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
+    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -790,11 +819,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.30522946" sideWeight="0.6522222" order="3" side_tool="false" content_ui="tabs" x="1105" y="395" width="548" height="788" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28655282" sideWeight="0.6522222" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28655282" sideWeight="0.6522222" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -810,7 +839,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18162394" sideWeight="0.49888888" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18089648" sideWeight="0.6522222" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18055555" sideWeight="0.6522222" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34777778" sideWeight="0.44236925" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -881,20 +910,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatsListAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="29" selection-start="1061" selection-end="1074" vertical-scroll-proportion="0.4641638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/LikeOnItemClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="56" selection-start="961" selection-end="961" vertical-scroll-proportion="0.5068259">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/DBHelper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="39" selection-start="1120" selection-end="1120" vertical-scroll-proportion="0.3327645">
@@ -918,38 +933,6 @@
     <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/HotelGestureDetector.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="13" selection-start="196" selection-end="196" vertical-scroll-proportion="0.11604095">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="59" selection-start="968" selection-end="968" vertical-scroll-proportion="0.53125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/flat.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="27" selection-start="1021" selection-end="1021" vertical-scroll-proportion="-11.36">
-          <folding>
-            <element signature="tag#RelativeLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#Button#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#Button#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#Button#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#Button#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatOnItemClickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="61" selection-start="764" selection-end="977" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -984,9 +967,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/GalleryAdapter.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/booking.xml">
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state line="139" column="59" selection-start="7120" selection-end="7120" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="108" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.0">
+        <state line="20" column="21" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="39" selection-start="704" selection-end="704" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -1000,6 +1000,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/GalleryAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="108" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="40" column="0" selection-start="1257" selection-end="1257" vertical-scroll-proportion="0.0">
@@ -1007,12 +1014,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/booking.xml">
-      <provider selected="true" editor-type-id="android-designer">
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatOnItemClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="61" selection-start="764" selection-end="977" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/flat.xml">
+      <provider editor-type-id="android-designer">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state line="139" column="59" selection-start="7120" selection-end="7120" vertical-scroll-proportion="0.0">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="45" selection-start="1006" selection-end="2479" vertical-scroll-proportion="-12.24">
+          <folding>
+            <element signature="tag#LinearLayout#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
+            <element signature="tag#Button#0;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
+            <element signature="tag#Button#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
+            <element signature="tag#Button#2;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
+            <element signature="tag#Button#3;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
+            <element signature="tag#LinearLayout#1;tag#LinearLayout#0;tag#RelativeLayout#0;tag#ScrollView#0;tag#RelativeLayout#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/settings.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="122" column="66" selection-start="5692" selection-end="5692" vertical-scroll-proportion="0.8484849">
           <folding />
         </state>
       </provider>

@@ -6,5 +6,8 @@
     <string name="dataTransferFlatId">flatId</string>
     <string name="flatListMenuBtn">Каталог квартир</string>
     <string name="flatMapMenuBtn">Квартиры на карте</string>
-    <string name="settingsMenuBtn">Настройки</string>
+    <string name="settingsMenuBtn">Настройки</string><string name="settings_info">Клиенты Квартирного бюро Хом-Сити город Тюмень, могут привязать свой номер телефона к базе данных компании, что позволит получить дополнительные возможности</string>
+    <string name="more_details_btn_text">Подробнее</string>
+    <string name="booking_btn">Забронировать</string>
+    <string name="bound_number">Привязать номер</string>
 </resources>
