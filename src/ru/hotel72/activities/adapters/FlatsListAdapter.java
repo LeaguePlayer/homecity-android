@@ -6,6 +6,7 @@ import android.widget.*;
 import ru.hotel72.R;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.domains.extension.FlatListExtension;
+import ru.hotel72.utils.SingleSlideGallery;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -90,13 +91,13 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
             holder.isLiked.setOnClickListener(new LikeOnItemClickListener(context, this, flat));
 
             holder.gallery.setAdapter(galleryAdapter);
-            gestureDetector = new GestureDetector(new HotelGestureDetector(context));
-            gestureListener = new View.OnTouchListener() {
-                public boolean onTouch(View v, MotionEvent event) {
-                    return gestureDetector.onTouchEvent(event);
-                }
-            };
-            holder.gallery.setOnTouchListener(gestureListener);
+//            gestureDetector = new GestureDetector(new HotelGestureDetector(context));
+//            gestureListener = new View.OnTouchListener() {
+//                public boolean onTouch(View v, MotionEvent event) {
+//                    return gestureDetector.onTouchEvent(event);
+//                }
+//            };
+//            holder.gallery.setOnTouchListener(gestureListener);
             holder.gallery.setOnItemClickListener(new FlatOnItemClickListener(context, flat));
         }
 

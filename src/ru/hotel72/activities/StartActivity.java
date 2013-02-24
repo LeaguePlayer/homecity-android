@@ -22,20 +22,30 @@ public class StartActivity extends BaseActivity {
 
         setContentView(R.layout.start);
 
-        Button btn = (Button)findViewById(R.id.button);
-        btn.setOnClickListener(onClickListener);
+        Button flatListBtn = (Button)findViewById(R.id.flatList);
+        flatListBtn.setOnClickListener(onClickListener);
+
+        Button settingsBtn = (Button)findViewById(R.id.settings);
+        settingsBtn.setOnClickListener(onClickListener);
 
     }
 
     private View.OnClickListener onClickListener = new View.OnClickListener() {
         @Override
         public void onClick(final View v) {
+            Intent intent;
             switch(v.getId()){
-                case R.id.button:
-                    Intent intent = new Intent(context, FlatListActivity.class);
-                    startActivity(intent);
+                case R.id.flatList:
+                    intent = new Intent(context, FlatListActivity.class);
                     break;
+                case R.id.settings:
+                    intent = new Intent(context, SettingsActivity.class);
+                    break;
+                default:
+                    intent = new Intent(context, StartActivity.class);
             }
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            startActivity(intent);
         }
     };
 }

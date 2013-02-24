@@ -35,6 +35,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+            android:id="@+id/mainLayout"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_alignLeft="@+id/headerLayout"
@@ -112,15 +113,20 @@
                     android:layout_height="wrap_content"
                     android:text="@string/more_details_btn_text"
                     android:layout_alignParentLeft="true"/>
+            <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/imageView"
+                    android:layout_alignParentTop="true" android:layout_alignParentRight="true"
+                    android:layout_alignParentLeft="false"/>
         </RelativeLayout>
         <Button
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/bound_number"
                 android:id="@+id/bound"
-                android:layout_alignLeft="@+id/cityLayout"
-                android:layout_alignParentBottom="true"
-                android:layout_alignRight="@+id/cityLayout"/>
+                android:layout_alignLeft="@+id/cityLayout" android:layout_below="@+id/moreDetails"
+                android:layout_alignRight="@+id/cityLayout" android:layout_marginTop="70dp"/>
     </RelativeLayout>
 
 </RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="devicetypeKey">devicetype</string>
+    <string name="deviceTypeDefaultValue">android</string>
+    <string name="passwordKey">password</string>
+    <string name="passwordDefaultValue">welcomestuff3452</string>
+    <string name="bounded">Номер привязан</string>
+    <string name="bound_updating">Обновление данных...</string>
+    <string name="data_updated">Данные обновлены</string>
+    <string name="required">Необходимо заполнить имя и номер телефона</string>
+    <string name="user_name">name</string>
+    <string name="phone_number">phone</string>
+    <string name="email">email</string>
+    <string name="bounding">Привязка номера...</string>
+</resources>

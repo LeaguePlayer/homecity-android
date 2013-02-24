@@ -15,13 +15,16 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/mainLayout">
-            <ru.hotel72.utils.HorizontalListView
+            <ru.hotel72.utils.SingleSlideGallery
                     android:layout_width="fill_parent"
-                    android:layout_height="141dp"
+                    android:layout_height="219dp"
                     android:layout_marginTop="4dp"
                     android:id="@+id/gallery"
                     android:layout_alignLeft="@+id/mainLayout"
-                    android:layout_below="@+id/mainLayout"/>
+                    android:layout_below="@+id/mainLayout"
+                    android:spacing="2dp"
+                    android:background="#ffffff"
+                    android:fadingEdge="none"/>
             <RelativeLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"

@@ -4,7 +4,9 @@ import android.util.Log;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.client.methods.HttpRequestBase;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -16,13 +18,20 @@ public class JSONParser {
     private JSONObject jObj = null;
     private String json = "";
 
-    public JSONObject getJSONFromUrl(String url) {
+    public JSONObject getJSONFromPost(HttpPost httpPost){
+        return getJSON(httpPost);
+    }
+
+    public JSONObject getJSONFromUrl(String url){
+        HttpGet httpGet = new HttpGet(url);
+        return getJSON(httpGet);
+    }
+
+    private JSONObject getJSON(HttpRequestBase httpRequest) {
 
         try {
             DefaultHttpClient httpClient = new DefaultHttpClient();
-            HttpPost httpPost = new HttpPost(url);
-
-            HttpResponse httpResponse = httpClient.execute(httpPost);
+            HttpResponse httpResponse = httpClient.execute(httpRequest);
             HttpEntity httpEntity = httpResponse.getEntity();
             is = httpEntity.getContent();
 

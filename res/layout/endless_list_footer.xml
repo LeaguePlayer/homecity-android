@@ -2,8 +2,9 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
-                android:layout_height="50dp"
-                android:padding="10dp" android:background="@drawable/substrate" android:gravity="center">
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center">
 
     <ProgressBar
             android:id="@+id/progressBar"

@@ -2,4 +2,8 @@
 <resources>
     <string name="imgCachePath">/hotel72/cache/img</string>
     <string name="bookingNumber">+73452500407</string>
+    <string name="cityName">city</string>
+    <string name="update_bound">Обновить данные</string>
+    <string name="is_user_bound">isUserBounded</string>
+    <string name="userDataCache">userData</string>
 </resources>

@@ -6,7 +6,7 @@
                 android:layout_height="264dp"
                 android:background="#ffffff">
 
-    <Gallery
+    <ru.hotel72.utils.SingleSlideGallery
             android:layout_width="fill_parent"
             android:layout_height="219dp"
             android:id="@+id/gallery"
@@ -14,7 +14,8 @@
             android:layout_alignParentTop="false"
             android:fadingEdge="none"
             android:layout_alignParentRight="false"
-            android:background="#ffffff" android:spacing="2dp"/>
+            android:background="#ffffff"
+            android:spacing="2dp"/>
 
     <TextView
             android:layout_width="wrap_content"

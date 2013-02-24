@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.GestureDetector;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Gallery;
 import android.widget.TextView;
 import ru.hotel72.R;
 import ru.hotel72.activities.adapters.GalleryAdapter;
@@ -60,7 +61,7 @@ public class FlatActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void initGallery() {
-        HorizontalListView gallery = (HorizontalListView) findViewById(R.id.gallery);
+        Gallery gallery = (Gallery) findViewById(R.id.gallery);
 
         Object obj = getLastNonConfigurationInstance();
         if (null != obj) {
@@ -71,13 +72,13 @@ public class FlatActivity extends BaseActivity implements View.OnClickListener {
 
         gallery.setAdapter(galleryAdapter);
 
-        final GestureDetector gestureDetector = new GestureDetector(new HotelGestureDetector(this));
-        View.OnTouchListener gestureListener = new View.OnTouchListener() {
-            public boolean onTouch(View v, MotionEvent event) {
-                return gestureDetector.onTouchEvent(event);
-            }
-        };
-        gallery.setOnTouchListener(gestureListener);
+//        final GestureDetector gestureDetector = new GestureDetector(new HotelGestureDetector(this));
+//        View.OnTouchListener gestureListener = new View.OnTouchListener() {
+//            public boolean onTouch(View v, MotionEvent event) {
+//                return gestureDetector.onTouchEvent(event);
+//            }
+//        };
+//        gallery.setOnTouchListener(gestureListener);
     }
 
     private void initMap() {
