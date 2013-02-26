@@ -28,6 +28,8 @@ public class StartActivity extends BaseActivity {
         Button settingsBtn = (Button)findViewById(R.id.settings);
         settingsBtn.setOnClickListener(onClickListener);
 
+        Button mapBtn = (Button)findViewById(R.id.map);
+        mapBtn.setOnClickListener(onClickListener);
     }
 
     private View.OnClickListener onClickListener = new View.OnClickListener() {
@@ -40,6 +42,9 @@ public class StartActivity extends BaseActivity {
                     break;
                 case R.id.settings:
                     intent = new Intent(context, SettingsActivity.class);
+                    break;
+                case R.id.map:
+                    intent = new Intent(context, FlatMapActivity.class);
                     break;
                 default:
                     intent = new Intent(context, StartActivity.class);

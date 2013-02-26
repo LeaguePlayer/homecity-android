@@ -22,7 +22,7 @@ import java.util.ArrayList;
 public class FlatListActivity extends BaseActivity {
     private FlatsListAdapter flatsListAdapter;
     private ListView flatList;
-    private static ArrayList<Flat> flats = new ArrayList<Flat>();
+    private ArrayList<Flat> flats = new ArrayList<Flat>();
 
     private final int visibleThreshold = 5;
     private View footer;
@@ -35,6 +35,8 @@ public class FlatListActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        final ArrayList<Integer> ids = getIntent().getIntegerArrayListExtra(getString(R.string.flatIds));
+
         Object obj = getLastNonConfigurationInstance();
         if (null != obj) {
             flatsListAdapter = (FlatsListAdapter) obj;
@@ -45,7 +47,12 @@ public class FlatListActivity extends BaseActivity {
         setContentView(R.layout.flat_list);
         flatList = (ListView)findViewById(R.id.flatList);
 
-        endlessScrollListener = new EndlessScrollListener(this, visibleThreshold, page, prevTotal);
+        if(ids != null && ids.size() > 0){
+            endlessScrollListener = new EndlessScrollListener(this);
+            endlessScrollListener.setHotelIds(ids);
+        } else {
+            endlessScrollListener = new EndlessScrollListener(this, visibleThreshold, page, prevTotal);
+        }
 
         footer = getLayoutInflater().inflate(R.layout.endless_list_footer, null);
 

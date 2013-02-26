@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 import ru.hotel72.R;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.utils.DataTransfer;
@@ -23,6 +25,9 @@ public class BaseInfoActivity extends BaseHeaderActivity implements View.OnClick
 
     protected Flat flat;
     private String flatId;
+    private Button infoBtn;
+    private Button detailsBtn;
+    private Button facilitiesBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,72 +40,96 @@ public class BaseInfoActivity extends BaseHeaderActivity implements View.OnClick
         infoPlaceholder = (RelativeLayout) mActivityLevelView.findViewById(R.id.content);
 
         setButtons();
+
+        final int viewId = getIntent().getIntExtra(getString(R.string.info_viewId), 0);
+
+        setInfoView(viewId);
     }
 
     private void setButtons() {
-        Button info = (Button) mActivityLevelView.findViewById(R.id.infoBtn);
-        info.setOnClickListener(this);
+        infoBtn = (Button) mActivityLevelView.findViewById(R.id.infoBtn);
+        infoBtn.setOnClickListener(this);
 
-        Button details = (Button) mActivityLevelView.findViewById(R.id.detailsBtn);
-        details.setOnClickListener(this);
+        detailsBtn = (Button) mActivityLevelView.findViewById(R.id.detailsBtn);
+        detailsBtn.setOnClickListener(this);
 
-        Button facilities = (Button) mActivityLevelView.findViewById(R.id.facilitiesBtn);
-        facilities.setOnClickListener(this);
+        facilitiesBtn = (Button) mActivityLevelView.findViewById(R.id.facilitiesBtn);
+        facilitiesBtn.setOnClickListener(this);
+    }
+
+    private void fillDetails(){
+        TextView square = (TextView) infoView.findViewById(R.id.squareLayout).findViewById(R.id.textSquare);
+        square.setText(flat.square.toString() + " кв.м.");
+
+        TextView rooms = (TextView) infoView.findViewById(R.id.roomsLayout).findViewById(R.id.textRooms);
+        rooms.setText(flat.rooms.toString());
+
+        TextView cost = (TextView) infoView.findViewById(R.id.costLayout).findViewById(R.id.textCost);
+        cost.setText(flat.cost.toString() + " р");
+    }
+
+    private void fillFacilities() {
+        LinearLayout layout = (LinearLayout) infoView.findViewById(R.id.list);
+
+        for(int i=0; i < flat.options.size(); i++){
+            View item = getView(R.layout.flat_facilities_item);
+            TextView textView = (TextView) item.findViewById(R.id.itemText);
+            textView.setText(flat.options.get(i));
+
+            layout.addView(item);
+        }
+    }
+
+    private void fillInfo() {
+        TextView textView = (TextView) infoView.findViewById(R.id.textView);
+        textView.setText(flat.full_desc);
+    }
+
+    private void setContent(int id){
+        infoBtn.setEnabled(true);
+        detailsBtn.setEnabled(true);
+        facilitiesBtn.setEnabled(true);
+
+        switch (id){
+            case R.layout.flat_info:
+                infoBtn.setEnabled(false);
+                fillInfo();
+                break;
+            case R.layout.flat_details:
+                detailsBtn.setEnabled(false);
+                fillDetails();
+                break;
+            case R.layout.flat_facilities:
+                facilitiesBtn.setEnabled(false);
+                fillFacilities();
+                break;
+        }
     }
 
     @Override
     public void onClick(View view) {
         super.onClick(view);
 
-        Intent intent;
-
         switch (view.getId()){
             case R.id.infoBtn:
-                intent = new Intent(this, FlatInfoActivity.class);
-                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
+                setInfoView(R.layout.flat_info);
                 break;
 
             case R.id.detailsBtn:
-                intent = new Intent(this, FlatDetailsActivity.class);
-                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
+                setInfoView(R.layout.flat_details);
                 break;
 
             case R.id.facilitiesBtn:
-                intent = new Intent(this, FlatFacilitiesActivity.class);
-                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
-                break;
-
-            default:
-                intent = new Intent(this, FlatActivity.class);
-                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
+                setInfoView(R.layout.flat_facilities);
                 break;
         }
-
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(intent);
     }
     public void setInfoView(int id){
         View view = getView(id);
+        infoPlaceholder.removeAllViews();
         infoPlaceholder.addView(view);
         infoView = view;
 
-        setButtonsState(id);
-    }
-
-    private void setButtonsState(int id) {
-        switch (id){
-            case R.layout.flat_info:
-                Button infoBtn = (Button) mActivityLevelView.findViewById(R.id.infoBtn);
-                infoBtn.setEnabled(false);
-                break;
-            case R.layout.flat_details:
-                Button detailsBtn = (Button) mActivityLevelView.findViewById(R.id.detailsBtn);
-                detailsBtn.setEnabled(false);
-                break;
-            case R.layout.flat_facilities:
-                Button facilitiesBtn = (Button) mActivityLevelView.findViewById(R.id.facilitiesBtn);
-                facilitiesBtn.setEnabled(false);
-                break;
-        }
+        setContent(id);
     }
 }

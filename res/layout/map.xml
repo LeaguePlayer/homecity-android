@@ -6,6 +6,36 @@
               android:layout_height="match_parent"
               android:background="@android:color/white">
 
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/header"
+            android:id="@+id/headerLayout"
+            android:paddingBottom="9dp">
+        <Button
+                android:layout_width="49dp"
+                android:layout_height="36dp"
+                android:id="@+id/returnBtn"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="7dp"
+                android:layout_centerVertical="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flatViewTitle"
+                android:id="@+id/headerText"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:shadowColor="#000000"
+                android:shadowDx="-1"
+                android:shadowDy="1"
+                android:shadowRadius="1"/>
+    </RelativeLayout>
+
     <ru.yandex.yandexmapkit.MapView
             android:id="@+id/map"
             android:layout_width="fill_parent"

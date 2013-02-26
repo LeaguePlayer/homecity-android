@@ -8,6 +8,7 @@ import android.widget.AdapterView;
 import android.widget.Gallery;
 import android.widget.TextView;
 import ru.hotel72.R;
+import ru.hotel72.accessData.GetFlatTask;
 import ru.hotel72.activities.adapters.GalleryAdapter;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.utils.DataTransfer;
@@ -30,7 +31,7 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
     private GalleryAdapter galleryAdapter;
     private MapController mMapController;
     private OverlayManager mOverlayManager;
-    private String flatId;
+    private Integer flatId;
     private FlatActivity context;
 
     @Override
@@ -39,16 +40,20 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
 
         context = this;
 
-        flatId = getIntent().getStringExtra(getString(R.string.dataTransferFlatId));
-        flat = (Flat) DataTransfer.get(flatId);
+        flatId = getIntent().getIntExtra(getString(R.string.dataTransferFlatId), -1);
+        flat = (Flat) DataTransfer.get(flatId.toString());
 
         setActivityView(R.layout.flat);
 
-        setButtons();
-        setContent();
-
-        initGallery();
-        initMap();
+        if(flat != null){
+            setContent();
+            initGallery();
+            initMap();
+            setButtons();
+        }
+        else{
+            new GetFlatTask(this).execute(new Integer[]{ flatId });
+        }
     }
 
     private void setContent() {
@@ -75,8 +80,8 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Intent intent = new Intent(context, FlatPhotoGalleryActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                String flatId = "flat" + flat.id;
-                intent.putExtra("flatId", flatId);
+                intent.putExtra("flatId", flat.id.toString());
+                DataTransfer.put(flat.id.toString(), flat);
 
                 context.startActivity(intent);
             }
@@ -114,6 +119,9 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
         View detailsBtn = infoLayout.findViewById(R.id.detailsBtn);
         detailsBtn.setOnClickListener(this);
 
+        View facilitiesBtn = infoLayout.findViewById(R.id.facilitiesBtn);
+        facilitiesBtn.setOnClickListener(this);
+
         View callBtn = infoLayout.findViewById(R.id.footerLayout).findViewById(R.id.phoneBooking);
         callBtn.setOnClickListener(this);
 
@@ -143,22 +151,29 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
 
             case R.id.booking:
                 intent = new Intent(this, BookingActivity.class);
-                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
+                DataTransfer.put(flatId.toString(), flat);
+                intent.putExtra(getString(R.string.dataTransferFlatId), flatId.toString());
                 break;
 
             case R.id.infoBtn:
-                intent = new Intent(this, FlatInfoActivity.class);
-                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
+                intent = new Intent(this, BaseInfoActivity.class);
+                DataTransfer.put(flatId.toString(), flat);
+                intent.putExtra(getString(R.string.dataTransferFlatId), flatId.toString());
+                intent.putExtra(getString(R.string.info_viewId), R.layout.flat_info);
                 break;
 
             case R.id.detailsBtn:
-                intent = new Intent(this, FlatDetailsActivity.class);
-                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
+                intent = new Intent(this, BaseInfoActivity.class);
+                DataTransfer.put(flatId.toString(), flat);
+                intent.putExtra(getString(R.string.dataTransferFlatId), flatId.toString());
+                intent.putExtra(getString(R.string.info_viewId), R.layout.flat_details);
                 break;
 
             case R.id.facilitiesBtn:
-                intent = new Intent(this, FlatFacilitiesActivity.class);
-                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
+                intent = new Intent(this, BaseInfoActivity.class);
+                DataTransfer.put(flatId.toString(), flat);
+                intent.putExtra(getString(R.string.dataTransferFlatId), flatId.toString());
+                intent.putExtra(getString(R.string.info_viewId), R.layout.flat_facilities);
                 break;
 
             default:
@@ -167,5 +182,13 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
 
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
+    }
+
+    public void updateContent(Flat flat) {
+        this.flat = flat;
+        setContent();
+        initGallery();
+        initMap();
+        setButtons();
     }
 }

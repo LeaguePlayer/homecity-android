@@ -34,7 +34,7 @@
     </list>
     <ignored path="hotel72.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/GetFlatsTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361891631144" ignored="false" />
+    <file path="/GetFlatsTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361906784996" ignored="false" />
     <file path="/Dummy.txt" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361892194260" ignored="false" />
     <file path="/fragment.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361382691674" ignored="false" />
     <file path="/BaseActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1358788146975" ignored="false" />
@@ -43,7 +43,7 @@
     <file path="/Test.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359995210789" ignored="false" />
     <file path="/JSONParser.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361698447543" ignored="false" />
     <file path="/flatListItem.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359050860354" ignored="false" />
-    <file path="/EndlessScrollListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361113402410" ignored="false" />
+    <file path="/EndlessScrollListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361906857212" ignored="false" />
     <file path="/flatListActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359286440728" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361611244993" ignored="false" />
     <file path="/FlatsListAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361703655621" ignored="false" />
@@ -51,7 +51,7 @@
     <file path="/FlatListExtension.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359289270546" ignored="false" />
     <file path="/flat_list_item.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361702914729" ignored="false" />
     <file path="/GatImageTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359313847548" ignored="false" />
-    <file path="/FlatListActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361113555276" ignored="false" />
+    <file path="/FlatListActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361911239446" ignored="false" />
     <file path="/GetImageTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359319168435" ignored="false" />
     <file path="/ImageDownloader.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361810333392" ignored="false" />
     <file path="/*.regexp" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359473666687" ignored="false" />
@@ -61,14 +61,14 @@
     <file path="/GalleryAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361809568806" ignored="false" />
     <file path="/HotelOnItemClickListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360349825515" ignored="false" />
     <file path="$PROJECT_DIR$/.idea/vcs.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360169916563" ignored="false" />
-    <file path="/FlatActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361891163267" ignored="false" />
+    <file path="/FlatActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361912001300" ignored="false" />
     <file path="/endless_list_footer.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361386396429" ignored="false" />
     <file path="/flat_list.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361092674820" ignored="false" />
     <file path="/start.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361288571410" ignored="false" />
     <file path="/strings.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360254385239" ignored="false" />
     <file path="/flat.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361889737742" ignored="false" />
     <file path="/HotelGestureDetector.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360349704115" ignored="false" />
-    <file path="/FlatOnItemClickListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361031312292" ignored="false" />
+    <file path="/FlatOnItemClickListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361908453113" ignored="false" />
     <file path="/DataTransfer.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360386012139" ignored="false" />
     <file path="/HorizontalListView.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360499827412" ignored="false" />
     <file path="/horizontalListItem.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360498430086" ignored="false" />
@@ -76,16 +76,16 @@
     <file path="$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/.idea/misc.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360600272582" ignored="false" />
     <file path="/SplashActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361109753232" ignored="false" />
     <file path="/DBHelper.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361110104887" ignored="false" />
-    <file path="/GetFlatHelper.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361107633647" ignored="false" />
+    <file path="/GetFlatHelper.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361905708855" ignored="false" />
     <file path="/settings.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361293468095" ignored="false" />
     <file path="/LikeOnItemClicklistener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361111653098" ignored="false" />
     <file path="/booking.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361124583494" ignored="false" />
     <file path="/BookingActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361120421998" ignored="false" />
     <file path="/ImageHelper.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361119354813" ignored="false" />
     <file path="/SettingsActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361645181899" ignored="false" />
-    <file path="/StartActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361288703795" ignored="false" />
+    <file path="/StartActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361898431976" ignored="false" />
     <file path="/CitySelectionActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361294742661" ignored="false" />
-    <file path="$PROJECT_DIR$/gen/ru/hotel72/R.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361892170176" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/ru/hotel72/R.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361901157161" ignored="false" />
     <file path="/MoreDetails.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361382681977" ignored="false" />
     <file path="/moreDetails.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361295662869" ignored="false" />
     <file path="/base_layout.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361383326027" ignored="false" />
@@ -106,11 +106,13 @@
     <file path="/flat_base_info.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361886937034" ignored="false" />
     <file path="/flat_details.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361890008890" ignored="false" />
     <file path="/FlatDetailsActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361890354669" ignored="false" />
-    <file path="/BaseInfoActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361891133157" ignored="false" />
+    <file path="/BaseInfoActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361901707380" ignored="false" />
     <file path="/FlatFacilitiesActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361891096667" ignored="false" />
     <file path="/map.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361892261076" ignored="false" />
-    <file path="/GetAllCoordsTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361892884096" ignored="false" />
+    <file path="/GetAllCoordsTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361903689918" ignored="false" />
     <file path="/MapElement.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361892839647" ignored="false" />
+    <file path="/FlatMapActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361910261220" ignored="false" />
+    <file path="/GetFlatTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361907663134" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,9 +182,58 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/accessData/GetAllCoordsTask.java" line="52" class="ru.hotel72.accessData.GetAllCoordsTask" package="ru.hotel72.accessData">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java" line="173" class="ru.hotel72.activities.FlatActivity" package="ru.hotel72.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
+  </component>
+  <component name="DockManager">
+    <window id="4">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="GetFlatsTask.java" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/GetFlatsTask.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="32" column="0" selection-start="907" selection-end="907" vertical-scroll-proportion="0.33333334">
+                    <folding>
+                      <element signature="e#769#775#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -190,22 +241,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="FlatMapActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatMapActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="135" column="65" selection-start="4692" selection-end="4692" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GetFlatTask.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/GetFlatTask.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="22" selection-start="2191" selection-end="2191" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GetAllCoordsTask.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/GetAllCoordsTask.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="25" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+            <state line="66" column="0" selection-start="2027" selection-end="2027" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#748#760#0" expanded="true" />
+                <element signature="e#2212#2221#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlatActivity.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="60" selection-start="2795" selection-end="2795" vertical-scroll-proportion="0.9056604">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetFlatsTask.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/GetFlatsTask.java">
+      <file leaf-file-name="FlatPhotoGalleryActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatPhotoGalleryActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="54" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.05111821">
+            <state line="34" column="0" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="e#2564#2572#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseInfoActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/BaseInfoActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataTransfer.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/DataTransfer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="25" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="method#get#0;class#DataTransfer#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlatOnItemClickListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatOnItemClickListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="51" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlatListActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatListActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="51" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EndlessScrollListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/EndlessScrollListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="38" column="106" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -236,22 +371,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatInfoActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/flat_info.xml" />
-        <option value="$PROJECT_DIR$/res/layout/facilities.xml" />
-        <option value="$PROJECT_DIR$/res/layout/flat.xml" />
-        <option value="$PROJECT_DIR$/res/layout/flat_details.xml" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatDetailsActivity.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/BaseHeaderActivity.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/BaseInfoActivity.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java" />
-        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/GetFlatsTask.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatFacilitiesActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/map.xml" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/domains/MapElement.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/GetAllCoordsTask-rj-pc.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/BaseInfoActivity.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/GetFlatHelper.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/FlatJsonNames.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/PhotoJsonNames.java" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/GetAllCoordsTask.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/MapElementJsonNames.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/utils/EndlessScrollListener.java" />
+        <option value="$PROJECT_DIR$/res/layout/flat.xml" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/GetFlatTask.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatOnItemClickListener.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/GetFlatsTask.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatMapActivity.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatListActivity.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java" />
       </list>
     </option>
   </component>
@@ -355,24 +490,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="domains" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel72" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homecity-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="accessData" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -387,38 +504,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accessData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetFlatsTask.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel72" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homecity-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="accessData" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="GetAllCoordsTask.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -491,6 +578,7 @@
       <recent name="ru.hotel72.activities.adapters" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\res\drawable" />
       <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\res\layout" />
       <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\res\layout-mdpi" />
     </key>
@@ -703,22 +791,22 @@
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.22329059" sideWeight="0.6522222" order="3" side_tool="false" content_ui="tabs" x="-526" y="43" width="370" height="892" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287234" sideWeight="0.4913886" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28936172" sideWeight="0.45299146" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29" sideWeight="0.5432692" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32659575" sideWeight="0.47438633" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32234043" sideWeight="0.4850587" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32234043" sideWeight="0.4850587" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3288889" sideWeight="0.4956943" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18162394" sideWeight="0.49888888" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28655282" sideWeight="0.6776596" order="0" side_tool="true" content_ui="combo" x="40" y="96" width="338" height="900" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34680852" sideWeight="0.44236925" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20330843" sideWeight="0.6776596" order="0" side_tool="true" content_ui="combo" x="40" y="96" width="338" height="900" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27553192" sideWeight="0.44236925" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3288889" sideWeight="0.4913886" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -785,88 +873,134 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/res/drawable-xhdpi/ymk_tlight_no_level_inactive_pressed.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/res/drawable-xhdpi/ymk_tlight_no_level_inactive.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/res/drawable-xhdpi/ymk_tlight_no_level_active_pressed.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/res/drawable-xhdpi/ymk_tlight_no_level_active.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/res/drawable-xhdpi/ymk_syellowvga.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/res/drawable-xhdpi/ymk_stricolorvga.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/res/drawable-xhdpi/ymk_sredvga.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/res/drawable-xhdpi/ymk_sgreenvga.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/res/drawable-xhdpi/ymk_sgrayvga.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/res/drawable-xhdpi/ymk_balloon_tail_black.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/res/drawable-xhdpi/ymk_balloon_black.9.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/domains/Flat.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/PhotoJsonNames.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="224" selection-end="224" vertical-scroll-proportion="0.18743344">
+        <state line="2" column="12" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/domains/MapElement.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/MapElementJsonNames.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="37" selection-start="363" selection-end="363" vertical-scroll-proportion="0.27263045">
+        <state line="2" column="12" selection-start="44" selection-end="44" vertical-scroll-proportion="0.0">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatsListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="451" selection-end="451" vertical-scroll-proportion="0.18743344">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/EndlessScrollListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="106" selection-start="1041" selection-end="1041" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/flat.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="61" selection-start="1172" selection-end="1172" vertical-scroll-proportion="0.48593926">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/GetAllCoordsTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="25" selection-start="431" selection-end="431" vertical-scroll-proportion="0.0">
+        <state line="66" column="0" selection-start="2027" selection-end="2027" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#748#760#0" expanded="true" />
+            <element signature="e#2212#2221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatOnItemClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="51" selection-start="909" selection-end="909" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/DataTransfer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="25" selection-start="342" selection-end="342" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="method#get#0;class#DataTransfer#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/IDE/sdk/platforms/android-8/android.jar!/android/os/AsyncTask.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="62" selection-start="1239" selection-end="1239" vertical-scroll-proportion="0.5120385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/GetFlatTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="22" selection-start="2191" selection-end="2191" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/BaseInfoActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="919" selection-end="919" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatMapActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="135" column="65" selection-start="4692" selection-end="4692" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/GetFlatsTask.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="54" selection-start="1063" selection-end="1063" vertical-scroll-proportion="0.05111821">
+        <state line="32" column="0" selection-start="907" selection-end="907" vertical-scroll-proportion="0.33333334">
           <folding>
-            <element signature="e#2564#2572#0" expanded="true" />
+            <element signature="e#769#775#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatListActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="51" selection-start="1700" selection-end="1700" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatPhotoGalleryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="1068" selection-end="1068" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="60" selection-start="2795" selection-end="2795" vertical-scroll-proportion="0.9056604">
+          <folding />
         </state>
       </provider>
     </entry>

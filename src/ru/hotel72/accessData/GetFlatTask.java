@@ -5,63 +5,36 @@ import android.os.AsyncTask;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import ru.hotel72.activities.FlatActivity;
 import ru.hotel72.activities.FlatListActivity;
 import ru.hotel72.domains.Flat;
-import ru.hotel72.domains.Photo;
-
-import java.util.ArrayList;
 
 /**
  * Created with IntelliJ IDEA.
  * User: Evgeny
- * Date: 20.01.13
- * Time: 22:46
+ * Date: 27.02.13
+ * Time: 1:36
  * To change this template use File | Settings | File Templates.
  */
-
-public class GetFlatsTask extends AsyncTask<Integer, Void, Void> {
+public class GetFlatTask extends AsyncTask<Integer, Void, Void> {
 
     private Context context;
-    private int visibleItemCount;
-    private static String getFlatsUrl = "http://hotel72.ru/index.php/api/getJsonHotels?%spage=%d&rows_count=%d";
+    private static String getFlatsUrl = "http://hotel72.ru/index.php/api/getJsonHotels?id=%d";
+    private Flat flat;
 
-    private ArrayList<Flat> flats = new ArrayList<Flat>();
-    private String idsParameter = "";
-
-    public GetFlatsTask(Context context, int visibleItemCount, ArrayList<Integer> ids){
-
+    public GetFlatTask(Context context) {
         this.context = context;
-        this.visibleItemCount = visibleItemCount;
-        if (ids != null && ids.size() > 0) {
-            idsParameter += "id=" + ids.get(0).toString();
-            for (int i=1; i < ids.size(); i++){
-                idsParameter += "," + ids.get(i).toString();
-            }
-            idsParameter += "&";
-        }
     }
 
     @Override
     protected Void doInBackground(Integer... integers) {
-        tryGetFlats(integers[0]);
-        return null;
-    }
-
-    @Override
-    protected void onPostExecute(Void aVoid) {
-        super.onPostExecute(aVoid);
-        FlatListActivity activity = (FlatListActivity) context;
-        activity.UpdateFlatsList(flats);
-    }
-
-    private Boolean tryGetFlats(Integer pageNumber) {
-        String url = String.format(getFlatsUrl, idsParameter, pageNumber, visibleItemCount);
+        String url = String.format(getFlatsUrl, integers[0]);
         JSONParser jsonParser = new JSONParser();
 
         JSONObject jsonObject = jsonParser.getJSONFromUrl(url);
 
         if(jsonObject == null)
-            return false;
+            return null;
 
         JSONArray names = jsonObject.names();
 
@@ -70,21 +43,24 @@ public class GetFlatsTask extends AsyncTask<Integer, Void, Void> {
                 String name = names.get(i).toString();
                 JSONObject flatJson = jsonObject.getJSONObject(name);
 
-                Flat flat = GetFlatHelper.parseMainFlatData(flatJson);
+                flat = GetFlatHelper.parseMainFlatData(flatJson);
                 flat.photos = GetFlatHelper.parseFlatPhotos(flatJson.getJSONObject(String.valueOf(FlatJsonNames.photos)));
                 flat.coords = GetFlatHelper.parseFlatCoors(flatJson.getJSONArray(String.valueOf(FlatJsonNames.coords)));
                 flat.options = GetFlatHelper.parseFlatOptions(flatJson.getJSONArray(String.valueOf(FlatJsonNames.options)));
 
                 flat.isLiked = GetFlatHelper.likedFlat.contains(flat.id);
 
-                flats.add(flat);
-
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
+        return null;  //To change body of implemented methods use File | Settings | File Templates.
+    }
 
-        return true;
+    @Override
+    protected void onPostExecute(Void aVoid) {
+        super.onPostExecute(aVoid);
+        FlatActivity activity = (FlatActivity) context;
+        activity.updateContent(flat);
     }
 }
-

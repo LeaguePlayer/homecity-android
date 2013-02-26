@@ -7,6 +7,8 @@ import android.widget.ListView;
 import ru.hotel72.accessData.GetFlatsTask;
 import ru.hotel72.activities.FlatListActivity;
 
+import java.util.ArrayList;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Evgeny
@@ -20,6 +22,7 @@ public class EndlessScrollListener implements AbsListView.OnScrollListener {
     private int currentPage = 1;
     private int previousTotal = 1;
     private boolean loading = false;
+    private ArrayList<Integer> ids;
 
     public int getPage(){
         return currentPage;
@@ -38,6 +41,10 @@ public class EndlessScrollListener implements AbsListView.OnScrollListener {
         this.visibleThreshold = visibleThreshold;
         this.currentPage = currentPage;
         this.previousTotal = previousTotal;
+    }
+
+    public void setHotelIds(ArrayList<Integer> ids){
+        this.ids = ids;
     }
 
     public void updateContext(Context context){
@@ -59,7 +66,7 @@ public class EndlessScrollListener implements AbsListView.OnScrollListener {
             }
         }
         if (!loading && firstVisibleItem + visibleItemCount >= totalItemCount) {
-            new GetFlatsTask(context, visibleThreshold).execute(currentPage);
+            new GetFlatsTask(context, visibleThreshold, ids).execute(currentPage);
             loading = true;
         }
     }

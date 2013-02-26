@@ -13,7 +13,7 @@ public class MapElement {
 
     public String address;
     public int count;
-    public ArrayList<double[]> coords;
+    public double[] coords;
     public ArrayList<Integer> hotels;
 
 }
