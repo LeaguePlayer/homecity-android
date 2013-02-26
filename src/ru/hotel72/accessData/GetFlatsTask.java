@@ -5,7 +5,6 @@ import android.os.AsyncTask;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import ru.hotel72.R;
 import ru.hotel72.activities.FlatListActivity;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.domains.Photo;
@@ -66,8 +65,9 @@ public class GetFlatsTask extends AsyncTask<Integer, Void, Void> {
                 Flat flat = parseMainFlatData(flatJson);
                 flat.photos = parseFlatPhotos(flatJson.getJSONObject(String.valueOf(FlatJsonNames.photos)));
                 flat.coords = parseFlatCoors(flatJson.getJSONArray(String.valueOf(FlatJsonNames.coords)));
+                flat.options = parseFlatOptions(flatJson.getJSONArray(String.valueOf(FlatJsonNames.options)));
 
-                flat.isLicked = GetFlatHelper.likedFlat.contains(flat.id);
+                flat.isLiked = GetFlatHelper.likedFlat.contains(flat.id);
 
                 flats.add(flat);
 
@@ -77,6 +77,20 @@ public class GetFlatsTask extends AsyncTask<Integer, Void, Void> {
         }
 
         return true;
+    }
+
+    private ArrayList<String> parseFlatOptions(JSONArray jsonArray) {
+        ArrayList<String> result = new ArrayList<String>();
+
+        for(int i=0; i < jsonArray.length(); i++){
+            try {
+                result.add(jsonArray.get(i).toString());
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return result;
     }
 
     private double[] parseFlatCoors(JSONArray jsonArray) throws JSONException {

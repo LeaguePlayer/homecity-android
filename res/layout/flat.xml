@@ -3,135 +3,94 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent"
-                android:background="#ffffff">
-
-
-    <ScrollView
-            android:scrollbars="none"
+                android:id="@+id/mainLayout">
+    <ru.hotel72.utils.SingleSlideGallery
+            android:layout_width="fill_parent"
+            android:layout_height="219dp"
+            android:layout_marginTop="4dp"
+            android:id="@+id/gallery"
+            android:layout_alignLeft="@+id/mainLayout"
+            android:layout_below="@+id/mainLayout"
+            android:spacing="2dp"
+            android:background="#ffffff"
+            android:fadingEdge="none"/>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="46dp"
+            android:text="Забронировать"
+            android:id="@+id/booking"
+            android:layout_alignLeft="@+id/mainLayout"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="188dp"
+            android:singleLine="false"/>
+    <LinearLayout
+            android:orientation="vertical"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/scrollView">
-        <RelativeLayout
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:id="@+id/mainLayout">
-            <ru.hotel72.utils.SingleSlideGallery
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="236dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:id="@+id/infoLayout">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="128dp">
+            <ru.yandex.yandexmapkit.MapView
+                    android:id="@+id/map"
                     android:layout_width="fill_parent"
-                    android:layout_height="219dp"
-                    android:layout_marginTop="4dp"
-                    android:id="@+id/gallery"
-                    android:layout_alignLeft="@+id/mainLayout"
-                    android:layout_below="@+id/mainLayout"
-                    android:spacing="2dp"
-                    android:background="#ffffff"
-                    android:fadingEdge="none"/>
-            <RelativeLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:background="@drawable/header"
-                    android:id="@+id/headerLayout"
-                    android:paddingBottom="9dp">
-                <Button
-                        android:layout_width="49dp"
-                        android:layout_height="36dp"
-                        android:id="@+id/returnBtn"
-                        android:layout_alignParentLeft="true"
-                        android:layout_marginLeft="7dp"
-                        android:layout_centerVertical="true"/>
-                <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/flatViewTitle"
-                        android:id="@+id/headerText"
-                        android:layout_centerHorizontal="true"
-                        android:layout_centerVertical="true"
-                        android:textSize="15dp"
-                        android:textColor="#ffffff"
-                        android:shadowColor="#000000"
-                        android:shadowDx="-1"
-                        android:shadowDy="1"
-                        android:shadowRadius="1"/>
-            </RelativeLayout>
+                    android:layout_height="fill_parent"
+                    android:apiKey="1234567890"
+                    android:tag="static"
+                    android:layout_marginBottom="8dp"/>
+        </LinearLayout>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:text="Описание"
+                android:id="@+id/infoBtn" android:gravity="left"/>
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/shortDesc" android:layout_gravity="left|center_vertical"
+                android:paddingTop="25dp"
+                android:paddingBottom="27dp" android:paddingRight="9dp" android:paddingLeft="9dp"/>
+        <Button android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:text="Детали"
+                android:id="@+id/detailsBtn"
+                android:gravity="left"
+                android:singleLine="false"/>
+        <Button android:layout_width="fill_parent"
+                android:layout_height="46dp"
+                android:text="Удобства"
+                android:id="@+id/facilitiesBtn"
+                android:gravity="left"
+                android:layout_marginBottom="7dp"
+                android:singleLine="false"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/footerLayout">
             <Button
+                    android:textSize="13dp"
                     android:layout_width="fill_parent"
                     android:layout_height="46dp"
-                    android:text="Забронировать"
-                    android:id="@+id/booking"
-                    android:layout_alignLeft="@+id/mainLayout"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="188dp"
-                    android:singleLine="false"/>
-            <LinearLayout
-                    android:orientation="vertical"
+                    android:text="Поделиться"
+                    android:id="@+id/share"
+                    android:layout_weight="1"
+                    android:layout_marginRight="2dp" android:singleLine="true"/>
+            <Button
+                    android:textSize="13dp"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="236dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:id="@+id/infoLayout">
-                <LinearLayout
-                        android:orientation="vertical"
-                        android:layout_width="fill_parent"
-                        android:layout_height="128dp">
-                    <ru.yandex.yandexmapkit.MapView
-                            android:id="@+id/map"
-                            android:layout_width="fill_parent"
-                            android:layout_height="fill_parent"
-                            android:apiKey="1234567890"
-                            android:tag="static"
-                            android:layout_marginBottom="8dp"/>
-                </LinearLayout>
-                <Button
-                        android:layout_width="fill_parent"
-                        android:layout_height="46dp"
-                        android:text="Описание"
-                        android:id="@+id/description" android:gravity="left"/>
-                <TextView
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:text="New Text"
-                        android:id="@+id/shortDesc" android:layout_gravity="left|center_vertical"
-                        android:paddingTop="25dp"
-                        android:paddingBottom="27dp" android:paddingRight="9dp" android:paddingLeft="9dp"/>
-                <Button android:layout_width="fill_parent"
-                        android:layout_height="46dp"
-                        android:text="Детали"
-                        android:id="@+id/detalies"
-                        android:gravity="left"
-                        android:singleLine="false"/>
-                <Button android:layout_width="fill_parent" android:layout_height="46dp" android:text="Удобства"
-                        android:id="@+id/facilities" android:gravity="left" android:layout_marginBottom="7dp"
-                        android:singleLine="false"/>
-                <Button android:layout_width="fill_parent" android:layout_height="46dp" android:text="Отзывы"
-                        android:id="@+id/opinion" android:gravity="left" android:enabled="false"
-                        android:layout_marginBottom="6dp"/>
-                <LinearLayout
-                        android:orientation="horizontal"
-                        android:layout_width="fill_parent"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/footerLayout">
-                    <Button
-                            android:textSize="13dp"
-                            android:layout_width="fill_parent"
-                            android:layout_height="46dp"
-                            android:text="Поделиться"
-                            android:id="@+id/share"
-                            android:layout_weight="1"
-                            android:layout_marginRight="2dp" android:singleLine="true"/>
-                    <Button
-                            android:textSize="13dp"
-                            android:layout_width="fill_parent"
-                            android:layout_height="46dp"
-                            android:text="Забронировать по телефону"
-                            android:id="@+id/phoneBooking"
-                            android:layout_weight="1"
-                            android:layout_marginLeft="2dp" android:singleLine="true"/>
-                </LinearLayout>
-            </LinearLayout>
-        </RelativeLayout>
-    </ScrollView>
+                    android:layout_height="46dp"
+                    android:text="Забронировать по телефону"
+                    android:id="@+id/phoneBooking"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

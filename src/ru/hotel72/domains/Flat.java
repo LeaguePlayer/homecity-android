@@ -22,7 +22,7 @@ public class Flat {
     public double[] coords;
     public ArrayList<Photo> photos;
     public ArrayList<String> options;
-    public boolean isLicked;
+    public boolean isLiked;
 
 //    public static final Parcelable.Creator<Flat> CREATOR = new Parcelable.Creator<Flat>() {
 //        public Flat createFromParcel(Parcel in) {

@@ -6,7 +6,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.util.Log;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import ru.hotel72.R;
+import ru.hotel72.utils.ImageHelper;
 
 import java.io.*;
 import java.net.URL;
@@ -43,18 +45,38 @@ public class ImageDownloader {
     final int stub_id = R.drawable.substrate;
 
     public void DisplayImage(String url, String profilePic, Activity activity, ImageView imageView) {
-        if (cache.containsKey(url))
-            imageView.setImageBitmap(cache.get(url));
+        if (cache.containsKey(url)){
+            Bitmap bitmap = cache.get(url);
+            float scalingFactor = getBitmapScalingFactor(bitmap, imageView, activity);
+            Bitmap newBitmap = ImageHelper.ScaleBitmap(bitmap, scalingFactor);
+            imageView.setImageBitmap(newBitmap);
+        }
         else {
             queuePhoto(url, activity, imageView, profilePic);
             imageView.setImageResource(stub_id);
         }
     }
 
+    private float getBitmapScalingFactor(Bitmap bm, ImageView image, Activity activity) {
+        // Get display width from device
+        int displayWidth = activity.getWindowManager().getDefaultDisplay().getWidth();
+
+//        // Get margin to use it for calculating to max width of the ImageView
+//        LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) image.getLayoutParams();
+//        int leftMargin = layoutParams.leftMargin;
+//        int rightMargin = layoutParams.rightMargin;
+//
+//        // Calculate the max width of the imageView
+//        int imageViewWidth = displayWidth - (leftMargin + rightMargin);
+
+        // Calculate scaling factor and return it
+        return ( (float) displayWidth / (float) bm.getWidth() );
+    }
+
     private void queuePhoto(String url, Activity activity, ImageView imageView, String profilePic) {
         //This ImageView may be used for other images before. So there may be some old tasks in the queue. We need to discard them.
         photosQueue.Clean(imageView);
-        PhotoToLoad p = new PhotoToLoad(url, imageView, profilePic);
+        PhotoToLoad p = new PhotoToLoad(url, imageView, profilePic, activity);
         synchronized (photosQueue.photosToLoad) {
             photosQueue.photosToLoad.push(p);
             photosQueue.photosToLoad.notifyAll();
@@ -155,11 +177,13 @@ public class ImageDownloader {
         public String url;
         public ImageView imageView;
         public String profilePic;
+        public Activity activity;
 
-        public PhotoToLoad(String u, ImageView i, String profilePic) {
+        public PhotoToLoad(String u, ImageView i, String profilePic, Activity activity) {
             this.url = u;
             this.imageView = i;
             this.profilePic = profilePic;
+            this.activity = activity;
         }
     }
 
@@ -202,7 +226,7 @@ public class ImageDownloader {
                         cache.put(photoToLoad.url, bmp);
                         Object tag = photoToLoad.imageView.getTag();
                         if (tag != null && ((String) tag).equals(photoToLoad.url)) {
-                            BitmapDisplayer bd = new BitmapDisplayer(bmp, photoToLoad.imageView);
+                            BitmapDisplayer bd = new BitmapDisplayer(bmp, photoToLoad.imageView, photoToLoad.activity);
                             Activity a = (Activity) photoToLoad.imageView.getContext();
                             a.runOnUiThread(bd);
                         }
@@ -222,15 +246,20 @@ public class ImageDownloader {
     class BitmapDisplayer implements Runnable {
         Bitmap bitmap;
         ImageView imageView;
+        private Activity activity;
 
-        public BitmapDisplayer(Bitmap b, ImageView i) {
+        public BitmapDisplayer(Bitmap b, ImageView i, Activity activity) {
             bitmap = b;
             imageView = i;
+            this.activity = activity;
         }
 
         public void run() {
-            if (bitmap != null)
-                imageView.setImageBitmap(bitmap);
+            if (bitmap != null) {
+                float scalingFactor = getBitmapScalingFactor(bitmap, imageView, activity);
+                Bitmap newBitmap = ImageHelper.ScaleBitmap(bitmap, scalingFactor);
+                imageView.setImageBitmap(newBitmap);
+            }
             else
                 imageView.setImageResource(stub_id);
         }

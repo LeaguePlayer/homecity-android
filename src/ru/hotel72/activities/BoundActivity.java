@@ -37,8 +37,8 @@ public class BoundActivity extends BaseHeaderActivity {
     }
 
     private void setContent(boolean mIsUserBounded) {
-        LayoutInflater inflater = (LayoutInflater) getSystemService(this.LAYOUT_INFLATER_SERVICE);
-        mActivityLevelView = inflater.inflate(R.layout.bound, null);
+        LayoutInflater inflate = (LayoutInflater) getSystemService(this.LAYOUT_INFLATER_SERVICE);
+        mActivityLevelView = inflate.inflate(R.layout.bound, null);
         contentLayout.addView(mActivityLevelView);
 
         Button btn = (Button) mActivityLevelView.findViewById(R.id.button);

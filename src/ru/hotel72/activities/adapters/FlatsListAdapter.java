@@ -6,7 +6,6 @@ import android.widget.*;
 import ru.hotel72.R;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.domains.extension.FlatListExtension;
-import ru.hotel72.utils.SingleSlideGallery;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -87,7 +86,7 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
                 galleryCache.put(flat.id, galleryAdapter);
             }
 
-            holder.isLiked.setChecked(flat.isLicked);
+            holder.isLiked.setChecked(flat.isLiked);
             holder.isLiked.setOnClickListener(new LikeOnItemClickListener(context, this, flat));
 
             holder.gallery.setAdapter(galleryAdapter);

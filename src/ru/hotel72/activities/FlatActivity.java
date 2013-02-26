@@ -3,17 +3,14 @@ package ru.hotel72.activities;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.GestureDetector;
-import android.view.MotionEvent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Gallery;
 import android.widget.TextView;
 import ru.hotel72.R;
 import ru.hotel72.activities.adapters.GalleryAdapter;
-import ru.hotel72.activities.adapters.HotelGestureDetector;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.utils.DataTransfer;
-import ru.hotel72.utils.HorizontalListView;
 import ru.yandex.yandexmapkit.MapController;
 import ru.yandex.yandexmapkit.MapView;
 import ru.yandex.yandexmapkit.OverlayManager;
@@ -27,24 +24,27 @@ import ru.yandex.yandexmapkit.utils.GeoPoint;
  * Time: 23:02
  * To change this template use File | Settings | File Templates.
  */
-public class FlatActivity extends BaseActivity implements View.OnClickListener {
+public class FlatActivity extends BaseHeaderActivity implements View.OnClickListener {
 
     private Flat flat;
     private GalleryAdapter galleryAdapter;
     private MapController mMapController;
     private OverlayManager mOverlayManager;
     private String flatId;
+    private FlatActivity context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        context = this;
+
         flatId = getIntent().getStringExtra(getString(R.string.dataTransferFlatId));
         flat = (Flat) DataTransfer.get(flatId);
 
-        setContentView(R.layout.flat);
+        setActivityView(R.layout.flat);
 
-        setBtns();
+        setButtons();
         setContent();
 
         initGallery();
@@ -52,8 +52,7 @@ public class FlatActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void setContent() {
-        TextView textView = (TextView) this.findViewById(R.id.scrollView)
-                .findViewById(R.id.mainLayout)
+        TextView textView = (TextView) mActivityLevelView
                 .findViewById(R.id.infoLayout)
                 .findViewById(R.id.shortDesc);
 
@@ -61,7 +60,7 @@ public class FlatActivity extends BaseActivity implements View.OnClickListener {
     }
 
     private void initGallery() {
-        Gallery gallery = (Gallery) findViewById(R.id.gallery);
+        Gallery gallery = (Gallery) mActivityLevelView.findViewById(R.id.gallery);
 
         Object obj = getLastNonConfigurationInstance();
         if (null != obj) {
@@ -71,6 +70,17 @@ public class FlatActivity extends BaseActivity implements View.OnClickListener {
         }
 
         gallery.setAdapter(galleryAdapter);
+        gallery.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(context, FlatPhotoGalleryActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                String flatId = "flat" + flat.id;
+                intent.putExtra("flatId", flatId);
+
+                context.startActivity(intent);
+            }
+        });
 
 //        final GestureDetector gestureDetector = new GestureDetector(new HotelGestureDetector(this));
 //        View.OnTouchListener gestureListener = new View.OnTouchListener() {
@@ -81,35 +91,39 @@ public class FlatActivity extends BaseActivity implements View.OnClickListener {
 //        gallery.setOnTouchListener(gestureListener);
     }
 
+    public Object onRetainNonConfigurationInstance() {
+        return galleryAdapter;
+    }
+
     private void initMap() {
-        final MapView mapView = (MapView) findViewById(R.id.map);
+        final MapView mapView = (MapView) mActivityLevelView.findViewById(R.id.map);
         mMapController = mapView.getMapController();
+        mMapController.setEnabled(false);
         mOverlayManager = mMapController.getOverlayManager();
         mOverlayManager.getMyLocation().setEnabled(false);
         showBalloon(flat.coords);
     }
 
-    private void setBtns() {
+    private void setButtons() {
 
-        View mainL = this.findViewById(R.id.scrollView).findViewById(R.id.mainLayout);
+        View infoLayout = mActivityLevelView.findViewById(R.id.infoLayout);
 
-        View returnBtn = mainL.findViewById(R.id.headerLayout)
-                .findViewById(R.id.returnBtn);
+        View infoBtn = infoLayout.findViewById(R.id.infoBtn);
+        infoBtn.setOnClickListener(this);
 
-        returnBtn.setOnClickListener(this);
-
-        View infoLayout = mainL.findViewById(R.id.infoLayout);
+        View detailsBtn = infoLayout.findViewById(R.id.detailsBtn);
+        detailsBtn.setOnClickListener(this);
 
         View callBtn = infoLayout.findViewById(R.id.footerLayout).findViewById(R.id.phoneBooking);
         callBtn.setOnClickListener(this);
 
-        View bookingBtn = mainL.findViewById(R.id.booking);
+        View bookingBtn = mActivityLevelView.findViewById(R.id.booking);
         bookingBtn.setOnClickListener(this);
     }
 
-    public void showBalloon(double[] coords){
+    public void showBalloon(double[] coords) {
         // Create a balloon model for the object
-        BalloonItem balloon = new BalloonItem(this, new GeoPoint(coords[1] , coords[0]));
+        BalloonItem balloon = new BalloonItem(this, new GeoPoint(coords[1], coords[0]));
         balloon.setText(flat.street);
         mMapController.showBalloon(balloon);
         mMapController.setPositionNoAnimationTo(new GeoPoint(coords[1], coords[0]), 15);
@@ -117,26 +131,41 @@ public class FlatActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.returnBtn:
-                Intent intent = new Intent(this, FlatListActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-                break;
+        super.onClick(view);
 
+        Intent intent;
+
+        switch (view.getId()) {
             case R.id.phoneBooking:
-                Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                callIntent.setData(Uri.parse("tel:" + getString(R.string.bookingNumber)));
-                startActivity(callIntent);
+                intent = new Intent(Intent.ACTION_CALL);
+                intent.setData(Uri.parse("tel:" + getString(R.string.bookingNumber)));
                 break;
 
             case R.id.booking:
-                Intent bookingIntent = new Intent(this, BookingActivity.class);
-                bookingIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                bookingIntent.putExtra("flatId", flatId);
-                startActivity(bookingIntent);
+                intent = new Intent(this, BookingActivity.class);
+                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
                 break;
+
+            case R.id.infoBtn:
+                intent = new Intent(this, FlatInfoActivity.class);
+                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
+                break;
+
+            case R.id.detailsBtn:
+                intent = new Intent(this, FlatDetailsActivity.class);
+                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
+                break;
+
+            case R.id.facilitiesBtn:
+                intent = new Intent(this, FlatFacilitiesActivity.class);
+                intent.putExtra(getString(R.string.dataTransferFlatId), flatId);
+                break;
+
+            default:
+                intent = new Intent(this, StartActivity.class);
         }
+
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
     }
 }

@@ -3,6 +3,7 @@ package ru.hotel72.activities;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RelativeLayout;
 import ru.hotel72.R;
@@ -17,6 +18,7 @@ import ru.hotel72.R;
 public class BaseHeaderActivity extends Activity implements View.OnClickListener {
 
     protected RelativeLayout contentLayout;
+    protected View mActivityLevelView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +35,12 @@ public class BaseHeaderActivity extends Activity implements View.OnClickListener
         returnBtn.setOnClickListener(this);
     }
 
+    public void setActivityView(int id){
+        View view = getView(id);
+        contentLayout.addView(view);
+        mActivityLevelView = view;
+    }
+
     @Override
     public void onClick(View view) {
         if(view.getId() == R.id.returnBtn){
@@ -40,5 +48,10 @@ public class BaseHeaderActivity extends Activity implements View.OnClickListener
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
+    }
+
+    public View getView(int id){
+        LayoutInflater inflate = (LayoutInflater) getSystemService(this.LAYOUT_INFLATER_SERVICE);
+        return inflate.inflate(id, null);
     }
 }

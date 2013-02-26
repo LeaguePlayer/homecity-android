@@ -5,7 +5,6 @@ import android.view.View;
 import android.widget.ToggleButton;
 import ru.hotel72.accessData.DBHelper;
 import ru.hotel72.accessData.GetFlatHelper;
-import ru.hotel72.accessData.GetFlatsTask;
 import ru.hotel72.domains.Flat;
 
 /**
@@ -31,7 +30,7 @@ public class LikeOnItemClickListener implements View.OnClickListener {
         ToggleButton btn = (ToggleButton) view;
 
         if(btn.isChecked()){
-            flat.isLicked = true;
+            flat.isLiked = true;
             if(!GetFlatHelper.likedFlat.contains(flat.id)){
                 GetFlatHelper.likedFlat.add(flat.id);
             }
@@ -39,7 +38,7 @@ public class LikeOnItemClickListener implements View.OnClickListener {
         }
         else
         {
-            flat.isLicked = false;
+            flat.isLiked = false;
             if(GetFlatHelper.likedFlat.contains(flat.id)){
                 GetFlatHelper.likedFlat.remove(flat.id);
             }

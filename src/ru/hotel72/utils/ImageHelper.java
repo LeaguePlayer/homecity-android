@@ -1,6 +1,7 @@
 package ru.hotel72.utils;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import ru.hotel72.accessData.ImageDownloader;
 
 /**
@@ -19,5 +20,12 @@ public class ImageHelper {
         }
 
         return imageDownloader;
+    }
+
+    public static Bitmap ScaleBitmap(Bitmap bm, float scalingFactor) {
+        int scaleHeight = (int) (bm.getHeight() * scalingFactor);
+        int scaleWidth = (int) (bm.getWidth() * scalingFactor);
+
+        return Bitmap.createScaledBitmap(bm, scaleWidth, scaleHeight, true);
     }
 }

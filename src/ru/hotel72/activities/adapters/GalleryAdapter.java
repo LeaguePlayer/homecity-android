@@ -2,11 +2,13 @@ package ru.hotel72.activities.adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import ru.hotel72.R;
 import ru.hotel72.accessData.ImageDownloader;
 import ru.hotel72.domains.Photo;

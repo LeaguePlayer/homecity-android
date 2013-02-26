@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="33dp"
+            android:id="@+id/btnGroup">
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="Описание"
+                android:id="@+id/infoBtn"
+                android:layout_weight="1"
+                android:singleLine="true"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="Детали"
+                android:id="@+id/detailsBtn"
+                android:layout_weight="1"
+                android:singleLine="true"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:text="Удобства"
+                android:id="@+id/facilitiesBtn"
+                android:layout_weight="1"
+                android:singleLine="true"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnGroup">
+    </RelativeLayout>
+
+</RelativeLayout>
