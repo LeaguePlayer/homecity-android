@@ -16,4 +16,5 @@
     <string name="flatInfo">flatInfo</string>
     <string name="info_viewId">infoView</string>
     <string name="flatIds">flatIds</string>
+    <string name="search_msg">Поиск...</string>
 </resources>

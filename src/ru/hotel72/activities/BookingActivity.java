@@ -20,7 +20,7 @@ import ru.hotel72.utils.ImageHelper;
  * Time: 21:46
  * To change this template use File | Settings | File Templates.
  */
-public class BookingActivity extends BaseActivity implements View.OnClickListener {
+public class BookingActivity extends BaseHeaderActivity implements View.OnClickListener {
     private Flat flat;
     private String flatId;
 
@@ -28,7 +28,7 @@ public class BookingActivity extends BaseActivity implements View.OnClickListene
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.booking);
+        setActivityView(R.layout.booking);
 
         flatId = getIntent().getStringExtra(getString(R.string.dataTransferFlatId));
         flat = (Flat) DataTransfer.get(flatId);
@@ -38,14 +38,10 @@ public class BookingActivity extends BaseActivity implements View.OnClickListene
     }
 
     private void setBtns() {
-        View returnBtn = findViewById(R.id.headerLayout).findViewById(R.id.returnBtn);
-        returnBtn.setOnClickListener(this);
     }
 
     private void setContent() {
-        View subHeader = findViewById(R.id.scrollView)
-                .findViewById(R.id.mainLayout)
-                .findViewById(R.id.subHeader);
+        View subHeader = mActivityLevelView.findViewById(R.id.subHeader);
 
         setImg(subHeader);
 
@@ -73,14 +69,9 @@ public class BookingActivity extends BaseActivity implements View.OnClickListene
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.returnBtn:
-                Intent intent = new Intent(this, FlatActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                intent.putExtra("flatId", flatId);
-                startActivity(intent);
-                break;
+        super.onClick(view);
 
+        switch (view.getId()){
             case R.id.booking:
                 break;
         }

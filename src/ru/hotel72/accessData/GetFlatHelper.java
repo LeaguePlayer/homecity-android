@@ -32,7 +32,7 @@ public class GetFlatHelper {
         return result;
     }
 
-    public static double[] parseFlatCoors(JSONArray jsonArray) throws JSONException {
+    public static double[] parseCoords(JSONArray jsonArray) throws JSONException {
         double[] coord = new double[2];
 
         coord[0] = Double.parseDouble(jsonArray.get(0).toString());

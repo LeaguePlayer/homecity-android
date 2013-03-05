@@ -8,26 +8,29 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.methods.HttpRequestBase;
 import org.apache.http.impl.client.DefaultHttpClient;
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
+import org.json.JSONTokener;
+
 import java.io.*;
 
 public class JSONParser {
 
     private InputStream is = null;
-    private JSONObject jObj = null;
+    private Object jObj = null;
     private String json = "";
 
-    public JSONObject getJSONFromPost(HttpPost httpPost){
+    public Object getJSONFromPost(HttpPost httpPost){
         return getJSON(httpPost);
     }
 
-    public JSONObject getJSONFromUrl(String url){
+    public Object getJSONFromUrl(String url){
         HttpGet httpGet = new HttpGet(url);
         return getJSON(httpGet);
     }
 
-    private JSONObject getJSON(HttpRequestBase httpRequest) {
+    private Object getJSON(HttpRequestBase httpRequest) {
 
         try {
             DefaultHttpClient httpClient = new DefaultHttpClient();
@@ -58,9 +61,9 @@ public class JSONParser {
             Log.e("Buffer Error", "Error converting result " + e.toString());
         }
 
-        if(json != "[]"){
+        if(json != null && json != "null" && json != "[]"){
             try {
-                jObj = new JSONObject(json);
+                jObj = new JSONTokener(json).nextValue();
             } catch (JSONException e) {
                 Log.e("JSON Parser", "Error parsing data " + e.toString());
             }

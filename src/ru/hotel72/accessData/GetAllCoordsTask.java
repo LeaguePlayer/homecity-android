@@ -33,7 +33,12 @@ public class GetAllCoordsTask extends AsyncTask<Void, Void, Void> {
     protected Void doInBackground(Void... voids) {
 
         JSONParser jsonParser = new JSONParser();
-        JSONObject jsonObject = jsonParser.getJSONFromUrl(url);
+        Object object = jsonParser.getJSONFromUrl(url);
+
+        if(object == null)
+            return null;
+
+        JSONObject jsonObject = (JSONObject) object;
 
         JSONArray names = jsonObject.names();
         for (int i = 0; i < names.length(); i++) {

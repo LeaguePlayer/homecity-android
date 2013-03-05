@@ -36,6 +36,27 @@
                 android:shadowRadius="1"/>
     </RelativeLayout>
 
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/mapSearch">
+
+        <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:id="@+id/searchText"
+                android:layout_toLeftOf="@+id/searchBtn"/>
+
+        <Button
+                android:layout_width="49dp"
+                android:layout_height="36dp"
+                android:id="@+id/searchBtn"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
     <ru.yandex.yandexmapkit.MapView
             android:id="@+id/map"
             android:layout_width="fill_parent"

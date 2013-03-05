@@ -4,8 +4,10 @@ import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import ru.hotel72.R;
 import ru.hotel72.accessData.GetAllCoordsTask;
+import ru.hotel72.accessData.SearchTask;
 import ru.hotel72.domains.MapElement;
 import ru.yandex.yandexmapkit.MapController;
 import ru.yandex.yandexmapkit.MapView;
@@ -51,8 +53,10 @@ public class FlatMapActivity extends BaseActivity implements View.OnClickListene
 
     private void setButtons() {
         View returnBtn = findViewById(R.id.headerLayout).findViewById(R.id.returnBtn);
-
         returnBtn.setOnClickListener(this);
+
+        View searchBtn = findViewById(R.id.mapSearch).findViewById(R.id.searchBtn);
+        searchBtn.setOnClickListener(this);
     }
 
 
@@ -107,11 +111,27 @@ public class FlatMapActivity extends BaseActivity implements View.OnClickListene
 
     @Override
     public void onClick(View view) {
-        if(view.getId() == R.id.returnBtn){
-            Intent intent = new Intent(this, StartActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
+
+        Intent intent;
+        switch (view.getId()){
+            case R.id.returnBtn:
+                intent = new Intent(this, StartActivity.class);
+                break;
+            case R.id.searchBtn:
+                searchPlace();
+                return;
+            default:
+                intent = new Intent(this, StartActivity.class);
+                break;
         }
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(intent);
+
+    }
+
+    private void searchPlace() {
+        TextView searchText = (TextView) findViewById(R.id.mapSearch).findViewById(R.id.searchText);
+        new SearchTask(this, searchText.getText().toString().trim()).execute();
     }
 
     @Override
@@ -155,5 +175,10 @@ public class FlatMapActivity extends BaseActivity implements View.OnClickListene
     @Override
     public void onBalloonAnimationEnd(BalloonItem balloonItem) {
         //To change body of implemented methods use File | Settings | File Templates.
+    }
+
+    public void centrefyMap(double[] coords) {
+        float zoom = mMapController.getZoomCurrent();
+        mMapController.setPositionNoAnimationTo(new GeoPoint(coords[1], coords[0]));
     }
 }

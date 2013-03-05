@@ -97,10 +97,10 @@ public class BoundActivity extends BaseHeaderActivity {
                 return;
             }
 
-            if(!Validations.isValidEmail(email)){
-                Toast.makeText(this, getString(R.string.incorrectEmail), 0).show();
-                return;
-            }
+//            if((email != "" || email != null) && !Validations.isValidEmail(email)){
+//                Toast.makeText(this, getString(R.string.incorrectEmail), 0).show();
+//                return;
+//            }
 
             new BoundTask(phone, android_id, name, email, this, mIsUserBounded).execute();
         }

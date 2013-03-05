@@ -6,7 +6,6 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import ru.hotel72.activities.FlatActivity;
-import ru.hotel72.activities.FlatListActivity;
 import ru.hotel72.domains.Flat;
 
 /**
@@ -31,30 +30,37 @@ public class GetFlatTask extends AsyncTask<Integer, Void, Void> {
         String url = String.format(getFlatsUrl, integers[0]);
         JSONParser jsonParser = new JSONParser();
 
-        JSONObject jsonObject = jsonParser.getJSONFromUrl(url);
+        Object object = jsonParser.getJSONFromUrl(url);
 
-        if(jsonObject == null)
+        if(object == null)
             return null;
 
-        JSONArray names = jsonObject.names();
+        try {
+            JSONObject jsonObject = (JSONObject) object;
 
-        for (int i = 0; i < names.length(); i++){
-            try {
-                String name = names.get(i).toString();
-                JSONObject flatJson = jsonObject.getJSONObject(name);
+            JSONArray names = jsonObject.names();
 
-                flat = GetFlatHelper.parseMainFlatData(flatJson);
-                flat.photos = GetFlatHelper.parseFlatPhotos(flatJson.getJSONObject(String.valueOf(FlatJsonNames.photos)));
-                flat.coords = GetFlatHelper.parseFlatCoors(flatJson.getJSONArray(String.valueOf(FlatJsonNames.coords)));
-                flat.options = GetFlatHelper.parseFlatOptions(flatJson.getJSONArray(String.valueOf(FlatJsonNames.options)));
+            for (int i = 0; i < names.length(); i++){
+                try {
+                    String name = names.get(i).toString();
+                    JSONObject flatJson = jsonObject.getJSONObject(name);
 
-                flat.isLiked = GetFlatHelper.likedFlat.contains(flat.id);
+                    flat = GetFlatHelper.parseMainFlatData(flatJson);
+                    flat.photos = GetFlatHelper.parseFlatPhotos(flatJson.getJSONObject(String.valueOf(FlatJsonNames.photos)));
+                    flat.coords = GetFlatHelper.parseCoords(flatJson.getJSONArray(String.valueOf(FlatJsonNames.coords)));
+                    flat.options = GetFlatHelper.parseFlatOptions(flatJson.getJSONArray(String.valueOf(FlatJsonNames.options)));
 
-            } catch (JSONException e) {
-                e.printStackTrace();
+                    flat.isLiked = GetFlatHelper.likedFlat.contains(flat.id);
+
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
             }
+        } catch (Exception e){
+            e.printStackTrace();
         }
-        return null;  //To change body of implemented methods use File | Settings | File Templates.
+
+        return null;
     }
 
     @Override
