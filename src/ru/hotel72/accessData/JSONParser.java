@@ -61,7 +61,7 @@ public class JSONParser {
             Log.e("Buffer Error", "Error converting result " + e.toString());
         }
 
-        if(json != null && json != "null" && json != "[]"){
+        if(json != null && json != "null" && json != "[]" && json != ""){
             try {
                 jObj = new JSONTokener(json).nextValue();
             } catch (JSONException e) {

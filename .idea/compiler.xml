@@ -5,6 +5,9 @@
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/gen" includeSubdirectories="true" />
       <directory url="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/gen" includeSubdirectories="true" />
+      <directory url="file://$USER_HOME$/Documents/GitHub/android-times-square/library/gen" includeSubdirectories="true" />
+      <directory url="file://$USER_HOME$/Documents/GitHub/android-calendar-view/gen" includeSubdirectories="true" />
+      <directory url="file://$USER_HOME$/Documents/GitHub/android-numberpicker/library/gen" includeSubdirectories="true" />
     </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>

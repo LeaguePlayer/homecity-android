@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/Documents/GitHub/android-calendar-view/android-calendar-view.iml" filepath="$USER_HOME$/Documents/GitHub/android-calendar-view/android-calendar-view.iml" />
       <module fileurl="file://$PROJECT_DIR$/hotel72.iml" filepath="$PROJECT_DIR$/hotel72.iml" />
+      <module fileurl="file://$USER_HOME$/Documents/GitHub/android-numberpicker/library/numeric.iml" filepath="$USER_HOME$/Documents/GitHub/android-numberpicker/library/numeric.iml" />
       <module fileurl="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/yandexmapkit-library.iml" filepath="$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/yandexmapkit-library.iml" />
     </modules>
   </component>

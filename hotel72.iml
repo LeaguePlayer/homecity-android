@@ -40,6 +40,8 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="libs" level="project" />
     <orderEntry type="module" module-name="yandexmapkit-library" />
+    <orderEntry type="module" module-name="android-calendar-view" />
+    <orderEntry type="module" module-name="numeric" />
   </component>
 </module>
 

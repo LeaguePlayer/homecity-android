@@ -6,6 +6,10 @@
               android:layout_height="match_parent"
               android:background="@android:color/white">
 
+    <LinearLayout
+            android:focusable="true" android:focusableInTouchMode="true"
+            android:layout_width="0px" android:layout_height="0px"/>
+
     <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
@@ -46,7 +50,9 @@
                 android:layout_height="wrap_content"
                 android:singleLine="true"
                 android:id="@+id/searchText"
-                android:layout_toLeftOf="@+id/searchBtn"/>
+                android:layout_toLeftOf="@+id/searchBtn"
+                android:nextFocusUp="@id/searchText"
+                android:nextFocusLeft="@id/searchText"/>
 
         <Button
                 android:layout_width="49dp"

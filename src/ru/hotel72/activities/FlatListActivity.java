@@ -47,12 +47,12 @@ public class FlatListActivity extends BaseActivity {
         setContentView(R.layout.flat_list);
         flatList = (ListView)findViewById(R.id.flatList);
 
-        if(ids != null && ids.size() > 0){
+//        if(ids != null && ids.size() > 0){
             endlessScrollListener = new EndlessScrollListener(this);
             endlessScrollListener.setHotelIds(ids);
-        } else {
-            endlessScrollListener = new EndlessScrollListener(this, visibleThreshold, page, prevTotal);
-        }
+//        } else {
+//            endlessScrollListener = new EndlessScrollListener(this, visibleThreshold, page, prevTotal);
+//        }
 
         footer = getLayoutInflater().inflate(R.layout.endless_list_footer, null);
 

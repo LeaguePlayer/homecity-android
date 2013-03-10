@@ -17,4 +17,9 @@
     <string name="info_viewId">infoView</string>
     <string name="flatIds">flatIds</string>
     <string name="search_msg">Поиск...</string>
+    <string name="booking_dates_loading">Загрузки информации о брони...</string>
+    <string name="id_hotel">id_hotel</string>
+    <string name="date_stay_begin">date_stay_begin</string>
+    <string name="date_stay_finish">date_stay_finish</string>
+    <string name="guests">guests</string>
 </resources>

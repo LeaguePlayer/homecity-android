@@ -63,6 +63,8 @@ public class BoundActivity extends BaseHeaderActivity {
         ed.putString(getString(R.string.email), mData.get(getString(R.string.email)));
         ed.putBoolean(getString(R.string.is_user_bound), true);
         ed.commit();
+
+        finish();
     }
 
     public void fillUserData(View view) {
