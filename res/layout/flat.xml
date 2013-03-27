@@ -14,15 +14,65 @@
             android:spacing="2dp"
             android:background="#ffffff"
             android:fadingEdge="none"/>
+
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tag_flat"
+            android:id="@+id/tag_layout"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true">
+
+        <ru.hotel72.utils.RotateLinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/cost_layout"
+                android:padding="6dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="70dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="9 9999"
+                    android:id="@+id/cost"
+                    android:textColor="#044f35"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="17dp"
+                    android:paddingRight="5dp"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="руб"
+                    android:textColor="#044f35"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="9dp"
+                    android:textStyle="bold"/>
+
+        </ru.hotel72.utils.RotateLinearLayout>
+
+    </RelativeLayout>
+
     <Button
             android:layout_width="fill_parent"
-            android:layout_height="46dp"
+            android:layout_height="wrap_content"
             android:text="Забронировать"
             android:id="@+id/booking"
             android:layout_alignLeft="@+id/mainLayout"
             android:layout_alignParentTop="true"
             android:layout_marginTop="188dp"
-            android:singleLine="false"/>
+            android:singleLine="false"
+            android:textSize="15dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="-1"
+            android:shadowRadius="1"
+            android:background="@drawable/flat_booking_btn"/>
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="fill_parent"
@@ -33,64 +83,160 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:id="@+id/infoLayout">
-        <LinearLayout
-                android:orientation="vertical"
+        <RelativeLayout
                 android:layout_width="fill_parent"
-                android:layout_height="128dp">
+                android:layout_height="128dp"
+                android:layout_marginBottom="8dp">
             <ru.yandex.yandexmapkit.MapView
                     android:id="@+id/map"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     android:apiKey="1234567890"
-                    android:tag="static"
-                    android:layout_marginBottom="8dp"/>
-        </LinearLayout>
-        <Button
-                android:layout_width="fill_parent"
-                android:layout_height="46dp"
-                android:text="Описание"
-                android:id="@+id/infoBtn" android:gravity="left"/>
-        <TextView
+                    android:tag="static"/>
+
+            <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/flat_map_over"/>
+
+        </RelativeLayout>
+        <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:text=""
-                android:id="@+id/shortDesc" android:layout_gravity="left|center_vertical"
-                android:paddingTop="25dp"
-                android:paddingBottom="27dp" android:paddingRight="9dp" android:paddingLeft="9dp"/>
-        <Button android:layout_width="fill_parent"
-                android:layout_height="46dp"
-                android:text="Детали"
+                android:id="@+id/infoBtn"
+                android:background="@drawable/flat_top_btn">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Описание"
+                    style="@style/InfoBtnsText" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingTop="1dp"
+                       android:src="@drawable/arrow_flat_right"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="13dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:id="@+id/shortDesc"
+                    android:layout_gravity="left|center_vertical"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="27dp"
+                    android:paddingRight="9dp"
+                    android:paddingLeft="18dp"
+                    android:textColor="#686868"
+                    android:shadowColor="#ffffff"
+                    android:shadowDx="-1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:background="@drawable/short_info_mid"/>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/short_info_top"/>
+
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/short_info_bottom"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
                 android:id="@+id/detailsBtn"
-                android:gravity="left"
-                android:singleLine="false"/>
-        <Button android:layout_width="fill_parent"
-                android:layout_height="46dp"
-                android:text="Удобства"
-                android:id="@+id/facilitiesBtn"
-                android:gravity="left"
-                android:layout_marginBottom="7dp"
-                android:singleLine="false"/>
-        <LinearLayout
-                android:orientation="horizontal"
+                android:background="@drawable/flat_mid_btn">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Детали"
+                    style="@style/InfoBtnsText" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingTop="1dp"
+                       android:src="@drawable/arrow_flat_right"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="13dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/footerLayout">
+                android:id="@+id/facilitiesBtn"
+                android:background="@drawable/flat_bottom_btn">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Удобства"
+                    style="@style/InfoBtnsText" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:paddingTop="1dp"
+                       android:src="@drawable/arrow_flat_right"
+                       android:layout_centerVertical="true"
+                       android:layout_alignParentRight="true"
+                       android:layout_marginRight="13dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginRight="-1dp"
+                android:id="@+id/footerLayout"
+                android:layout_marginBottom="10dp">
+
             <Button
                     android:textSize="13dp"
-                    android:layout_width="fill_parent"
-                    android:layout_height="46dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:text="Поделиться"
                     android:id="@+id/share"
-                    android:layout_weight="1"
-                    android:layout_marginRight="2dp" android:singleLine="true"/>
+                    android:shadowColor="#ffffff"
+                    android:shadowDx="-1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:background="@drawable/flat_bottom_button"
+
+                    android:layout_alignTop="@+id/phoneBooking"
+                    android:layout_toLeftOf="@+id/view"
+                    android:layout_alignParentLeft="true"/>
+
+            <View
+                    android:id="@+id/view"
+                    android:layout_width="2dp"
+                    android:layout_height="1dp"
+                    android:layout_centerHorizontal="true"/>
+
             <Button
                     android:textSize="13dp"
-                    android:layout_width="fill_parent"
-                    android:layout_height="46dp"
-                    android:text="Забронировать по телефону"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Забронировать\nпо телефону"
                     android:id="@+id/phoneBooking"
-                    android:layout_weight="1"
-                    android:layout_marginLeft="2dp" android:singleLine="true"/>
-        </LinearLayout>
+                    android:shadowColor="#ffffff"
+                    android:shadowDx="-1"
+                    android:shadowDy="1"
+                    android:shadowRadius="1"
+                    android:background="@drawable/flat_bottom_button"
+                    android:layout_alignParentRight="true"
+                    android:layout_toRightOf="@+id/view"/>
+
+        </RelativeLayout>
     </LinearLayout>
 </RelativeLayout>

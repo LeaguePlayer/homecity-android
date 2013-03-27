@@ -79,7 +79,7 @@ public class BookingTask extends AsyncTask<Void, Void, Void> {
             ((BookingUserActivity)context).booked();
         }
         else {
-            Toast.makeText(context, responseMsg, 0).show();
+            ((BookingUserActivity)context).bookedError(responseMsg);
         }
     }
 

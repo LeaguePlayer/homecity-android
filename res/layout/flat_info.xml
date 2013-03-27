@@ -9,6 +9,11 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:id="@+id/textView"
-            android:paddingTop="25dp"/>
+            android:paddingTop="25dp"
+            android:textColor="#686868"
+            android:shadowColor="#ffffff"
+            android:shadowDx="-1"
+            android:shadowDy="1"
+            android:shadowRadius="1"/>
 
 </LinearLayout>

@@ -8,6 +8,15 @@
       <directory url="file://$USER_HOME$/Documents/GitHub/android-times-square/library/gen" includeSubdirectories="true" />
       <directory url="file://$USER_HOME$/Documents/GitHub/android-calendar-view/gen" includeSubdirectories="true" />
       <directory url="file://$USER_HOME$/Documents/GitHub/android-numberpicker/library/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/libs/android-calendar-view/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/libs/yandexmapkit-android/yandexmapkit-library/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/libs/android-numberpicker/library/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/externals/yandexmapkit-android/yandexmapkit-library/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/externals/android-numberpicker/library/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/externals/android-calendar-view/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/externals/facebook/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/externals/Android-VKontakte-SDK/AndroidVkSdk/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/gen" includeSubdirectories="true" />
     </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>

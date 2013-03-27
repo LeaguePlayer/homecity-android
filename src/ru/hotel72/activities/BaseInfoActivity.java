@@ -59,7 +59,7 @@ public class BaseInfoActivity extends BaseHeaderActivity implements View.OnClick
 
     private void fillDetails(){
         TextView square = (TextView) infoView.findViewById(R.id.squareLayout).findViewById(R.id.textSquare);
-        square.setText(flat.square.toString() + " кв.м.");
+        square.setText(flat.square + " кв.м.");
 
         TextView rooms = (TextView) infoView.findViewById(R.id.roomsLayout).findViewById(R.id.textRooms);
         rooms.setText(flat.rooms.toString());

@@ -1,27 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
+    <ImageView
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/menu_bg">
+    </ImageView>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_group"
+            android:orientation="horizontal" android:layout_centerInParent="true">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flatList_btn_layout"
+                android:layout_marginRight="50dp">
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_flats_btn"
+                    android:id="@+id/flatList"
+                    android:layout_centerHorizontal="true"/>
+            <ru.hotel72.utils.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flatListMenuBtn"
+                    android:layout_below="@+id/flatList"
+                    android:layout_centerHorizontal="true"
+                    style="@style/MenuText"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/map_btn_layout"
+                android:layout_marginLeft="50dp">
+
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/menu_map_btn"
+                    android:id="@+id/map"
+                    android:layout_centerHorizontal="true"/>
+
+            <ru.hotel72.utils.TextViewPlus
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flatMapMenuBtn"
+                    android:layout_below="@+id/map"
+                    android:layout_centerHorizontal="true"
+                    style="@style/MenuText"/>
+
+        </RelativeLayout>
+    </LinearLayout>
 
     <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/flatListMenuBtn"
-            android:id="@+id/flatList"
-            android:layout_gravity="left|center_vertical"/>
-    <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/flatMapMenuBtn"
-            android:id="@+id/map"
-            android:layout_gravity="left|center_vertical"/>
-    <Button
+            android:background="@drawable/menu_settings_btn"
+            android:id="@+id/settings"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btn_group"
+            android:layout_marginTop="10dp"/>
+
+    <ru.hotel72.utils.TextViewPlus
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/settingsMenuBtn"
-            android:id="@+id/settings"
-            android:layout_gravity="left|center_vertical"/>
-</LinearLayout>
+            android:layout_below="@+id/settings"
+            android:layout_centerHorizontal="true"
+            style="@style/MenuText"/>
+
+</RelativeLayout>

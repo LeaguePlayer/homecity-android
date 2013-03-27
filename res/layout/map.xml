@@ -19,12 +19,13 @@
             android:id="@+id/headerLayout"
             android:paddingBottom="9dp">
         <Button
-                android:layout_width="49dp"
-                android:layout_height="36dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/returnBtn"
                 android:layout_alignParentLeft="true"
-                android:layout_marginLeft="7dp"
-                android:layout_centerVertical="true"/>
+                android:layout_marginLeft="11dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/back_btn"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -43,7 +44,9 @@
     <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/mapSearch">
+            android:id="@+id/mapSearch"
+            android:background="#4f7f13"
+            android:paddingBottom="5dp">
 
         <EditText
                 android:layout_width="fill_parent"
@@ -52,14 +55,13 @@
                 android:id="@+id/searchText"
                 android:layout_toLeftOf="@+id/searchBtn"
                 android:nextFocusUp="@id/searchText"
-                android:nextFocusLeft="@id/searchText"/>
-
-        <Button
-                android:layout_width="49dp"
-                android:layout_height="36dp"
-                android:id="@+id/searchBtn"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"/>
+                android:nextFocusLeft="@id/searchText"
+                android:background="@drawable/rounded_edittext"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:drawableLeft="@drawable/search"
+                android:imeOptions="actionSearch"/>
 
     </RelativeLayout>
 

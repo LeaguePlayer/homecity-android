@@ -72,10 +72,10 @@ public class GetFlatHelper {
         flat.id = flatJson.getInt(String.valueOf(FlatJsonNames.id));
         flat.street = flatJson.getString(String.valueOf(FlatJsonNames.street));
         flat.full_desc = flatJson.getString(String.valueOf(FlatJsonNames.full_desc));
-        flat.square = flatJson.getDouble(String.valueOf(FlatJsonNames.square));
+        flat.square = flatJson.getInt(String.valueOf(FlatJsonNames.square));
         flat.post_id = flatJson.getInt(String.valueOf(FlatJsonNames.post_id));
         flat.short_desc = flatJson.getString(String.valueOf(FlatJsonNames.short_desc));
-        flat.cost = flatJson.getDouble(String.valueOf(FlatJsonNames.cost));
+        flat.cost = flatJson.getInt(String.valueOf(FlatJsonNames.cost));
         flat.rooms = flatJson.getInt(String.valueOf(FlatJsonNames.rooms));
 
         return flat;

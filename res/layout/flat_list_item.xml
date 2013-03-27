@@ -17,12 +17,6 @@
             android:background="#ffffff"
             android:spacing="2dp"/>
 
-    <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="cost"
-            android:id="@+id/cost"
-            android:layout_alignLeft="@+id/gallery" android:layout_alignTop="@+id/gallery"/>
     <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="63dp"
@@ -35,20 +29,75 @@
                 android:text="New Text"
                 android:id="@+id/rooms"
                 android:textSize="12dp"
-                android:layout_alignParentLeft="true" android:layout_alignParentTop="true"
-                android:layout_margin="18dp" android:layout_marginTop="17dp"/>
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="18dp"
+                android:layout_marginTop="17dp"
+                android:textColor="#033223"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="New Text"
                 android:id="@+id/address"
                 android:textSize="10dp"
-                android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
-                android:layout_marginLeft="18dp" android:layout_marginTop="31dp"/>
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="31dp"
+                android:textColor="#6b6b6b"/>
         <ToggleButton
-                android:layout_width="32dp"
-                android:layout_height="31dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="18dp"
                 android:id="@+id/isLiked"
-                android:layout_alignParentRight="true" android:layout_alignBaseline="@+id/rooms"/>
+                android:textOff=""
+                android:textOn=""
+                android:layout_alignParentRight="true"
+                android:background="@drawable/flat_like_btn"
+                android:layout_centerVertical="true"/>
     </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tag"
+            android:id="@+id/tag_layout"
+            android:layout_marginTop="-6dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                android:id="@+id/cost_layout" android:paddingBottom="2dp">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="99 999"
+                    android:id="@+id/cost"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="16dp"
+                    android:paddingRight="3dp"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="руб"
+                    android:textColor="#ffffff"
+                    android:layout_alignParentLeft="true"
+                    android:textSize="8dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tag_piece"
+            android:background="@drawable/tag"
+            android:visibility="invisible"
+            android:layout_marginBottom="-61dp" android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"/>
 </RelativeLayout>

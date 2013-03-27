@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">hotel72</string>
+    <string name="app_name">Квартиры посуточно</string>
     <string name="imgPathTemplate"></string>
     <string name="loadImgUrlTemplate"></string><string name="flatViewTitle">Каталог квартир</string>
     <string name="dataTransferFlatId">flatId</string>
@@ -22,4 +22,15 @@
     <string name="date_stay_begin">date_stay_begin</string>
     <string name="date_stay_finish">date_stay_finish</string>
     <string name="guests">guests</string>
+    <string name="file_extention">h72</string>
+    <string name="booked">Спасибо за использование наших услуг!\nСкоро с Вами свяжется наш специалист.
+    </string>
+    <string name="showDialog">showDialog</string>
+    <string name="dataUpdated">Данные обновлены!</string>
+    <string name="error">error</string>
+    <string name="errorMsg">errorMsg</string>
+    <string name="dialogMessage">dialogMessage</string>
+    <string name="shareMsg">Хом-Сити - Отличные квартиры посуточно! Рекомендую!</string>
+    <string name="vk_msg">vk_msg</string>
+    <string name="tweet_msg">tweet_msg</string>
 </resources>

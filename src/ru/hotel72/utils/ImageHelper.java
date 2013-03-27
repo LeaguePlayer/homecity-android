@@ -4,6 +4,8 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import ru.hotel72.accessData.ImageDownloader;
 
+import java.util.HashMap;
+
 /**
  * Created with IntelliJ IDEA.
  * User: Evgeny
@@ -12,14 +14,22 @@ import ru.hotel72.accessData.ImageDownloader;
  * To change this template use File | Settings | File Templates.
  */
 public class ImageHelper {
-    private static ImageDownloader imageDownloader;
 
-    public static ImageDownloader getImageDownloader(Context context){
-        if(imageDownloader == null){
-            imageDownloader = new ImageDownloader(context);
+    private static HashMap<ImageDownloaderType, ImageDownloader> downloader = new HashMap<ImageDownloaderType, ImageDownloader>();
+//    private static ImageDownloader imageDownloader;
+
+    public static ImageDownloader getImageDownloader(Context context, ImageDownloaderType type){
+        if(downloader.get(type) == null){
+            downloader.put(type, new ImageDownloader(context, type));
         }
 
-        return imageDownloader;
+        return downloader.get(type);
+
+//        if(imageDownloader == null){
+//            imageDownloader = new ImageDownloader(context);//, type);
+//        }
+//
+//        return imageDownloader;
     }
 
     public static Bitmap ScaleBitmap(Bitmap bm, float scalingFactor) {

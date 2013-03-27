@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="ru.hotel72">
+    <supports-screens android:resizeable="false" />
     <uses-sdk android:minSdkVersion="8"/>
     <application
             android:icon="@drawable/icon"
@@ -8,7 +9,8 @@
             android:theme="@android:style/Theme.NoTitleBar">
         <activity
                 android:name=".activities.SplashActivity"
-                android:configChanges="keyboardHidden|orientation">
+                android:configChanges="orientation"
+                android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -48,6 +50,16 @@
                   android:configChanges="orientation"
                   android:screenOrientation="portrait"/>
         <activity android:name=".activities.FlatPhotoGalleryActivity"/>
+        <activity android:name=".social.vkontakte.LoginActivity"/>
+        <!--<activity android:name=".social.twitter.OAuthActivity"/>-->
+        <!--<activity android:name=".social.twitter.PrepareRequestTokenActivity" android:launchMode="singleTask">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.VIEW" />-->
+                <!--<category android:name="android.intent.category.DEFAULT" />-->
+                <!--<category android:name="android.intent.category.BROWSABLE" />-->
+                <!--<data android:scheme="twitterapp" android:host="OAuthActivity" />-->
+            <!--</intent-filter>-->
+        <!--</activity>-->
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"/>

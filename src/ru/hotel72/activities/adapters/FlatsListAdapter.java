@@ -1,11 +1,19 @@
 package ru.hotel72.activities.adapters;
 
 import android.content.Context;
+import android.graphics.Typeface;
+import android.text.SpannableString;
+import android.text.style.StyleSpan;
+import android.text.style.UnderlineSpan;
 import android.view.*;
+import android.view.animation.AnimationUtils;
+import android.view.animation.RotateAnimation;
 import android.widget.*;
 import ru.hotel72.R;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.domains.extension.FlatListExtension;
+import ru.hotel72.utils.ImageDownloaderType;
+import ru.hotel72.utils.Utils;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -44,23 +52,25 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
         public TextView address;
         public ToggleButton isLiked;
         public Gallery gallery;
+        public View costLayout;
+        public View tagPiece;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-
-        //TODO дописать отрисовку куска бирки для верхней view
 
         if (convertView == null || convertView.getTag() == null) {
             final LayoutInflater mInflate = LayoutInflater.from(context);
             convertView = mInflate.inflate(R.layout.flat_list_item, parent, false);
 
             holder = new ViewHolder();
-            holder.cost = (TextView) convertView.findViewById(R.id.cost);
+            holder.cost = (TextView) convertView.findViewById(R.id.tag_layout).findViewById(R.id.cost_layout).findViewById(R.id.cost);
+            holder.costLayout = convertView.findViewById(R.id.tag_layout).findViewById(R.id.cost_layout);
             holder.rooms = (TextView) convertView.findViewById(R.id.gallery_item_footer).findViewById(R.id.rooms);
             holder.address = (TextView) convertView.findViewById(R.id.gallery_item_footer).findViewById(R.id.address);
             holder.isLiked = (ToggleButton) convertView.findViewById(R.id.gallery_item_footer).findViewById(R.id.isLiked);
             holder.gallery = (Gallery) convertView.findViewById(R.id.gallery);
+            holder.tagPiece = convertView.findViewById(R.id.tag_piece);
 
             convertView.setTag(holder);
         } else {
@@ -75,14 +85,24 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
             }
             holder.address.setText(flat.street);
 
+            Object tag = holder.costLayout.getTag();
+            if(tag == null){
+                RotateAnimation rotate= (RotateAnimation) AnimationUtils.loadAnimation(context, R.anim.rotate_cost);
+                holder.costLayout.setAnimation(rotate);
+                holder.costLayout.setTag(true);
+            }
+
             if (flat.cost != Double.NaN && holder.cost != null) {
-                holder.cost.setText(flat.cost.toString());
+                SpannableString spanString = new SpannableString(Utils.getCostString(flat.cost));
+                spanString.setSpan(new StyleSpan(Typeface.BOLD), 0, spanString.length(), 0);
+
+                holder.cost.setText(spanString);
             }
             if(galleryCache.containsKey(flat.id)){
                 galleryAdapter = galleryCache.get(flat.id);
             }
             else {
-                galleryAdapter = new GalleryAdapter(context, R.layout.gallary_item, flat.photos);
+                galleryAdapter = new GalleryAdapter(context, R.layout.gallary_item, flat.photos, ImageDownloaderType.FlatList);
                 galleryCache.put(flat.id, galleryAdapter);
             }
 
@@ -98,6 +118,13 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
 //            };
 //            holder.gallery.setOnTouchListener(gestureListener);
             holder.gallery.setOnItemClickListener(new FlatOnItemClickListener(context, flat));
+
+            if(position < flats.size() - 1){
+                holder.tagPiece.setVisibility(holder.tagPiece.VISIBLE);
+            }
+            else {
+                holder.tagPiece.setVisibility(holder.tagPiece.INVISIBLE);
+            }
         }
 
         return convertView;

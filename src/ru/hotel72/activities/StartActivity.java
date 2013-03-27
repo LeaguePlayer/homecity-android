@@ -22,13 +22,13 @@ public class StartActivity extends BaseActivity {
 
         setContentView(R.layout.start);
 
-        Button flatListBtn = (Button)findViewById(R.id.flatList);
+        Button flatListBtn = (Button)findViewById(R.id.btn_group).findViewById(R.id.flatList_btn_layout).findViewById(R.id.flatList);
         flatListBtn.setOnClickListener(onClickListener);
 
         Button settingsBtn = (Button)findViewById(R.id.settings);
         settingsBtn.setOnClickListener(onClickListener);
 
-        Button mapBtn = (Button)findViewById(R.id.map);
+        Button mapBtn = (Button)findViewById(R.id.btn_group).findViewById(R.id.map_btn_layout).findViewById(R.id.map);
         mapBtn.setOnClickListener(onClickListener);
     }
 

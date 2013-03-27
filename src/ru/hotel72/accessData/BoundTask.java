@@ -119,11 +119,10 @@ public class BoundTask extends AsyncTask<Void, Void, String> {
         super.onPostExecute(s);
         progressDialog.dismiss();
 
-        String toastMsg = mIsOK ? mOkToastMsg : responseMsg;
-        Toast.makeText(context, toastMsg, 0).show();
+        String msg = mIsOK ? mOkToastMsg : responseMsg;
 
         if(mIsOK){
-            ((BoundActivity)context).dataBounded(mData);
+            ((BoundActivity)context).dataBounded(mData, msg);
         }
     }
 }

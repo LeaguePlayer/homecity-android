@@ -26,14 +26,19 @@ public class GetImageTask extends AsyncTask<String, Void, Void> {
     private Context context;
     private ImageView view;
     private int id;
+    private int w;
+    private int h;
     private Bitmap bitmap;
     private String loadUrl;
 
-    public GetImageTask(Context context, ImageView view, int id) {
+    public GetImageTask(Context context, ImageView view, int id, int w, int h) {
         this.context = context;
         this.view = view;
         this.id = id;
+        this.w = w;
+        this.h = h;
         loadUrl = "http://hotel72.ru/index.php/api/GetFile?filename=%s&for=%s";
+//        loadUrl = "http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&w=%d&h=%d&zc=1&q=90";
     }
 
     @Override
@@ -52,6 +57,7 @@ public class GetImageTask extends AsyncTask<String, Void, Void> {
 
             try {
                 URL url = new URL(String.format(loadUrl, imgName, "original"));
+//                URL url = new URL(String.format(loadUrl, imgName, w, h));
 
                 try {
                     bitmap = BitmapFactory.decodeStream(url.openConnection().getInputStream());

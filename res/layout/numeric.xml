@@ -14,6 +14,6 @@
     <Button android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/done"
-            android:text="Готово"/>
+            android:text="Выбрать"/>
 
 </LinearLayout>

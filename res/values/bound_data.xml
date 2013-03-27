@@ -4,9 +4,9 @@
     <string name="deviceTypeDefaultValue">android</string>
     <string name="passwordKey">password</string>
     <string name="passwordDefaultValue">welcomestuff3452</string>
-    <string name="bounded">Номер привязан</string>
+    <string name="bounded">Ваш номер успешно привязан к системе</string>
     <string name="bound_updating">Обновление данных...</string>
-    <string name="data_updated">Данные обновлены</string>
+    <string name="data_updated">Данные обновлены!</string>
     <string name="required">Необходимо заполнить имя и номер телефона</string>
     <string name="user_name">name</string>
     <string name="phone_number">phone</string>

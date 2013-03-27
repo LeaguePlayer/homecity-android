@@ -77,7 +77,9 @@ public class GetFlatsTask extends AsyncTask<Integer, Void, Void> {
                     flat.coords = GetFlatHelper.parseCoords(flatJson.getJSONArray(String.valueOf(FlatJsonNames.coords)));
                     flat.options = GetFlatHelper.parseFlatOptions(flatJson.getJSONArray(String.valueOf(FlatJsonNames.options)));
 
-                    flat.isLiked = GetFlatHelper.likedFlat.contains(flat.id);
+                    if(GetFlatHelper.likedFlat != null) {
+                        flat.isLiked = GetFlatHelper.likedFlat.contains(flat.id);
+                    }
 
                     flats.add(flat);
 

@@ -27,8 +27,6 @@ public class FlatListActivity extends BaseActivity {
     private final int visibleThreshold = 5;
     private View footer;
     private static int currPosition;
-    private static int page = 1;
-    private static int prevTotal = 1;
     private EndlessScrollListener endlessScrollListener;
 
     @Override
@@ -47,12 +45,8 @@ public class FlatListActivity extends BaseActivity {
         setContentView(R.layout.flat_list);
         flatList = (ListView)findViewById(R.id.flatList);
 
-//        if(ids != null && ids.size() > 0){
-            endlessScrollListener = new EndlessScrollListener(this);
-            endlessScrollListener.setHotelIds(ids);
-//        } else {
-//            endlessScrollListener = new EndlessScrollListener(this, visibleThreshold, page, prevTotal);
-//        }
+        endlessScrollListener = new EndlessScrollListener(this);
+        endlessScrollListener.setHotelIds(ids);
 
         footer = getLayoutInflater().inflate(R.layout.endless_list_footer, null);
 
@@ -80,8 +74,6 @@ public class FlatListActivity extends BaseActivity {
     protected void onPause() {
         super.onPause();
         currPosition = flatList.getFirstVisiblePosition();
-        page = endlessScrollListener.getPage();
-        prevTotal = endlessScrollListener.getPreviousTotal();
     }
 
     @Override

@@ -8,56 +8,53 @@
 
     <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:id="@+id/squareLayout">
+            android:layout_height="wrap_content"
+            android:id="@+id/squareLayout"
+            android:background="@drawable/details_top">
 
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Площадь"
-                android:layout_centerVertical="true"
-                android:paddingLeft="17dp"/>
+                style="@style/DetailsTextNames"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="New Text"
                 android:id="@+id/textSquare"
-                android:layout_marginLeft="125dp"
-                android:layout_centerVertical="true"/>
+                style="@style/DetailsTextValues"/>
     </RelativeLayout>
     <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:id="@+id/costLayout">
+            android:layout_height="wrap_content"
+            android:id="@+id/costLayout"
+            android:background="@drawable/details_mid">
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:text="Стоимость"
-                  android:layout_centerVertical="true"
-                  android:paddingLeft="17dp"/>
+                  style="@style/DetailsTextNames"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="New Text"
                 android:id="@+id/textCost"
-                android:layout_marginLeft="125dp"
-                android:layout_centerVertical="true"/>
+                style="@style/DetailsTextValues"/>
     </RelativeLayout>
     <RelativeLayout
             android:layout_width="fill_parent"
-            android:layout_height="40dp"
-            android:id="@+id/roomsLayout">
+            android:layout_height="wrap_content"
+            android:id="@+id/roomsLayout"
+            android:background="@drawable/details_bottom">
         <TextView android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:text="Комнат"
-                  android:layout_centerVertical="true"
-                  android:paddingLeft="17dp"/>
+                  style="@style/DetailsTextNames"/>
         <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="New Text"
                 android:id="@+id/textRooms"
-                android:layout_marginLeft="125dp"
-                android:layout_centerVertical="true"/>
+                style="@style/DetailsTextValues"/>
     </RelativeLayout>
 
 </LinearLayout>

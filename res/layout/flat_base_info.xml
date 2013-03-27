@@ -8,7 +8,7 @@
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="fill_parent"
-            android:layout_height="33dp"
+            android:layout_height="wrap_content"
             android:id="@+id/btnGroup">
 
         <Button
@@ -17,21 +17,27 @@
                 android:text="Описание"
                 android:id="@+id/infoBtn"
                 android:layout_weight="1"
-                android:singleLine="true"/>
+                android:singleLine="true"
+                android:background="@drawable/flat_group_btn_info"
+                android:textColor="@color/group_btn_text_color"/>
         <Button
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:text="Детали"
                 android:id="@+id/detailsBtn"
                 android:layout_weight="1"
-                android:singleLine="true"/>
+                android:singleLine="true"
+                android:background="@drawable/flat_group_btn_details"
+                android:textColor="@color/group_btn_text_color"/>/>
         <Button
                 android:layout_width="fill_parent"
                 android:layout_height="match_parent"
                 android:text="Удобства"
                 android:id="@+id/facilitiesBtn"
                 android:layout_weight="1"
-                android:singleLine="true"/>
+                android:singleLine="true"
+                android:background="@drawable/flat_group_btn_facilities"
+                android:textColor="@color/group_btn_text_color"/>/>
     </LinearLayout>
 
     <RelativeLayout

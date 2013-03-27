@@ -13,8 +13,8 @@ public class Flat {
     public Integer id;
     public Integer post_id;
     public String street;
-    public Double cost;
-    public Double square;
+    public Integer cost;
+    public int square;
     public String short_desc;
     public String full_desc;
     public String hotel_url;

@@ -1,8 +1,12 @@
 package ru.hotel72.activities;
 
+import android.app.AlertDialog;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.net.Uri;
 import android.os.Bundle;
+import android.text.SpannableString;
+import android.text.style.StyleSpan;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Gallery;
@@ -11,7 +15,11 @@ import ru.hotel72.R;
 import ru.hotel72.accessData.GetFlatTask;
 import ru.hotel72.activities.adapters.GalleryAdapter;
 import ru.hotel72.domains.Flat;
+import ru.hotel72.social.ShareDialog;
 import ru.hotel72.utils.DataTransfer;
+import ru.hotel72.utils.ImageDownloaderType;
+import ru.hotel72.utils.InfoDialog;
+import ru.hotel72.utils.Utils;
 import ru.yandex.yandexmapkit.MapController;
 import ru.yandex.yandexmapkit.MapView;
 import ru.yandex.yandexmapkit.OverlayManager;
@@ -45,14 +53,13 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
 
         setActivityView(R.layout.flat);
 
-        if(flat != null){
+        if (flat != null) {
             setContent();
             initGallery();
             initMap();
             setButtons();
-        }
-        else{
-            new GetFlatTask(this).execute(new Integer[]{ flatId });
+        } else {
+            new GetFlatTask(this).execute(new Integer[]{flatId});
         }
     }
 
@@ -62,6 +69,16 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
                 .findViewById(R.id.shortDesc);
 
         textView.setText(flat.short_desc);
+
+        View costLayout = mActivityLevelView
+                .findViewById(R.id.tag_layout)
+                .findViewById(R.id.cost_layout);
+
+        TextView cost = (TextView) costLayout.findViewById(R.id.cost);
+
+        SpannableString spanString = new SpannableString(Utils.getCostString(flat.cost));
+        spanString.setSpan(new StyleSpan(Typeface.BOLD), 0, spanString.length(), 0);
+        cost.setText(spanString);
     }
 
     private void initGallery() {
@@ -71,7 +88,7 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
         if (null != obj) {
             galleryAdapter = (GalleryAdapter) obj;
         } else {
-            galleryAdapter = new GalleryAdapter(this, R.layout.gallary_item, flat.photos);
+            galleryAdapter = new GalleryAdapter(this, R.layout.gallary_item, flat.photos, ImageDownloaderType.Flat);
         }
 
         gallery.setAdapter(galleryAdapter);
@@ -127,6 +144,9 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
 
         View bookingBtn = mActivityLevelView.findViewById(R.id.booking);
         bookingBtn.setOnClickListener(this);
+
+        View share = mActivityLevelView.findViewById(R.id.share);
+        share.setOnClickListener(this);
     }
 
     public void showBalloon(double[] coords) {
@@ -153,7 +173,9 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
                 intent = new Intent(this, BookingActivity.class);
                 DataTransfer.put(flatId.toString(), flat);
                 intent.putExtra(getString(R.string.dataTransferFlatId), flatId.toString());
-                break;
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                startActivityForResult(intent, 1);
+                return;
 
             case R.id.infoBtn:
                 intent = new Intent(this, BaseInfoActivity.class);
@@ -176,6 +198,12 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
                 intent.putExtra(getString(R.string.info_viewId), R.layout.flat_facilities);
                 break;
 
+            case R.id.share:{
+                ShareDialog dialog = new ShareDialog(this, flat.hotel_url);
+                dialog.showDialog();
+                return;
+            }
+
             default:
                 intent = new Intent(this, StartActivity.class);
         }
@@ -190,5 +218,18 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
         initGallery();
         initMap();
         setButtons();
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode == RESULT_OK) {
+            boolean show = data.getBooleanExtra(getString(R.string.showDialog), false);
+            if (show) {
+                String msg = data.getBooleanExtra(getString(R.string.error), false)
+                        ? data.getStringExtra(getString(R.string.errorMsg))
+                        : getString(R.string.booked);
+                InfoDialog.showDialog(this, null, msg);
+            }
+        }
     }
 }

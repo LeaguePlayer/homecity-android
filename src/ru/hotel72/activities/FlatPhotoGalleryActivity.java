@@ -1,6 +1,7 @@
 package ru.hotel72.activities;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.Window;
 import android.view.WindowManager;
@@ -10,6 +11,8 @@ import ru.hotel72.activities.adapters.GalleryAdapter;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.domains.Photo;
 import ru.hotel72.utils.DataTransfer;
+import ru.hotel72.utils.ImageDownloaderType;
+import ru.hotel72.utils.Utils;
 
 import java.util.ArrayList;
 
@@ -23,6 +26,7 @@ import java.util.ArrayList;
 public class FlatPhotoGalleryActivity extends Activity {
     private ArrayList<Photo> photos;
     private GalleryAdapter galleryAdapter;
+    private Gallery gallery;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,19 +40,25 @@ public class FlatPhotoGalleryActivity extends Activity {
 
         setContentView(R.layout.flat_photo_gallery);
 
-        Gallery gallery = (Gallery) findViewById(R.id.gallery);
+        gallery = (Gallery) findViewById(R.id.gallery);
 
-        Object obj = getLastNonConfigurationInstance();
-        if (null != obj) {
-            galleryAdapter = (GalleryAdapter) obj;
-        } else {
-            galleryAdapter = new GalleryAdapter(this, R.layout.gallary_item, photos);
+        ImageDownloaderType type = ImageDownloaderType.PortraitGallery;
+        String url = "http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&w=%d&far=1&q=90";
+        if (Utils.getScreenOrientation(this) == Configuration.ORIENTATION_LANDSCAPE) {
+            type = ImageDownloaderType.LandscapeGallery;
+            url = "http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&h=%d&far=1&q=90";
         }
 
+        galleryAdapter = new GalleryAdapter(this, R.layout.gallary_item, photos, type, url);
+
         gallery.setAdapter(galleryAdapter);
+        Object position = getLastNonConfigurationInstance();
+        if (position != null) {
+            gallery.setSelection((Integer) position);
+        }
     }
 
     public Object onRetainNonConfigurationInstance() {
-        return galleryAdapter;
+        return gallery.getFirstVisiblePosition();
     }
 }

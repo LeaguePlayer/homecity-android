@@ -7,16 +7,19 @@ import android.os.Bundle;
 import android.view.ContextThemeWrapper;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 import com.infteh.calendarview.*;
 import net.simonvt.numberpicker.NumberPicker;
 import ru.hotel72.R;
 import ru.hotel72.accessData.GetBookingDatesTask;
+import ru.hotel72.activities.adapters.Size;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.utils.DataTransfer;
+import ru.hotel72.utils.ImageDownloaderType;
 import ru.hotel72.utils.ImageHelper;
+import ru.hotel72.utils.InfoDialog;
 
 import java.util.Calendar;
 import java.util.TimeZone;
@@ -35,9 +38,11 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
     private int[] mInDate;
     private int[] mLeaveDate;
     private int mVisitors = 1;
-    private double cost;
+    private int cost;
     private BookingDaysTaskFactory taskFactory;
     public static BookingActivity bookingActivity;
+    private Size imageSize;
+    private int mMaxVisitors;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +54,22 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
 
         flatId = getIntent().getStringExtra(getString(R.string.dataTransferFlatId));
         flat = (Flat) DataTransfer.get(flatId);
+
+        switch (flat.rooms) {
+            case 1: {
+                mMaxVisitors = 2;
+                break;
+            }
+            case 2: {
+                mMaxVisitors = 4;
+                break;
+            }
+            case 3:
+            default: {
+                mMaxVisitors = 5;
+                break;
+            }
+        }
 
         taskFactory = new BookingDaysTaskFactory(this, flat.post_id);
 
@@ -77,7 +98,26 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
     private void setContent() {
         View subHeader = mActivityLevelView.findViewById(R.id.subHeader);
 
-        setImg(subHeader);
+        if (flat.photos.size() > 0) {
+            final ImageView image = (ImageView) subHeader.findViewById(R.id.icon_layout).findViewById(R.id.imageView);
+            image.setScaleType(ImageView.ScaleType.CENTER_CROP);
+
+            if (imageSize == null) {
+                image.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+                    @Override
+                    public void onGlobalLayout() {
+                        imageSize = new Size();
+                        imageSize.width = image.getWidth();
+                        imageSize.height = image.getHeight();
+
+                        setImage(image);
+                        image.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                    }
+                });
+            } else {
+                setImage(image);
+            }
+        }
 
         TextView rooms = (TextView) subHeader.findViewById(R.id.rooms);
         rooms.setText(flat.rooms.toString() + " комн.");
@@ -100,16 +140,14 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
         visitors.setText(count.toString());
     }
 
-    private void setImg(View container) {
-        if (flat.photos.size() == 0)
-            return;
-
-        ImageView image = (ImageView) container.findViewById(R.id.imageView);
-        image.setScaleType(ImageView.ScaleType.CENTER_CROP);
+    private void setImage(View image) {
+        int w = image.getWidth();
+        int h = image.getHeight();
 
         String imgUrl = flat.photos.get(0).url;
-        String url = String.format("http://hotel72.ru/index.php/api/GetFile?filename=%s&for=%s", imgUrl, "original");
-        ImageHelper.getImageDownloader(this).DisplayImage(url, imgUrl, this, image);
+        String url = String.format("http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&w=%d&h=%d&zc=1&q=90", imgUrl, w, h);
+        image.setTag(url);
+        ImageHelper.getImageDownloader(this, ImageDownloaderType.Booking).DisplayImage(url, imgUrl, BookingActivity.this, (ImageView) image, true);
     }
 
     @Override
@@ -141,7 +179,7 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
                 LayoutInflater inflater = (LayoutInflater) ctw.getSystemService(LAYOUT_INFLATER_SERVICE);
                 View numeric = inflater.inflate(R.layout.numeric, null);
                 final NumberPicker np = (NumberPicker) numeric.findViewById(R.id.numberPicker);
-                np.setMaxValue(20);
+                np.setMaxValue(mMaxVisitors);
                 np.setMinValue(1);
                 np.setFocusable(true);
                 np.setFocusableInTouchMode(true);
@@ -164,8 +202,14 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
 
             case R.id.booking: {
 
-                if(mInDate == null || mLeaveDate == null) {
-                    Toast.makeText(this, "Необходимо заполнить все поля", 0).show();
+                if (mInDate == null || mLeaveDate == null) {
+
+                    String msg = mInDate == null ? "Укажите дату начала проживания" : "";
+                    msg += mLeaveDate == null
+                            ? String.format("%s%s", mInDate == null ? "\n" : "", "Укажите дату конца проживания")
+                            : "";
+
+                    InfoDialog.showDialog(this, "Исправьте ошибки", msg);
                     return;
                 }
 
@@ -187,6 +231,7 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
                                 endDate[1] < 10 ? String.format("0%d", endDate[1]) : endDate[1],
                                 endDate[2] < 10 ? String.format("0%d", endDate[2]) : endDate[2]));
                 intent.putExtra(getString(R.string.guests), mVisitors);
+                intent.putExtra(getString(R.string.dataTransferFlatId), flatId.toString());
                 startActivity(intent);
                 break;
             }

@@ -13,7 +13,7 @@ import ru.hotel72.R;
  * Time: 23:38
  * To change this template use File | Settings | File Templates.
  */
-public class MoreDetailsActivity extends BaseActivity {
+public class MoreDetailsActivity extends BaseHeaderActivity {
     private Context context;
 
     @Override
@@ -22,20 +22,6 @@ public class MoreDetailsActivity extends BaseActivity {
         
         context = this;
 
-        setContentView(R.layout.more_details);
-
-        setButtons();
-    }
-
-    private void setButtons() {
-        View view = findViewById(R.id.headerLayout).findViewById(R.id.returnBtn);
-        view.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(context, StartActivity.class);
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(intent);
-            }
-        });
+        setActivityView(R.layout.more_details);
     }
 }

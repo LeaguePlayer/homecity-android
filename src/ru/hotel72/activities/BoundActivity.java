@@ -1,5 +1,6 @@
 package ru.hotel72.activities;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.provider.Settings;
@@ -52,7 +53,7 @@ public class BoundActivity extends BaseHeaderActivity {
         }
     }
 
-    public void dataBounded(HashMap<String, String> mData){
+    public void dataBounded(HashMap<String, String> mData, String msg){
         Button btn = (Button) mActivityLevelView.findViewById(R.id.button);
         btn.setText(R.string.update_bound);
 
@@ -63,6 +64,11 @@ public class BoundActivity extends BaseHeaderActivity {
         ed.putString(getString(R.string.email), mData.get(getString(R.string.email)));
         ed.putBoolean(getString(R.string.is_user_bound), true);
         ed.commit();
+
+        Intent intent = new Intent();
+        intent.putExtra(getString(R.string.showDialog), true);
+        intent.putExtra(getString(R.string.dialogMessage), msg);
+        setResult(RESULT_OK, intent);
 
         finish();
     }

@@ -7,7 +7,9 @@ import android.graphics.BitmapFactory;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 import ru.hotel72.R;
+import ru.hotel72.utils.ImageDownloaderType;
 import ru.hotel72.utils.ImageHelper;
 
 import java.io.*;
@@ -28,28 +30,61 @@ public class ImageDownloader {
     private HashMap<String, Bitmap> cache = new HashMap<String, Bitmap>();
 
     private File cacheDir;
+    private boolean useCache;
+    private Context context;
 
-    public ImageDownloader(Context context) {
+    public ImageDownloader(Context context, ImageDownloaderType type) {
+        this.context = context;
         //Make the background thread low priority. This way it will not affect the UI performance
         photoLoaderThread.setPriority(Thread.NORM_PRIORITY - 1);
 
+        String cachDirPath = context.getString(R.string.imgCacheFaltList);
+
+        switch (type){
+            case FlatList: {
+                cachDirPath = context.getString(R.string.imgCacheFaltList);
+                break;
+            }
+            case Flat:{
+                cachDirPath = context.getString(R.string.imgCacheFlat);
+                break;
+            }
+            case PortraitGallery:{
+                cachDirPath = context.getString(R.string.imgCachePGallery);
+                break;
+            }
+            case LandscapeGallery:{
+                cachDirPath = context.getString(R.string.imgCacheLGallery);
+                break;
+            }
+            case Booking:{
+                cachDirPath = context.getString(R.string.imgCacheBooking);
+                break;
+            }
+        }
+
         //Find the dir to save cached images
         if (android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED))
-            cacheDir = new File(android.os.Environment.getExternalStorageDirectory(), context.getString(R.string.imgCachePath));
+            cacheDir = new File(android.os.Environment.getExternalStorageDirectory(), cachDirPath);
         else
             cacheDir = context.getCacheDir();
         if (!cacheDir.exists())
             cacheDir.mkdirs();
+
+//        clearCache();
     }
 
     final int stub_id = R.drawable.substrate;
 
-    public void DisplayImage(String url, String profilePic, Activity activity, ImageView imageView) {
-        if (cache.containsKey(url)){
-            Bitmap bitmap = cache.get(url);
-            float scalingFactor = getBitmapScalingFactor(bitmap, imageView, activity);
-            Bitmap newBitmap = ImageHelper.ScaleBitmap(bitmap, scalingFactor);
-            imageView.setImageBitmap(newBitmap);
+    public void DisplayImage(String url, String profilePic, Activity activity, ImageView imageView, boolean useCache) {
+        this.useCache = useCache;
+
+        if (useCache && cache.containsKey(url + activity.getString(R.string.file_extention))){
+            Bitmap bitmap = cache.get(url + activity.getString(R.string.file_extention));
+//            float scalingFactor = getBitmapScalingFactor(bitmap, imageView, activity);
+//            Bitmap newBitmap = ImageHelper.ScaleBitmap(bitmap, scalingFactor);
+//            imageView.setImageBitmap(newBitmap);
+            imageView.setImageBitmap(bitmap);
         }
         else {
             queuePhoto(url, activity, imageView, profilePic);
@@ -92,12 +127,14 @@ public class ImageDownloader {
         //String filename=String.valueOf(url.hashCode());
         //File f=new File(cacheDir, filename);
 
-        File f = new File(cacheDir, profilePic);
+        File f = new File(cacheDir, profilePic + "." + context.getString(R.string.file_extention));
 
         //from SD cache
-        Bitmap b = decodeFile(f);
-        if (b != null)
-            return b;
+        if (useCache) {
+            Bitmap b = decodeFile(f);
+            if (b != null)
+                return b;
+        }
 
         //from web
         try {
@@ -148,25 +185,25 @@ public class ImageDownloader {
         try {
             //decode image size
             BitmapFactory.Options o = new BitmapFactory.Options();
-            o.inJustDecodeBounds = true;
-            BitmapFactory.decodeStream(new FileInputStream(f), null, o);
+//            o.inJustDecodeBounds = true;
+            return BitmapFactory.decodeStream(new FileInputStream(f), null, o);
 
-            //Find the correct scale value. It should be the power of 2.
-            final int REQUIRED_SIZE = 70;
-            int width_tmp = o.outWidth, height_tmp = o.outHeight;
-            int scale = 1;
-            while (true) {
-                if (width_tmp / 2 < REQUIRED_SIZE || height_tmp / 2 < REQUIRED_SIZE)
-                    break;
-                width_tmp /= 2;
-                height_tmp /= 2;
-                scale *= 2;
-            }
-
-            //decode with inSampleSize
-            BitmapFactory.Options o2 = new BitmapFactory.Options();
-            o2.inSampleSize = scale;
-            return BitmapFactory.decodeStream(new FileInputStream(f), null, o2);
+//            //Find the correct scale value. It should be the power of 2.
+//            final int REQUIRED_SIZE = 70;
+//            int width_tmp = o.outWidth, height_tmp = o.outHeight;
+//            int scale = 1;
+//            while (true) {
+//                if (width_tmp / 2 < REQUIRED_SIZE || height_tmp / 2 < REQUIRED_SIZE)
+//                    break;
+//                width_tmp /= 2;
+//                height_tmp /= 2;
+//                scale *= 2;
+//            }
+//
+//            //decode with inSampleSize
+//            BitmapFactory.Options o2 = new BitmapFactory.Options();
+//            o2.inSampleSize = scale;
+//            return BitmapFactory.decodeStream(new FileInputStream(f), null, o2);
         } catch (FileNotFoundException e) {
         }
         return null;
@@ -223,11 +260,14 @@ public class ImageDownloader {
                             photoToLoad = photosQueue.photosToLoad.pop();
                         }
                         Bitmap bmp = getBitmap(photoToLoad.url, photoToLoad.profilePic);
-                        cache.put(photoToLoad.url, bmp);
+
+                        Activity a = (Activity) photoToLoad.imageView.getContext();
+
+                        if(useCache) cache.put(photoToLoad.url + a.getString(R.string.file_extention), bmp);
+
                         Object tag = photoToLoad.imageView.getTag();
                         if (tag != null && ((String) tag).equals(photoToLoad.url)) {
                             BitmapDisplayer bd = new BitmapDisplayer(bmp, photoToLoad.imageView, photoToLoad.activity);
-                            Activity a = (Activity) photoToLoad.imageView.getContext();
                             a.runOnUiThread(bd);
                         }
                     }
@@ -256,12 +296,12 @@ public class ImageDownloader {
 
         public void run() {
             if (bitmap != null) {
-                float scalingFactor = getBitmapScalingFactor(bitmap, imageView, activity);
-                Bitmap newBitmap = ImageHelper.ScaleBitmap(bitmap, scalingFactor);
-                imageView.setImageBitmap(newBitmap);
-            }
-            else
+//                float scalingFactor = getBitmapScalingFactor(bitmap, imageView, activity);
+//                Bitmap newBitmap = ImageHelper.ScaleBitmap(bitmap, scalingFactor);
+                imageView.setImageBitmap(bitmap);
+            } else {
                 imageView.setImageResource(stub_id);
+            }
         }
     }
 

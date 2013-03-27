@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$USER_HOME$/Documents/GitHub/android-calendar-view/android-calendar-view.iml" filepath="$USER_HOME$/Documents/GitHub/android-calendar-view/android-calendar-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/AndroidTwitterConnect.iml" filepath="$PROJECT_DIR$/externals/AndroidTwitterConnect/AndroidTwitterConnect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/externals/Android-VKontakte-SDK/AndroidVkSdk/AndroidVkSdk.iml" filepath="$PROJECT_DIR$/externals/Android-VKontakte-SDK/AndroidVkSdk/AndroidVkSdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/externals/android-calendar-view/android-calendar-view.iml" filepath="$PROJECT_DIR$/externals/android-calendar-view/android-calendar-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/externals/facebook/facebook.iml" filepath="$PROJECT_DIR$/externals/facebook/facebook.iml" />
       <module fileurl="file://$PROJECT_DIR$/hotel72.iml" filepath="$PROJECT_DIR$/hotel72.iml" />
-      <module fileurl="file://$USER_HOME$/Documents/GitHub/android-numberpicker/library/numeric.iml" filepath="$USER_HOME$/Documents/GitHub/android-numberpicker/library/numeric.iml" />
-      <module fileurl="file://$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/yandexmapkit-library.iml" filepath="$USER_HOME$/Documents/GitHub/yandexmapkit-android/yandexmapkit-library/yandexmapkit-library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/externals/android-numberpicker/library/numeric.iml" filepath="$PROJECT_DIR$/externals/android-numberpicker/library/numeric.iml" />
+      <module fileurl="file://$PROJECT_DIR$/externals/yandexmapkit-android/yandexmapkit-library/yandexmapkit-library.iml" filepath="$PROJECT_DIR$/externals/yandexmapkit-android/yandexmapkit-library/yandexmapkit-library.iml" />
     </modules>
   </component>
 </project>

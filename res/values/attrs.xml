@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TextViewPlus">
+        <attr name="customFont" format="string"/>
+        <attr name="angle" format="float"/>
+        <attr name="pivotX" format="float"/>
+        <attr name="pivotY" format="float"/>
+    </declare-styleable>
+</resources>

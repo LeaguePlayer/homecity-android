@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="imgCachePath">/hotel72/cache/img</string>
+    <string name="imgCacheFaltList">/hotel72/cache/img/list</string>
+    <string name="imgCacheFlat">/hotel72/cache/img/flat</string>
+    <string name="imgCachePGallery">/hotel72/cache/img/gallery/p</string>
+    <string name="imgCacheLGallery">/hotel72/cache/img/gallery/l</string>
+    <string name="imgCacheBooking">/hotel72/cache/img/booking</string>
     <string name="bookingNumber">+73452500407</string>
     <string name="cityName">city</string>
     <string name="update_bound">Обновить данные</string>
     <string name="is_user_bound">isUserBounded</string>
     <string name="userDataCache">userData</string>
+    <string name="defaultCityName">Тюмень</string>
 </resources>

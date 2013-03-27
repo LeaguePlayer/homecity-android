@@ -2,6 +2,7 @@ package ru.hotel72.activities;
 
 import android.app.ListActivity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
@@ -30,8 +31,13 @@ public class CitySelectionActivity extends ListActivity {
     protected void onListItemClick(ListView list, View v, int position, long id) {
         String item = (String) getListAdapter().getItem(position);
         CitySelectionActivity.this.finish();
+
+        SharedPreferences pref = getSharedPreferences(getString(R.string.userDataCache), MODE_PRIVATE);
+        SharedPreferences.Editor ed = pref.edit();
+        ed.putString(getString(R.string.cityName), item);
+        ed.commit();
+
         Intent intent = new Intent(this, SettingsActivity.class);
-        intent.putExtra(getString(R.string.cityName), item);
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(intent);
     }
