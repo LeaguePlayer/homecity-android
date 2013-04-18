@@ -34,7 +34,7 @@ import java.util.Iterator;
  * To change this template use File | Settings | File Templates.
  */
 public class BoundTask extends AsyncTask<Void, Void, String> {
-    private final static String BOUND_URL = "http://dev.admin-hotel.ru/site/registerDeviceWithPhone";
+    private final static String BOUND_URL = "http://72.admin-hotel.ru/site/registerDeviceWithPhone";
 
     private HashMap<String, String> mData = new HashMap<String, String>();
     private String responseMsg;

@@ -42,14 +42,14 @@ public class FlatPhotoGalleryActivity extends Activity {
 
         gallery = (Gallery) findViewById(R.id.gallery);
 
-        ImageDownloaderType type = ImageDownloaderType.PortraitGallery;
+        ImageDownloaderType type = ImageDownloaderType.PORTRAIT;
         String url = "http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&w=%d&far=1&q=90";
         if (Utils.getScreenOrientation(this) == Configuration.ORIENTATION_LANDSCAPE) {
-            type = ImageDownloaderType.LandscapeGallery;
+            type = ImageDownloaderType.LANDSCAPE;
             url = "http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&h=%d&far=1&q=90";
         }
 
-        galleryAdapter = new GalleryAdapter(this, R.layout.gallary_item, photos, type, url);
+        galleryAdapter = new GalleryAdapter(this, R.layout.gallary_item, photos, type, url, false);
 
         gallery.setAdapter(galleryAdapter);
         Object position = getLastNonConfigurationInstance();

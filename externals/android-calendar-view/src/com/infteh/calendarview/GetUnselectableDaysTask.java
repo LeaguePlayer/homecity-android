@@ -30,7 +30,7 @@ public class GetUnselectableDaysTask extends AsyncTask<Void, Void, Void> {
      */
     public void setMonth(int month){
 
-        this.month = month;
+        this.month = month + 1;
     }
     public void setYear(int year){
 
@@ -51,7 +51,7 @@ public class GetUnselectableDaysTask extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onPostExecute(Void aVoid) {
         super.onPostExecute(aVoid);
-        callBack.onDaysLoaded(unselectableDays);
+        callBack.onDaysLoaded(unselectableDays, month - 1, year);
     }
 
     @Override
@@ -60,6 +60,6 @@ public class GetUnselectableDaysTask extends AsyncTask<Void, Void, Void> {
     }
 
     public interface OnDaysLoaded {
-        void onDaysLoaded (ArrayList<Integer> days);
+        void onDaysLoaded (ArrayList<Integer> days, int month, int year);
     }
 }

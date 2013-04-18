@@ -4,17 +4,14 @@ import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.Toast;
+import com.jakewharton.disklrucache.DiskLruImageCache;
 import ru.hotel72.R;
 import ru.hotel72.utils.ImageDownloaderType;
-import ru.hotel72.utils.ImageHelper;
 
 import java.io.*;
 import java.net.URL;
-import java.util.HashMap;
 import java.util.Stack;
 
 /**
@@ -26,69 +23,46 @@ import java.util.Stack;
  */
 public class ImageDownloader {
 
-    //the simplest in-memory cache implementation. This should be replaced with something like SoftReference or BitmapOptions.inPurgeable(since 1.6)
-    private HashMap<String, Bitmap> cache = new HashMap<String, Bitmap>();
+    private static DiskLruImageCache cache;
 
-    private File cacheDir;
-    private boolean useCache;
+    private boolean useStab;
     private Context context;
+    private ImageDownloaderType downloaderType;
 
     public ImageDownloader(Context context, ImageDownloaderType type) {
         this.context = context;
+        downloaderType = type;
+
+        if(cache == null)
+            cache = new DiskLruImageCache(context, "hotel72", 104857600, Bitmap.CompressFormat.JPEG, 100);
+
         //Make the background thread low priority. This way it will not affect the UI performance
         photoLoaderThread.setPriority(Thread.NORM_PRIORITY - 1);
-
-        String cachDirPath = context.getString(R.string.imgCacheFaltList);
-
-        switch (type){
-            case FlatList: {
-                cachDirPath = context.getString(R.string.imgCacheFaltList);
-                break;
-            }
-            case Flat:{
-                cachDirPath = context.getString(R.string.imgCacheFlat);
-                break;
-            }
-            case PortraitGallery:{
-                cachDirPath = context.getString(R.string.imgCachePGallery);
-                break;
-            }
-            case LandscapeGallery:{
-                cachDirPath = context.getString(R.string.imgCacheLGallery);
-                break;
-            }
-            case Booking:{
-                cachDirPath = context.getString(R.string.imgCacheBooking);
-                break;
-            }
-        }
-
-        //Find the dir to save cached images
-        if (android.os.Environment.getExternalStorageState().equals(android.os.Environment.MEDIA_MOUNTED))
-            cacheDir = new File(android.os.Environment.getExternalStorageDirectory(), cachDirPath);
-        else
-            cacheDir = context.getCacheDir();
-        if (!cacheDir.exists())
-            cacheDir.mkdirs();
-
-//        clearCache();
     }
 
     final int stub_id = R.drawable.substrate;
 
-    public void DisplayImage(String url, String profilePic, Activity activity, ImageView imageView, boolean useCache) {
-        this.useCache = useCache;
+    public void DisplayImage(String url, String profilePic, Activity activity, ImageView imageView) {
+        DisplayImage(url, profilePic, activity, imageView, true);
+    }
 
-        if (useCache && cache.containsKey(url + activity.getString(R.string.file_extention))){
-            Bitmap bitmap = cache.get(url + activity.getString(R.string.file_extention));
-//            float scalingFactor = getBitmapScalingFactor(bitmap, imageView, activity);
-//            Bitmap newBitmap = ImageHelper.ScaleBitmap(bitmap, scalingFactor);
-//            imageView.setImageBitmap(newBitmap);
+    public void DisplayImage(String url, String profilePic, Activity activity, ImageView imageView, boolean useStab) {
+        this.useStab = useStab;
+
+        String key = String.format("%s_%s", downloaderType.name(), profilePic.replace(".jpg", "")).toLowerCase();
+
+        if (cache.containsKey(key)){
+            Bitmap bitmap = cache.getBitmap(key);
             imageView.setImageBitmap(bitmap);
+            imageView.setVisibility(View.VISIBLE);
         }
         else {
-            queuePhoto(url, activity, imageView, profilePic);
-            imageView.setImageResource(stub_id);
+            queuePhoto(url, activity, imageView, key);
+            if(useStab) {
+                imageView.setImageResource(stub_id);}
+            else {
+                imageView.setVisibility(View.INVISIBLE);
+            }
         }
     }
 
@@ -122,16 +96,11 @@ public class ImageDownloader {
             photoLoaderThread.start();
     }
 
-    private Bitmap getBitmap(String url, String profilePic) {
-        //I identify images by hashcode. Not a perfect solution, good for the demo.
-        //String filename=String.valueOf(url.hashCode());
-        //File f=new File(cacheDir, filename);
-
-        File f = new File(cacheDir, profilePic + "." + context.getString(R.string.file_extention));
+    private Bitmap getBitmap(String url, String key) {
 
         //from SD cache
-        if (useCache) {
-            Bitmap b = decodeFile(f);
+        if (cache.containsKey(key)) {
+            Bitmap b = cache.getBitmap(key);
             if (b != null)
                 return b;
         }
@@ -140,10 +109,11 @@ public class ImageDownloader {
         try {
             Bitmap bitmap;
             InputStream is = new URL(url).openStream();
-            OutputStream os = new FileOutputStream(f);
-            copy(is, os);
-            os.close();
-            bitmap = decodeFile(f);
+            bitmap = decodeFile(is);
+            is.close();
+
+            cache.put(key, bitmap);
+
             return bitmap;
         } catch (Exception ex) {
             ex.printStackTrace();
@@ -151,75 +121,43 @@ public class ImageDownloader {
         }
     }
 
-    private static final int BUFFER_SIZE = 1024 * 2;
-
-    public static int copy(InputStream input, OutputStream output) throws Exception, IOException {
-        byte[] buffer = new byte[BUFFER_SIZE];
-
-        BufferedInputStream in = new BufferedInputStream(input, BUFFER_SIZE);
-        BufferedOutputStream out = new BufferedOutputStream(output, BUFFER_SIZE);
-        int count = 0, n = 0;
-        try {
-            while ((n = in.read(buffer, 0, BUFFER_SIZE)) != -1) {
-                out.write(buffer, 0, n);
-                count += n;
-            }
-            out.flush();
-        } finally {
-            try {
-                out.close();
-            } catch (IOException e) {
-                Log.e("Copy stream error", e.getMessage(), e);
-            }
-            try {
-                in.close();
-            } catch (IOException e) {
-                Log.e("Close stream error", e.getMessage(), e);
-            }
-        }
-        return count;
-    }
-
     //decodes image and scales it to reduce memory consumption
-    private Bitmap decodeFile(File f) {
-        try {
-            //decode image size
-            BitmapFactory.Options o = new BitmapFactory.Options();
-//            o.inJustDecodeBounds = true;
-            return BitmapFactory.decodeStream(new FileInputStream(f), null, o);
+    private Bitmap decodeFile(InputStream stream) {
 
-//            //Find the correct scale value. It should be the power of 2.
-//            final int REQUIRED_SIZE = 70;
-//            int width_tmp = o.outWidth, height_tmp = o.outHeight;
-//            int scale = 1;
-//            while (true) {
-//                if (width_tmp / 2 < REQUIRED_SIZE || height_tmp / 2 < REQUIRED_SIZE)
-//                    break;
-//                width_tmp /= 2;
-//                height_tmp /= 2;
-//                scale *= 2;
-//            }
-//
-//            //decode with inSampleSize
-//            BitmapFactory.Options o2 = new BitmapFactory.Options();
-//            o2.inSampleSize = scale;
-//            return BitmapFactory.decodeStream(new FileInputStream(f), null, o2);
-        } catch (FileNotFoundException e) {
+        //decode image size
+        BitmapFactory.Options o = new BitmapFactory.Options();
+        o.inJustDecodeBounds = true;
+//            return BitmapFactory.decodeStream(new FileInputStream(f), null, o);
+
+        //Find the correct scale value. It should be the power of 2.
+        final int REQUIRED_SIZE = 70;
+        int width_tmp = o.outWidth, height_tmp = o.outHeight;
+        int scale = 1;
+        while (true) {
+            if (width_tmp / 2 < REQUIRED_SIZE || height_tmp / 2 < REQUIRED_SIZE)
+                break;
+            width_tmp /= 2;
+            height_tmp /= 2;
+            scale *= 2;
         }
-        return null;
+
+        //decode with inSampleSize
+        BitmapFactory.Options o2 = new BitmapFactory.Options();
+        o2.inSampleSize = scale;
+        return BitmapFactory.decodeStream(new BufferedInputStream(stream), null, o2);
     }
 
     //Task for the queue
     private class PhotoToLoad {
         public String url;
         public ImageView imageView;
-        public String profilePic;
+        public String key;
         public Activity activity;
 
-        public PhotoToLoad(String u, ImageView i, String profilePic, Activity activity) {
+        public PhotoToLoad(String u, ImageView i, String key, Activity activity) {
             this.url = u;
             this.imageView = i;
-            this.profilePic = profilePic;
+            this.key = key;
             this.activity = activity;
         }
     }
@@ -259,11 +197,9 @@ public class ImageDownloader {
                         synchronized (photosQueue.photosToLoad) {
                             photoToLoad = photosQueue.photosToLoad.pop();
                         }
-                        Bitmap bmp = getBitmap(photoToLoad.url, photoToLoad.profilePic);
+                        Bitmap bmp = getBitmap(photoToLoad.url, photoToLoad.key);
 
                         Activity a = (Activity) photoToLoad.imageView.getContext();
-
-                        if(useCache) cache.put(photoToLoad.url + a.getString(R.string.file_extention), bmp);
 
                         Object tag = photoToLoad.imageView.getTag();
                         if (tag != null && ((String) tag).equals(photoToLoad.url)) {
@@ -299,19 +235,14 @@ public class ImageDownloader {
 //                float scalingFactor = getBitmapScalingFactor(bitmap, imageView, activity);
 //                Bitmap newBitmap = ImageHelper.ScaleBitmap(bitmap, scalingFactor);
                 imageView.setImageBitmap(bitmap);
+                imageView.setVisibility(View.VISIBLE);
             } else {
-                imageView.setImageResource(stub_id);
+                if(useStab) {
+                    imageView.setImageResource(stub_id);}
+                else {
+                    imageView.setVisibility(View.INVISIBLE);
+                }
             }
         }
-    }
-
-    public void clearCache() {
-        //clear memory cache
-        cache.clear();
-
-        //clear SD cache
-        File[] files = cacheDir.listFiles();
-        for (File f : files)
-            f.delete();
     }
 }

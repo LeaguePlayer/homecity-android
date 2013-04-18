@@ -1,6 +1,5 @@
 package ru.hotel72.activities;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.graphics.Typeface;
 import android.net.Uri;
@@ -88,7 +87,7 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
         if (null != obj) {
             galleryAdapter = (GalleryAdapter) obj;
         } else {
-            galleryAdapter = new GalleryAdapter(this, R.layout.gallary_item, flat.photos, ImageDownloaderType.Flat);
+            galleryAdapter = new GalleryAdapter(this, R.layout.gallary_item, flat.photos, ImageDownloaderType.FLAT);
         }
 
         gallery.setAdapter(galleryAdapter);

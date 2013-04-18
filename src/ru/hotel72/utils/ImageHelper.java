@@ -16,26 +16,14 @@ import java.util.HashMap;
 public class ImageHelper {
 
     private static HashMap<ImageDownloaderType, ImageDownloader> downloader = new HashMap<ImageDownloaderType, ImageDownloader>();
-//    private static ImageDownloader imageDownloader;
 
     public static ImageDownloader getImageDownloader(Context context, ImageDownloaderType type){
-        if(downloader.get(type) == null){
-            downloader.put(type, new ImageDownloader(context, type));
-        }
-
-        return downloader.get(type);
-
-//        if(imageDownloader == null){
-//            imageDownloader = new ImageDownloader(context);//, type);
+//        if(downloader.get(type) == null){
+//            downloader.put(type, new ImageDownloader(context, type));
 //        }
 //
-//        return imageDownloader;
-    }
+//        return downloader.get(type);
 
-    public static Bitmap ScaleBitmap(Bitmap bm, float scalingFactor) {
-        int scaleHeight = (int) (bm.getHeight() * scalingFactor);
-        int scaleWidth = (int) (bm.getWidth() * scalingFactor);
-
-        return Bitmap.createScaledBitmap(bm, scaleWidth, scaleHeight, true);
+        return new ImageDownloader(context, type);
     }
 }

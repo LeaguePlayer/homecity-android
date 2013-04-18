@@ -8,9 +8,9 @@ package ru.hotel72.utils;
  * To change this template use File | Settings | File Templates.
  */
 public enum ImageDownloaderType {
-    FlatList,
-    Flat,
-    PortraitGallery,
-    LandscapeGallery,
-    Booking
+    LIST,
+    FLAT,
+    PORTRAIT,
+    LANDSCAPE,
+    BOOKING
 }

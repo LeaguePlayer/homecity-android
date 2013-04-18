@@ -41,7 +41,7 @@ public class BookingTask extends AsyncTask<Void, Void, Void> {
     private Context context;
     private String responseMsg;
 
-    private final static String BOUND_URL = "http://dev.admin-hotel.ru/site/registerMobileApplication";
+    private final static String BOUND_URL = "http://72.admin-hotel.ru/site/registerMobileApplication";
     private HashMap<String, String> mData = new HashMap<String, String>();
     private boolean mIsOK;
     private final ProgressDialog progressDialog;

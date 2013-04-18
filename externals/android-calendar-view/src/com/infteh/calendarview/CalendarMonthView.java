@@ -121,30 +121,25 @@ public class CalendarMonthView extends LinearLayout {
 		mDaysAdapter.setCurrentDay(currentDay);
 		if(inDay != null) mDaysAdapter.setInDay(inDay);
         if(leaveDay != null) mDaysAdapter.setLeaveDay(leaveDay);
-		refreshCalendar();
+		refreshCalendar(false);
 	}
 	
 	/**
 	 * set current.
 	 * @param month month.
 	 */
-	public final void setMonth(Calendar month, final AlertDialog dialog) {
+	public final void setMonth(Calendar month) {
 		mInitialMonth = month;
 		mDaysAdapter.setMonth(month);
-		refreshCalendar();
         if(taskFactory != null){
             GetUnselectableDaysTask task = taskFactory.getTask();
-            task.setMonth(mInitialMonth.get(Calendar.MONTH) + 1);
+            task.setMonth(mInitialMonth.get(Calendar.MONTH));
             task.setYear(mInitialMonth.get(Calendar.YEAR));
             task.setCallBack(new GetUnselectableDaysTask.OnDaysLoaded() {
                 @Override
-                public void onDaysLoaded(ArrayList<Integer> days) {
-                    mDaysAdapter.setUnselectableDays(days);
-                    mDaysAdapter.notifyDataSetChanged();
-
-                    if (dialog.isShowing()){
-                        dialog.dismiss();
-                    }
+                public void onDaysLoaded(ArrayList<Integer> days, int month, int year) {
+                    mDaysAdapter.setUnselectableDays(days, month, year);
+                    refreshCalendar(true);
                 }
             });
             task.execute();
@@ -205,10 +200,11 @@ public class CalendarMonthView extends LinearLayout {
 	/**
 	 * refresh view.
 	 */
-	public final void refreshCalendar() {
+	public final void refreshCalendar(boolean byTask) {
         findViewById(R.id.progressBar).setVisibility(VISIBLE);
         findViewById(R.id.content).setVisibility(INVISIBLE);
 
+        mDaysAdapter.changedByTask = byTask;
 		mDaysAdapter.refreshDays();
 		mDaysAdapter.notifyDataSetChanged();
 		initMonthCaption();

@@ -6,9 +6,10 @@
         <option name="device" value="4in WVGA (Nexus S)" />
         <option name="deviceConfiguration" value="Portrait" />
         <option name="dockMode" value="" />
+        <option name="localeLanguage" value="ru" />
         <option name="nightMode" value="notnight" />
-        <option name="targetHashString" value="android-8" />
-        <option name="theme" value="Theme" />
+        <option name="targetHashString" value="android-10" />
+        <option name="theme" value="AppTheme" />
       </profile>
     </option>
     <option name="selection" value="[Full]" />
@@ -19,8 +20,9 @@
         <option name="device" value="4in WVGA (Nexus S)" />
         <option name="dockMode" value="" />
         <option name="nightMode" value="notnight" />
-        <option name="targetHashString" value="android-8" />
+        <option name="targetHashString" value="android-10" />
         <option name="theme" value="Theme.Black.NoTitleBar.Fullscreen" />
+        <option name="visible" value="false" />
       </GlobalState>
     </option>
   </component>
@@ -32,33 +34,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1a9bb44-c342-43e7-b21e-22e2c923f520" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\externals\android-calendar-view\README.md" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\externals\android-calendar-view\screenshot.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/CalendarAdapter.java" afterPath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/CalendarAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/CalendarAdapter.java" afterPath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/CalendarAdapter.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/CalendarDatePickerDialog.java" afterPath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/CalendarDatePickerDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/CalendarDatePickerDialog.java" afterPath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/CalendarDatePickerDialog.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/CalendarMonthView.java" afterPath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/CalendarMonthView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/CalendarMonthView.java" afterPath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/CalendarMonthView.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/CalendarView.java" afterPath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/CalendarView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/CalendarView.java" afterPath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/CalendarView.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/DateHelper.java" afterPath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/DateHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/DateHelper.java" afterPath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/DateHelper.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/MonthPagerAdapter.java" afterPath="$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/MonthPagerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/MonthPagerAdapter.java" afterPath="$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/MonthPagerAdapter.java" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/GitHub/android-calendar-view/res/layout/calendar.xml" afterPath="$USER_HOME$/Documents/GitHub/android-calendar-view/res/layout/calendar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/android-calendar-view/res/layout/calendar.xml" afterPath="$PROJECT_DIR$/externals/android-calendar-view/res/layout/calendar.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/GitHub/android-calendar-view/res/drawable/calendar_notcurrentmonth_item_selector.xml" afterPath="$USER_HOME$/Documents/GitHub/android-calendar-view/res/drawable/calendar_notcurrentmonth_item_selector.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/android-calendar-view/res/drawable/calendar_notcurrentmonth_item_selector.xml" afterPath="$PROJECT_DIR$/externals/android-calendar-view/res/drawable/calendar_notcurrentmonth_item_selector.xml" />
       <change type="MODIFICATION" beforePath="$USER_HOME$/Documents/GitHub/android-calendar-view/res/values/styles.xml" afterPath="$USER_HOME$/Documents/GitHub/android-calendar-view/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/externals/android-calendar-view/res/values/styles.xml" afterPath="$PROJECT_DIR$/externals/android-calendar-view/res/values/styles.xml" />
     </list>
     <ignored path="hotel72.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/GetFlatsTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363290320406" ignored="false" />
-    <file path="/Dummy.txt" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364233428948" ignored="false" />
-    <file path="/fragment.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364160477939" ignored="false" />
-    <file path="/BaseActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1358788146975" ignored="false" />
+    <file path="/Dummy.txt" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366266369053" ignored="false" />
+    <file path="/fragment.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366285039280" ignored="false" />
+    <file path="/BaseActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366258721740" ignored="false" />
     <file path="/Flat.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361108702592" ignored="false" />
     <file path="/Photo.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360383358642" ignored="false" />
     <file path="/Test.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359995210789" ignored="false" />
@@ -66,7 +57,7 @@
     <file path="/flatListItem.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359050860354" ignored="false" />
     <file path="/EndlessScrollListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361906857212" ignored="false" />
     <file path="/flatListActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359286440728" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364325477598" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366252443940" ignored="false" />
     <file path="/FlatsListAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363551325949" ignored="false" />
     <file path="/FlatListExtention.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359289159605" ignored="false" />
     <file path="/FlatListExtension.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359289270546" ignored="false" />
@@ -74,16 +65,16 @@
     <file path="/GatImageTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359313847548" ignored="false" />
     <file path="/FlatListActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363549869120" ignored="false" />
     <file path="/GetImageTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362935615023" ignored="false" />
-    <file path="/ImageDownloader.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363537098972" ignored="false" />
+    <file path="/ImageDownloader.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366258773974" ignored="false" />
     <file path="/*.regexp" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359473666687" ignored="false" />
-    <file path="/gallary_item.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363403301703" ignored="false" />
+    <file path="/gallary_item.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366258328469" ignored="false" />
     <file path="/MyGestureDetector.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360081148985" ignored="false" />
     <file path="/a.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359737365329" ignored="false" />
-    <file path="/GalleryAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363514213020" ignored="false" />
+    <file path="/GalleryAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366259317574" ignored="false" />
     <file path="/HotelOnItemClickListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360349825515" ignored="false" />
     <file path="/FlatActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364217358642" ignored="false" />
     <file path="/endless_list_footer.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361386396429" ignored="false" />
-    <file path="/flat_list.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361092674820" ignored="false" />
+    <file path="/flat_list.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366258017058" ignored="false" />
     <file path="/start.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363536530569" ignored="false" />
     <file path="/strings.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364331673579" ignored="false" />
     <file path="/flat.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364123074177" ignored="false" />
@@ -100,8 +91,8 @@
     <file path="/settings.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364148987103" ignored="false" />
     <file path="/LikeOnItemClicklistener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361111653098" ignored="false" />
     <file path="/booking.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364144173521" ignored="false" />
-    <file path="/BookingActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364187067213" ignored="false" />
-    <file path="/ImageHelper.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362938732319" ignored="false" />
+    <file path="/BookingActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364417136499" ignored="false" />
+    <file path="/ImageHelper.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366253089415" ignored="false" />
     <file path="/SettingsActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364186683611" ignored="false" />
     <file path="/StartActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363536599011" ignored="false" />
     <file path="/CitySelectionActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364148554321" ignored="false" />
@@ -114,7 +105,7 @@
     <file path="/BoundTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364186594425" ignored="false" />
     <file path="/SingleSlideGallery.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361702793036" ignored="false" />
     <file path="/flat_photo_gallery.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361807763548" ignored="false" />
-    <file path="/FlatPhotoGalleryActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364157246603" ignored="false" />
+    <file path="/FlatPhotoGalleryActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366259500463" ignored="false" />
     <file path="/FlatInfo.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361815633009" ignored="false" />
     <file path="/FlatInfoActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361887160295" ignored="false" />
     <file path="/details.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361820784332" ignored="false" />
@@ -139,11 +130,11 @@
     <file path="/MonthView.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362511551443" ignored="false" />
     <file path="/GetBookingDatesTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362908854749" ignored="false" />
     <file path="/new_calendar.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362766489974" ignored="false" />
-    <file path="/CalendarDatePickerDialog.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362927077269" ignored="false" />
-    <file path="/CalendarView.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362923172188" ignored="false" />
+    <file path="/CalendarDatePickerDialog.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364420106738" ignored="false" />
+    <file path="/CalendarView.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364920149517" ignored="false" />
     <file path="/MonthPagerAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363024024515" ignored="false" />
-    <file path="/CalendarAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363552097549" ignored="false" />
-    <file path="/CalendarMonthView.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363198809283" ignored="false" />
+    <file path="/CalendarAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1365355769122" ignored="false" />
+    <file path="/CalendarMonthView.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1365355793522" ignored="false" />
     <file path="/counter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362833764069" ignored="false" />
     <file path="/DateHelper.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362834488044" ignored="false" />
     <file path="$USER_HOME$/Documents/GitHub/android-numberpicker/samples/project.properties" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362835713270" ignored="false" />
@@ -161,15 +152,15 @@
     <file path="/numeric.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364139668639" ignored="false" />
     <file path="/NumericActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362838924173" ignored="false" />
     <file path="/BookingTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364186222917" ignored="false" />
-    <file path="/BookingUserActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364187421786" ignored="false" />
+    <file path="/BookingUserActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366252794307" ignored="false" />
     <file path="/booking_user.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364141588774" ignored="false" />
     <file path="/CalendarRunnable.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362908247938" ignored="false" />
     <file path="/TaskFactory.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362914906564" ignored="false" />
     <file path="$PROJECT_DIR$/libs/android-numberpicker/library/gen/net/simonvt/numberpicker/R.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362934317953" ignored="false" />
-    <file path="/ImageDownloaderType.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363509236738" ignored="false" />
-    <file path="/calendar.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363552077173" ignored="false" />
-    <file path="/GetUnselectableDaysTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363025591152" ignored="false" />
-    <file path="/Utils.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363543332744" ignored="false" />
+    <file path="/ImageDownloaderType.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366259154922" ignored="false" />
+    <file path="/calendar.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1365353766155" ignored="false" />
+    <file path="/GetUnselectableDaysTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364415700538" ignored="false" />
+    <file path="/Utils.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366187827651" ignored="false" />
     <file path="/splash.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363519933252" ignored="false" />
     <file path="/menu_flats.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363522318769" ignored="false" />
     <file path="/menu_map_btn.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363524219305" ignored="false" />
@@ -220,6 +211,403 @@
     <file path="/OAuthActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364325254885" ignored="false" />
     <file path="/TwitterUtils.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364329794287" ignored="false" />
     <file path="/TwitterDialog.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364331661387" ignored="false" />
+    <file path="$PROJECT_DIR$/externals/android-numberpicker/library/project.properties" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191200377" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_disable_only_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233942" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_focused_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233942" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233942" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_light_disable_only.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_light_nodisable.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_nodisable_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_nodisable_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/search_url_text.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/search_url_text_holo.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/secondary_text_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/secondary_text_dark_nodisable.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/secondary_text_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/secondary_text_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/secondary_text_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/secondary_text_light_nodisable.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/secondary_text_nodisable_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/secondary_text_nodisable_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/secondary_text_nofocus.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/tab_indicator_text.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/tab_indicator_text_v4.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/tertiary_text_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/tertiary_text_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/tertiary_text_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/tertiary_text_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/widget_edittext_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/action_bar_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/action_bar_divider.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/activated_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/activated_background_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/activated_background_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/activated_background_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/activity_picker_bg.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/app_icon_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/background_cache_hint_selector_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/background_cache_hint_selector_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/background_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/background_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/box.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_browser_zoom_fit_page.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_browser_zoom_page_overview.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_cab_done_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_cab_done_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_check.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233943" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_check_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_check_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_circle.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_close.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_default.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_default_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_default_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_default_small.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_default_transparent.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_dialog.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_dropdown.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_global_search.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_group_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_group_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_keyboard_key.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_keyboard_key_fulltrans.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_keyboard_key_ics.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_keyboard_key_trans.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_minus.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_plus.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_radio.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_radio_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_radio_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_search_dialog.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_search_dialog_voice.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_square_overlay.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_star.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_star_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_star_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_toggle.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_toggle_bg.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_toggle_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_toggle_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_zoom_down.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_zoom_page.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/btn_zoom_up.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/accelerate_decelerate_interpolator.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/accelerate_interpolator.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/activity_close_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/activity_close_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/activity_open_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/activity_open_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233944" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/anticipate_interpolator.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/anticipate_overshoot_interpolator.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/app_starting_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/bounce_interpolator.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/cycle_interpolator.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/decelerate_interpolator.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/dialog_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/dialog_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/dock_bottom_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/dock_bottom_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/dock_left_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/dock_left_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/dock_right_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/dock_right_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/dock_top_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/dock_top_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/fade_in.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/fade_out.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/fast_fade_in.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/fast_fade_out.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/grow_fade_in.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/grow_fade_in_center.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/grow_fade_in_from_bottom.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/input_method_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/input_method_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/input_method_extract_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/input_method_extract_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/input_method_fancy_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/input_method_fancy_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/keyguard_action_assist_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/keyguard_action_assist_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/keyguard_security_animate_in.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/keyguard_security_animate_out.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/keyguard_security_fade_in.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/keyguard_security_fade_out.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/linear_interpolator.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/lock_screen_behind_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/lock_screen_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/lock_screen_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/lock_screen_wallpaper_behind_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/options_panel_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/options_panel_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/overshoot_interpolator.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/push_down_in.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/push_down_in_no_alpha.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/push_down_out.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/push_down_out_no_alpha.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233945" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/push_up_in.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/push_up_out.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/recents_fade_in.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/recents_fade_out.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/recent_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/recent_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_0_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_0_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_0_frame.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_180_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_180_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_180_frame.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_finish_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_finish_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_finish_frame.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_minus_90_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_minus_90_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_minus_90_frame.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_plus_90_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_plus_90_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_plus_90_frame.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_start_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_start_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_rotate_start_frame.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_user_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/screen_user_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/search_bar_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/search_bar_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/shrink_fade_out.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/shrink_fade_out_center.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/shrink_fade_out_from_bottom.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/slide_in_child_bottom.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/slide_in_left.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/slide_in_right.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/slide_in_up.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/slide_out_down.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/slide_out_left.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/slide_out_right.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/slow_fade_in.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/submenu_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/submenu_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/task_close_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/task_close_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/task_open_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/task_open_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/toast_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/toast_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/translucent_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233946" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/translucent_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/wallpaper_close_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/wallpaper_close_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/wallpaper_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/wallpaper_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/wallpaper_intra_close_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/wallpaper_intra_close_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/wallpaper_intra_open_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/wallpaper_intra_open_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/wallpaper_open_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/wallpaper_open_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim/window_move_from_decor.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim-land/task_close_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim-land/task_close_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim-land/task_open_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim-land/task_open_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim-sw720dp/task_close_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim-sw720dp/task_close_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim-sw720dp/task_open_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/anim-sw720dp/task_open_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/animator/fade_in.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/animator/fade_out.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/animator/fragment_close_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/animator/fragment_close_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/animator/fragment_fade_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/animator/fragment_fade_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/animator/fragment_open_enter.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/animator/fragment_open_exit.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_dark_disable_only.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_dark_focused.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_dark_nodisable.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/color/primary_text_disable_only_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_horizontal_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_indeterminate_horizontal.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_indeterminate_horizontal_holo.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_large.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_large_holo.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_large_white.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_medium.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_medium_holo.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_medium_white.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_small.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_small_holo.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_small_titlebar.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233947" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_small_white.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/quickcontact_badge_overlay_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/quickcontact_badge_overlay_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_full.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_full_empty.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_full_empty_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_full_empty_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_full_filled.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_full_filled_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_full_filled_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_full_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_full_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_small.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_small_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ratingbar_small_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/screen_background_selector_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/screen_background_selector_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/scrubber_control_selector_holo.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/scrubber_progress_horizontal_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/scrubber_progress_horizontal_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/search_dropdown_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/search_dropdown_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/search_spinner.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/seek_thumb.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/settings_header.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/silent_mode_indicator.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/spinner_ab_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/spinner_ab_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/spinner_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/spinner_background_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/spinner_background_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/spinner_dropdown_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/status_bar_item_app_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/status_bar_item_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/stat_sys_battery.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/stat_sys_battery_charge.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/stat_sys_download.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/stat_sys_download_done_static.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/stat_sys_upload.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/submenu_arrow.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/switch_inner_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/switch_inner_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/switch_track_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/switch_track_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/tab_bottom_left.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/tab_bottom_left_v4.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233948" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/tab_bottom_right.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/tab_bottom_right_v4.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/tab_indicator.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/tab_indicator_ab_holo.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/tab_indicator_holo.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/tab_indicator_v4.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/textfield_search.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/textfield_searchview_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/textfield_searchview_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/textfield_searchview_right_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/textfield_searchview_right_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/textfield_search_empty.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/title_bar.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/button_inset.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/dark_header_dither.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/editbox_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/edit_query_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/edit_text.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/edit_text_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/edit_text_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/expander_group.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/expander_group_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/expander_group_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/fastscroll_thumb_holo.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/fastscroll_track_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/fastscroll_track_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/gallery_item_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/gallery_thumb.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/grid_selector_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_action_assist_generic.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233949" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_btn_round_more.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_btn_square_browser_zoom_fit_page.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_btn_square_browser_zoom_page_overview.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_clear.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_clear_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_lockscreen_camera.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_lockscreen_handle.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_lockscreen_outerring.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_lockscreen_silent.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_lockscreen_soundon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_lockscreen_unlock.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_lockscreen_unlock_phantom.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_maps_indicator_current_position_anim.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_media_route_connecting_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_media_route_connecting_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_media_route_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_media_route_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_menu_moreoverflow_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_menu_moreoverflow_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/ic_popup_sync.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/indicator_check_mark_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/indicator_check_mark_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/item_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/item_background_activated_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/item_background_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/item_background_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_bar_left_answer.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_bar_left_generic.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_bar_left_unlock.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_bar_right_decline.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_bar_right_generic.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_bar_right_sound_off.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_bar_right_sound_on.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_left_answer.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_left_generic.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_left_unlock.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_right_decline.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_right_generic.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_right_sound_off.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/jog_tab_right_sound_on.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/keyboard_key_feedback.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/keyguard_expand_challenge_handle.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/light_header_dither.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_highlight.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_highlight_active.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_highlight_inactive.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_selected_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_selected_background_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_selector_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233950" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_selector_background_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_selector_background_transition.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_selector_background_transition_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_selector_background_transition_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_selector_background_transition_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_selector_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/list_selector_holo_light.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/load_average_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/lockscreen_emergency_button.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/lockscreen_forgot_password_button.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/lockscreen_password_field_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/media_button_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/menuitem_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/menuitem_background_solid.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/menuitem_checkbox.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/menu_selector.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/minitab_lt.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/notification_bg.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/notification_bg_low.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/notify_panel_notification_icon_bg_tile.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/numberpicker_down_btn.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/numberpicker_input.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/numberpicker_up_btn.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/panel_picture_frame_background.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_horizontal.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable/progress_horizontal_holo_dark.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable-mdpi/pointer_spot_touch_icon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable-hdpi/pointer_arrow_icon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable-mdpi/pointer_arrow_icon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable-hdpi/pointer_spot_anchor_icon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable-mdpi/pointer_spot_anchor_icon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable-hdpi/pointer_spot_hover_icon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable-mdpi/pointer_spot_hover_icon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable-hdpi/pointer_spot_touch_icon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
+    <file path="$PROJECT_DIR$/externals/Android-VKontakte-SDK/AndroidVkSdk/project.properties" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366193252955" ignored="false" />
+    <file path="$PROJECT_DIR$/externals/yandexmapkit-android/yandexmapkit-library/project.properties" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366193252955" ignored="false" />
+    <file path="$PROJECT_DIR$/externals/facebook/project.properties" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366193252955" ignored="false" />
+    <file path="$USER_HOME$/Documents/GitHub/untitled/.idea/workspace.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366261697728" ignored="false" />
+    <file path="$USER_HOME$/Documents/GitHub/untitled/.idea/compiler.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366261697728" ignored="false" />
+    <file path="/DiskLruImageCache.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366282158365" ignored="false" />
+    <file path="/a.dummy" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366285335703" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,64 +627,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/accessData/GetImageTask.java" line="84" class="ru.hotel72.accessData.GetImageTask" package="ru.hotel72.accessData">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/social/facebook/FacebookConnector.java" line="44" class="ru.hotel72.social.facebook.FacebookConnector" package="ru.hotel72.social.facebook">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/social/vkontakte/LoginActivity.java" line="42" class="ru.hotel72.social.vkontakte.LoginActivity" package="ru.hotel72.social.vkontakte">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/social/vkontakte/LoginActivity.java" line="71" class="ru.hotel72.social.vkontakte.LoginActivity" package="ru.hotel72.social.vkontakte">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
@@ -312,8 +642,8 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
       </breakpoint>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -328,12 +658,84 @@
         <option name="CONDITION_ENABLED" value="true" />
         <option name="CLASS_FILTERS_ENABLED" value="false" />
         <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="&#13;&#13;JAVA" />
+        <option name="LOG_MESSAGE" value="&#13;&#13;JAVA" />
+      </breakpoint>
+    </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/social/vkontakte/LoginActivity.java" line="71" class="ru.hotel72.social.vkontakte.LoginActivity" package="ru.hotel72.social.vkontakte">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-    </breakpoint_any>
+      <breakpoint url="file://$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/CalendarAdapter.java" line="89" class="com.infteh.calendarview.CalendarAdapter" package="com.infteh.calendarview">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/externals/android-calendar-view/src/com/infteh/calendarview/CalendarAdapter.java" line="156" class="com.infteh.calendarview.CalendarAdapter" package="com.infteh.calendarview">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
+  </component>
+  <component name="DockManager">
+    <window id="1">
+      <content type="file-editors">
+        <state>
+          <leaf>
+            <file leaf-file-name="DiskLruImageCache.java" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/com/jakewharton/disklrucache/DiskLruImageCache.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="132" column="70" selection-start="4671" selection-end="4671" vertical-scroll-proportion="0.8092399">
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="DiskLruCache.java" pinned="false" current="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/com/jakewharton/disklrucache/DiskLruCache.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state line="185" column="19" selection-start="8211" selection-end="8221" vertical-scroll-proportion="0.0">
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+          </leaf>
+        </state>
+      </content>
+    </window>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -346,6 +748,11 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="GenerateSignedApkSettings">
+    <option name="KEY_STORE_PATH" value="C:\keystore.jks" />
+    <option name="KEY_ALIAS" value="hotel72" />
+    <option name="REMEMBER_PASSWORDS" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="DONT" />
@@ -366,22 +773,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ru/hotel72/social/Constants.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/social/vkontakte/Account.java" />
-        <option value="$PROJECT_DIR$/res/layout/login.xml" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/social/vkontakte/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/social/twitter/SessionStore.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/social/twitter/PrepareRequestTokenActivity.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/social/twitter/OAuthActivity.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/social/twitter/OAuthRequestTokenTask.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/BookingUserActivity.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/domains/Flat.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/utils/ImageDownloaderType.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatPhotoGalleryActivity.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/ImageDownloader.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/social/twitter/TwitterUtils.java" />
-        <option value="$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/twitter/TwitterUtils.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/social/ShareDialog.java" />
-        <option value="$PROJECT_DIR$/externals/AndroidTwitterConnect/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/twitter/TwitterDialog.java" />
-        <option value="$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/twitter/OAuthRequestTokenTask.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/social/twitter/Constants.java" />
+        <option value="$PROJECT_DIR$/res/layout/flat.xml" />
+        <option value="$PROJECT_DIR$/src/com/jakewharton/disklrucache/DiskLruImageCache.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/BookingTask.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/BoundTask.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/GetBookingDatesTask.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatsListAdapter.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/GalleryAdapter.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/LikeOnItemClickListener.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/domains/Photo.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/utils/InfoDialog.java" />
       </list>
     </option>
   </component>
@@ -442,7 +849,262 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vkontakte" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="twitter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="facebook" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="social" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extension" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="domains" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="adapters" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="accessData" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="homecity-android" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -453,60 +1115,62 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel72" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="275" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="292" />
-    <property name="OverrideImplement.combined" value="false" />
-    <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="296" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="recentsLimit" value="5" />
+    <property name="ExportedApkPath" value="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\hotel72.apk" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/externals/AndroidTwitterConnect/lib/twitter4j-core-2.1.11.jar!/" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="296" />
+    <property name="ExportedModule" value="hotel72" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="299" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="978" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="292" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="285" />
-    <property name="DEBUGGABLE_DEVICE" value="C4F12DC1DEDA71F" />
     <property name="DEBUGGABLE_PROCESS" value="ru.hotel72" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="Downloaded.Files.Path" value="C:\Users\Evgeny\IdeaProjects\hotel72\lib" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="AndroidRunProguardForReleaseBuild" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="last_opened_file_path" value="C:/keystore.jks" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="hotel72" />
+    <property name="DEBUGGABLE_DEVICE" value="C4F12DC1DEDA71F" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="AndroidTargetDevices" value="emulator-5556" />
-    <property name="Repository.Attach.Sources" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="Downloaded.Files.Path" value="C:\Users\Evgeny\IdeaProjects\hotel72\lib" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/ru/hotel72" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/ru/hotel72" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
@@ -514,13 +1178,14 @@
       <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\src" />
       <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\res\layout" />
       <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\res\drawable" />
       <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\res\drawable-hdpi" />
       <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\res\drawable-mdpi" />
-      <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\res\drawable-ldpi" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.hotel72.calendar" />
       <recent name="ru.hotel72.utils" />
       <recent name="ru.hotel72.activities" />
       <recent name="ru.hotel72.activities.adapters" />
@@ -568,6 +1233,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -593,19 +1271,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -667,7 +1332,7 @@
       <option name="COMMAND_LINE" value="" />
       <option name="WIPE_USER_DATA" value="false" />
       <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="edge" />
+      <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
       <option name="CLEAR_LOGCAT" value="false" />
       <RunnerSettings RunnerId="AndroidDebugRunner" />
@@ -744,18 +1409,18 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33297873" sideWeight="0.4913886" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.28936172" sideWeight="0.45299146" order="3" side_tool="false" content_ui="tabs" x="-810" y="49" width="737" height="904" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="true" weight="0.28936172" sideWeight="0.45299146" order="3" side_tool="false" content_ui="tabs" x="-816" y="161" width="737" height="904" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29" sideWeight="0.5432692" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3212766" sideWeight="0.47438633" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="true" weight="0.3212766" sideWeight="0.4850587" order="10" side_tool="false" content_ui="tabs" x="-1274" y="10" width="1186" height="1001" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31914893" sideWeight="0.47438633" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.3212766" sideWeight="0.4850587" order="10" side_tool="false" content_ui="tabs" x="-1359" y="17" width="1186" height="1001" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280255" sideWeight="0.4956943" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1814301" sideWeight="0.49888888" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20811099" sideWeight="0.71489364" order="0" side_tool="true" content_ui="combo" x="40" y="96" width="338" height="900" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2851064" sideWeight="0.44236925" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21024546" sideWeight="0.71595746" order="0" side_tool="true" content_ui="combo" x="40" y="96" width="338" height="900" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28404257" sideWeight="0.44236925" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.30522946" sideWeight="0.6522222" order="3" side_tool="false" content_ui="tabs" x="1145" y="141" width="548" height="788" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.28655282" sideWeight="0.31170213" order="2" side_tool="false" content_ui="tabs" x="-644" y="86" width="537" height="940" />
@@ -819,134 +1484,125 @@
     <MESSAGE value="123" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/TwitterConnect.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/social/facebook/SessionStore.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="26" selection-start="829" selection-end="829" vertical-scroll-proportion="0.3576751">
+        <state line="13" column="13" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="113" selection-start="3028" selection-end="3028" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/externals/AndroidTwitterConnect/lib/twitter4j-core-2.2.5-sources.jar!/twitter4j/auth/AccessToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="11" selection-start="1551" selection-end="1551" vertical-scroll-proportion="0.66766024">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/social/ShareDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="45" selection-start="3490" selection-end="3490" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3309#3633#0" expanded="true" />
-            <element signature="e#3618#3619#0" expanded="true" />
-            <element signature="e#5466#5474#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/twitter/IConstants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/twitter/OAuthDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/twitter/SessionStore.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="26" selection-start="1695" selection-end="1695" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/twitter/SubmitTwitterRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="405" selection-end="405" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/res/drawable-hdpi/close.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/res/layout/main.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="35" selection-start="201" selection-end="201" vertical-scroll-proportion="0.09538003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/twitter/TwitterUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/twitter/TwitterDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="37" selection-start="1970" selection-end="1984" vertical-scroll-proportion="13.84">
-          <folding>
-            <element signature="e#3233#3435#0" expanded="true" />
-            <element signature="e#3424#3425#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/twitter/Twitter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="23" selection-start="1399" selection-end="1399" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/externals/AndroidTwitterConnect/src/com/streetobjects/android/twitter/OAuthRequestTokenTask.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="37" selection-start="2790" selection-end="2790" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/hotel72/social/twitter/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="23" selection-start="377" selection-end="377" vertical-scroll-proportion="0.3099851">
+        <state line="9" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/social/vkontakte/Account.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="13" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/social/vkontakte/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="0" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/DataTransfer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/EndlessScrollListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/ImageDownloaderType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="12" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/ImageHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="49" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/InfoDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/MapBalloon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/RotateLinearLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/SingleSlideGallery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="13" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/TextViewPlus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="13" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/Typefaces.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="13" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/Validations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="193" selection-end="193" vertical-scroll-proportion="0.21428572">
           <folding />
         </state>
       </provider>
@@ -991,7 +1647,7 @@
       </state>
       <state key="JdkListConfigurable.UI">
         <settings>
-          <last-edited>Android 2.2 Platform</last-edited>
+          <last-edited>Android 2.3.3 Platform</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1003,7 +1659,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>AndroidTwitterConnect</last-edited>
+          <last-edited>hotel72</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

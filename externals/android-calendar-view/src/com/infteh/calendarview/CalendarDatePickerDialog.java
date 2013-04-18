@@ -80,6 +80,7 @@ public class CalendarDatePickerDialog extends AlertDialog implements OnDateChang
             curDate = leaveDate;
         }
 
+        CalendarAdapter.resetCloset(); // зачищаем значения ближайших занятых дней перед инициализацией
 		mCalendarMonthView.setAllDay(
                 DateHelper.createCalendar(curDate[0], curDate[1], curDate[2], TimeZone.getDefault().getID()),
                 inDay,

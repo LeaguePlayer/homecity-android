@@ -34,7 +34,6 @@ class MonthPagerAdapter extends PagerAdapter {
 	 */
 	private ViewPager mPager;
     private TaskFactory taskFactory;
-    private final AlertDialog progressDialog;
 
     /**
 	 * @param inflater inflater.
@@ -60,9 +59,6 @@ class MonthPagerAdapter extends PagerAdapter {
         view3.setTaskFactory(taskFactory);
 
         ContextThemeWrapper ctw = new ContextThemeWrapper(inflater.getContext(), R.style.Theme_DoNotDim);
-        final ProgressDialog.Builder builder = new ProgressDialog.Builder(ctw);
-        progressDialog = builder.create();
-        progressDialog.setMessage("Полчение информации...");
 
         view1.findViewById(R.id.progressBar).setVisibility(view1.VISIBLE);
         view1.findViewById(R.id.content).setVisibility(view1.INVISIBLE);
@@ -71,9 +67,9 @@ class MonthPagerAdapter extends PagerAdapter {
         view3.findViewById(R.id.progressBar).setVisibility(view3.VISIBLE);
         view3.findViewById(R.id.content).setVisibility(view3.INVISIBLE);
 
-        view1.setMonth(cal1, progressDialog);
-		view2.setMonth(cal2, progressDialog);
-		view3.setMonth(cal3, progressDialog);
+        view1.setMonth(cal1);
+		view2.setMonth(cal2);
+		view3.setMonth(cal3);
 
 		this.pages.add(view1);
 		this.pages.add(view2);
@@ -122,9 +118,9 @@ class MonthPagerAdapter extends PagerAdapter {
 		cal1.add(Calendar.MONTH, -1);
 		cal2.add(Calendar.MONTH, 0);
 		cal3.add(Calendar.MONTH, 1);
-		view1.setMonth(cal1, progressDialog);
-		view2.setMonth(cal2, progressDialog);
-		view3.setMonth(cal3, progressDialog);
+		view1.setMonth(cal1);
+		view2.setMonth(cal2);
+		view3.setMonth(cal3);
 	}
 	
 	/**
@@ -156,13 +152,11 @@ class MonthPagerAdapter extends PagerAdapter {
 
 	@Override
 	public final Object instantiateItem(View collection, int position) {
-//        progressDialog.show();
-
 		mPager = (ViewPager) collection;
 		int pagerPosition = mPager.getCurrentItem();
 		CalendarMonthView calView = pages.get(position % pages.size());
-//        calView.findViewById(R.id.progressBar).setVisibility(calView.VISIBLE);
-//        calView.findViewById(R.id.content).setVisibility(calView.INVISIBLE);
+        calView.findViewById(R.id.progressBar).setVisibility(calView.VISIBLE);
+        calView.findViewById(R.id.content).setVisibility(calView.INVISIBLE);
         calView.setTaskFactory(taskFactory);
 		if (position == pagerPosition) {
 			// first init. (occure then pager just created)
@@ -175,16 +169,11 @@ class MonthPagerAdapter extends PagerAdapter {
 			CalendarMonthView calViewBefore = pages.get((position - 1) % pages.size());
 			CalendarMonthView calViewAfter = pages.get((position + 1) % pages.size());
 
-            calViewBefore.findViewById(R.id.progressBar).setVisibility(calViewAfter.VISIBLE);
-            calViewBefore.findViewById(R.id.content).setVisibility(calViewAfter.INVISIBLE);
-            calViewAfter.findViewById(R.id.progressBar).setVisibility(calViewAfter.VISIBLE);
-            calViewAfter.findViewById(R.id.content).setVisibility(calViewAfter.INVISIBLE);
-
             calViewBefore.setTaskFactory(taskFactory);
             calViewAfter.setTaskFactory(taskFactory);
 
-			calViewAfter.setMonth(calAfter, progressDialog);
-			calViewBefore.setMonth(calBefore, progressDialog);
+			calViewAfter.setMonth(calAfter);
+			calViewBefore.setMonth(calBefore);
 		}
 		if (mPager.getChildCount() == pages.size()) {
 			Calendar cal = pages.get(pagerPosition % pages.size()).getMonth();
@@ -198,7 +187,7 @@ class MonthPagerAdapter extends PagerAdapter {
                 calViewAfter.findViewById(R.id.content).setVisibility(calViewAfter.INVISIBLE);
 
                 calViewAfter.setTaskFactory(taskFactory);
-				calViewAfter.setMonth(calAfter, progressDialog);
+				calViewAfter.setMonth(calAfter);
 			} else if (position < pagerPosition) {
 				// slide left
 				Calendar calBefore = (Calendar) cal.clone();
@@ -209,7 +198,7 @@ class MonthPagerAdapter extends PagerAdapter {
                 calViewBefore.findViewById(R.id.content).setVisibility(calViewBefore.INVISIBLE);
 
                 calViewBefore.setTaskFactory(taskFactory);
-				calViewBefore.setMonth(calBefore, progressDialog);
+				calViewBefore.setMonth(calBefore);
 			}
 		}
 

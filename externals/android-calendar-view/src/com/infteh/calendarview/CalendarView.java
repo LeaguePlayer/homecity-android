@@ -7,6 +7,7 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 /**
  * calendar view.
@@ -24,6 +25,7 @@ public class CalendarView extends LinearLayout {
 	 * adapter.
 	 */
 	private MonthPagerAdapter adapter;
+    private Context context;
 
     /**
 	 * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
@@ -32,7 +34,8 @@ public class CalendarView extends LinearLayout {
 	 */
 	public CalendarView(final Context context) {
 		this(context, null, null);
-	}
+        this.context = context;
+    }
 
 	/**
 	 * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.

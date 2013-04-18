@@ -37,7 +37,7 @@
       <sourceFolder url="file://$MODULE_DIR$/gen" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/externals" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Android 2.3.3 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="android-calendar-view" />
     <orderEntry type="module" module-name="yandexmapkit-library" />

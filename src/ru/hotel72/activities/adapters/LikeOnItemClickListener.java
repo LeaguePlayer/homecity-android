@@ -16,12 +16,10 @@ import ru.hotel72.domains.Flat;
  */
 public class LikeOnItemClickListener implements View.OnClickListener {
     private Context context;
-    private FlatsListAdapter flatsListAdapter;
     private Flat flat;
 
     public LikeOnItemClickListener(Context context, FlatsListAdapter flatsListAdapter, Flat flat) {
         this.context = context;
-        this.flatsListAdapter = flatsListAdapter;
         this.flat = flat;
     }
 

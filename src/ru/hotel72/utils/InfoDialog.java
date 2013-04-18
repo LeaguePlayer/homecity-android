@@ -29,10 +29,6 @@ public class InfoDialog {
             }
         });
 
-//        if(title != null && title != ""){
-//            builder.setTitle(title);
-//        }
-
         builder.setMessage(text);
         alertDialog = builder.create();
 

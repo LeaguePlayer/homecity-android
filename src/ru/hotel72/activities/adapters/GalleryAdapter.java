@@ -2,15 +2,10 @@ package ru.hotel72.activities.adapters;
 
 import android.app.Activity;
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.Point;
-import android.hardware.Camera;
 import android.view.*;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import ru.hotel72.R;
-import ru.hotel72.accessData.ImageDownloader;
 import ru.hotel72.domains.Photo;
 import ru.hotel72.utils.ImageDownloaderType;
 import ru.hotel72.utils.ImageHelper;
@@ -25,14 +20,15 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
     private ViewHolder holder;
     private static HashMap<ImageDownloaderType, Size> sizeHashMap;
     private String urlPattern = "http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&w=%d&h=%d&zc=1&q=90";
-    public boolean useCache = true;
+    private Boolean useStab;
 
     public GalleryAdapter(Context context, int textViewResourceId, ArrayList<Photo> photos, ImageDownloaderType type) {
-        this(context, textViewResourceId, photos, type, null);
+        this(context, textViewResourceId, photos, type, null, true);
     }
 
-    public GalleryAdapter(Context context, int textViewResourceId, ArrayList<Photo> photos, ImageDownloaderType type, String urlPattern) {
+    public GalleryAdapter(Context context, int textViewResourceId, ArrayList<Photo> photos, ImageDownloaderType type, String urlPattern, Boolean useStab) {
         super(context, textViewResourceId, photos);
+        this.useStab = useStab;
 
         if(urlPattern != null && urlPattern.trim() != ""){
             this.urlPattern = urlPattern;
@@ -60,7 +56,7 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
             holder = new ViewHolder();
             holder.image = (ImageView) convertView.findViewById(R.id.galleryImage);
 
-            if (type == ImageDownloaderType.LandscapeGallery || type == ImageDownloaderType.PortraitGallery) {
+            if (type == ImageDownloaderType.LANDSCAPE || type == ImageDownloaderType.PORTRAIT) {
                 holder.image.setScaleType(ImageView.ScaleType.CENTER);
             } else {
                 holder.image.setScaleType(ImageView.ScaleType.CENTER_CROP);
@@ -74,7 +70,6 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
         }
 
         final String imgUrl = photos.get(position).url;
-//        String url = String.format("http://hotel72.ru/index.php/api/GetFile?filename=%s&for=%s", imgUrl, "original");
 
         if (!sizeHashMap.containsKey(type)) {
             holder.image.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
@@ -103,13 +98,13 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
                 urlPattern,
                 imgUrl, size.width, size.height);
 
-        if (type == ImageDownloaderType.PortraitGallery) {
+        if (type == ImageDownloaderType.PORTRAIT) {
             url = String.format(urlPattern, imgUrl, size.width);
-        } else if (type == ImageDownloaderType.LandscapeGallery) {
+        } else if (type == ImageDownloaderType.LANDSCAPE) {
             url = String.format(urlPattern, imgUrl, size.height);
         }
 
         view.setTag(url);
-        ImageHelper.getImageDownloader(context, type).DisplayImage(url, imgUrl, (Activity) context, view, useCache);
+        ImageHelper.getImageDownloader(context, type).DisplayImage(url, imgUrl, (Activity) context, view, useStab);
     }
 }

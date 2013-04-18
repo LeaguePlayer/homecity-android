@@ -4,7 +4,6 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.text.SpannableString;
 import android.text.style.StyleSpan;
-import android.text.style.UnderlineSpan;
 import android.view.*;
 import android.view.animation.AnimationUtils;
 import android.view.animation.RotateAnimation;
@@ -102,7 +101,7 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
                 galleryAdapter = galleryCache.get(flat.id);
             }
             else {
-                galleryAdapter = new GalleryAdapter(context, R.layout.gallary_item, flat.photos, ImageDownloaderType.FlatList);
+                galleryAdapter = new GalleryAdapter(context, R.layout.gallary_item, flat.photos, ImageDownloaderType.LIST);
                 galleryCache.put(flat.id, galleryAdapter);
             }
 
@@ -110,13 +109,6 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
             holder.isLiked.setOnClickListener(new LikeOnItemClickListener(context, this, flat));
 
             holder.gallery.setAdapter(galleryAdapter);
-//            gestureDetector = new GestureDetector(new HotelGestureDetector(context));
-//            gestureListener = new View.OnTouchListener() {
-//                public boolean onTouch(View v, MotionEvent event) {
-//                    return gestureDetector.onTouchEvent(event);
-//                }
-//            };
-//            holder.gallery.setOnTouchListener(gestureListener);
             holder.gallery.setOnItemClickListener(new FlatOnItemClickListener(context, flat));
 
             if(position < flats.size() - 1){

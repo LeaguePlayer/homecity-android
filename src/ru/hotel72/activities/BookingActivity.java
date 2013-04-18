@@ -43,6 +43,7 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
     public static BookingActivity bookingActivity;
     private Size imageSize;
     private int mMaxVisitors;
+    private CalendarDatePickerDialog calendarView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -147,7 +148,7 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
         String imgUrl = flat.photos.get(0).url;
         String url = String.format("http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&w=%d&h=%d&zc=1&q=90", imgUrl, w, h);
         image.setTag(url);
-        ImageHelper.getImageDownloader(this, ImageDownloaderType.Booking).DisplayImage(url, imgUrl, BookingActivity.this, (ImageView) image, true);
+        ImageHelper.getImageDownloader(this, ImageDownloaderType.BOOKING).DisplayImage(url, imgUrl, BookingActivity.this, (ImageView) image);
     }
 
     @Override
@@ -156,20 +157,30 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
 
         switch (view.getId()) {
             case R.id.inDate: {
+
+                if(calendarView != null && calendarView.isShowing())
+                    return;
+
                 dateSelectionType = DateSelectionType.Start;
                 Calendar calendar = Calendar.getInstance();
                 int[] date = {calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)};
-                new CalendarDatePickerDialog(this, this, date, mInDate, mLeaveDate,
-                        DateSelectionType.Start, taskFactory).show();
+                calendarView = new CalendarDatePickerDialog(this, this, date, mInDate, mLeaveDate,
+                        DateSelectionType.Start, taskFactory);
+                calendarView.show();
                 break;
             }
 
             case R.id.leaveDate: {
+
+                if(calendarView != null && calendarView.isShowing())
+                    return;
+
                 dateSelectionType = DateSelectionType.End;
                 Calendar calendar = Calendar.getInstance();
                 int[] date = {calendar.get(Calendar.YEAR), calendar.get(Calendar.MONTH), calendar.get(Calendar.DAY_OF_MONTH)};
-                new CalendarDatePickerDialog(this, this, date, mInDate, mLeaveDate,
-                        DateSelectionType.End, taskFactory).show();
+                calendarView = new CalendarDatePickerDialog(this, this, date, mInDate, mLeaveDate,
+                        DateSelectionType.End, taskFactory);
+                calendarView.show();
                 break;
             }
 
@@ -234,10 +245,8 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
                 intent.putExtra(getString(R.string.dataTransferFlatId), flatId.toString());
                 startActivity(intent);
                 break;
-            }
         }
-
-
+        }
     }
 
     private void updatePrice() {

@@ -1,6 +1,5 @@
 package ru.hotel72.activities;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -100,7 +99,7 @@ public class BookingUserActivity extends BaseHeaderActivity {
         String imgUrl = flat.photos.get(0).url;
         String url = String.format("http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&w=%d&h=%d&zc=1&q=90", imgUrl, w, h);
         image.setTag(url);
-        ImageHelper.getImageDownloader(this, ImageDownloaderType.Booking).DisplayImage(url, imgUrl, BookingUserActivity.this, (ImageView) image, true);
+        ImageHelper.getImageDownloader(this, ImageDownloaderType.BOOKING).DisplayImage(url, imgUrl, BookingUserActivity.this, (ImageView) image);
     }
 
     private void setContent() {
@@ -154,6 +153,7 @@ public class BookingUserActivity extends BaseHeaderActivity {
         intent.putExtra(getString(R.string.showDialog), true);
         BookingActivity.bookingActivity.setResult(RESULT_OK, intent);
         BookingActivity.bookingActivity.finish();
+        BookingActivity.bookingActivity = null;
         finish();
     }
 
@@ -164,6 +164,7 @@ public class BookingUserActivity extends BaseHeaderActivity {
         intent.putExtra(getString(R.string.errorMsg), responseMsg);
         BookingActivity.bookingActivity.setResult(RESULT_OK, intent);
         BookingActivity.bookingActivity.finish();
+        BookingActivity.bookingActivity = null;
         finish();
     }
 }
