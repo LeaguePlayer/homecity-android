@@ -51,6 +51,9 @@ public class GetFlatsTask extends AsyncTask<Integer, Void, Void> {
         super.onPostExecute(aVoid);
         FlatListActivity activity = (FlatListActivity) context;
         activity.UpdateFlatsList(flats);
+
+        context = null;
+        System.gc();
     }
 
     private Boolean tryGetFlats(Integer pageNumber) {

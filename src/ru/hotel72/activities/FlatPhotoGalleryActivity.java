@@ -1,20 +1,30 @@
 package ru.hotel72.activities;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.view.Window;
-import android.view.WindowManager;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.view.*;
 import android.widget.Gallery;
+import android.widget.ImageView;
 import ru.hotel72.R;
 import ru.hotel72.activities.adapters.GalleryAdapter;
+import ru.hotel72.activities.adapters.ImagePagerAdapter;
+import ru.hotel72.activities.adapters.Size;
 import ru.hotel72.domains.Flat;
 import ru.hotel72.domains.Photo;
 import ru.hotel72.utils.DataTransfer;
 import ru.hotel72.utils.ImageDownloaderType;
+import ru.hotel72.utils.ImageHelper;
 import ru.hotel72.utils.Utils;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created with IntelliJ IDEA.
@@ -48,6 +58,10 @@ public class FlatPhotoGalleryActivity extends Activity {
             type = ImageDownloaderType.LANDSCAPE;
             url = "http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&h=%d&far=1&q=90";
         }
+
+//        ViewPager viewPager = (ViewPager) findViewById(R.id.view_pager);
+//        ImagePagerAdapter adapter = new ImagePagerAdapter(this, photos, type, url, false);
+//        viewPager.setAdapter(adapter);
 
         galleryAdapter = new GalleryAdapter(this, R.layout.gallary_item, photos, type, url, false);
 

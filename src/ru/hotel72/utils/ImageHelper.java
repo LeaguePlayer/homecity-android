@@ -15,15 +15,13 @@ import java.util.HashMap;
  */
 public class ImageHelper {
 
-    private static HashMap<ImageDownloaderType, ImageDownloader> downloader = new HashMap<ImageDownloaderType, ImageDownloader>();
+    private static ImageDownloader downloader;
 
     public static ImageDownloader getImageDownloader(Context context, ImageDownloaderType type){
-//        if(downloader.get(type) == null){
-//            downloader.put(type, new ImageDownloader(context, type));
-//        }
-//
-//        return downloader.get(type);
+        if(downloader == null){
+            downloader = new ImageDownloader(context, type);
+        }
 
-        return new ImageDownloader(context, type);
+        return downloader;
     }
 }

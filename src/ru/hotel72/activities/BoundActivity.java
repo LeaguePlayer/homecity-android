@@ -100,7 +100,7 @@ public class BoundActivity extends BaseHeaderActivity {
             String email = ((EditText) mActivityLevelView.findViewById(R.id.email)).getText().toString().trim();
 
             // номер телефона и имя обязательны для заполнения
-            if(phone == null || phone == "" || name == null || name == ""){
+            if(phone == null || phone.length() == 0 || name == null || name.length() == 0){
                 Toast.makeText(this, getString(R.string.required), 0).show();
                 return;
             }

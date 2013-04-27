@@ -27,7 +27,8 @@
     </option>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="BitmapUtils" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="INFO" />
   </component>
   <component name="BookmarkManager">
     <bookmark url="file://$USER_HOME$/Documents/GitHub/android-calendar-view/src/com/infteh/calendarview/CalendarMonthView.java" line="72" mnemonic="1" />
@@ -46,9 +47,9 @@
     </list>
     <ignored path="hotel72.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/GetFlatsTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363290320406" ignored="false" />
-    <file path="/Dummy.txt" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366266369053" ignored="false" />
-    <file path="/fragment.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366285039280" ignored="false" />
+    <file path="/GetFlatsTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366689839149" ignored="false" />
+    <file path="/Dummy.txt" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366642534428" ignored="false" />
+    <file path="/fragment.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366731209831" ignored="false" />
     <file path="/BaseActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366258721740" ignored="false" />
     <file path="/Flat.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361108702592" ignored="false" />
     <file path="/Photo.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360383358642" ignored="false" />
@@ -57,20 +58,20 @@
     <file path="/flatListItem.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359050860354" ignored="false" />
     <file path="/EndlessScrollListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361906857212" ignored="false" />
     <file path="/flatListActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359286440728" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366252443940" ignored="false" />
-    <file path="/FlatsListAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363551325949" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366654125179" ignored="false" />
+    <file path="/FlatsListAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366700125003" ignored="false" />
     <file path="/FlatListExtention.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359289159605" ignored="false" />
     <file path="/FlatListExtension.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359289270546" ignored="false" />
     <file path="/flat_list_item.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363551018185" ignored="false" />
     <file path="/GatImageTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359313847548" ignored="false" />
-    <file path="/FlatListActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363549869120" ignored="false" />
+    <file path="/FlatListActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366690023276" ignored="false" />
     <file path="/GetImageTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1362935615023" ignored="false" />
-    <file path="/ImageDownloader.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366258773974" ignored="false" />
+    <file path="/ImageDownloader.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366743134396" ignored="false" />
     <file path="/*.regexp" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359473666687" ignored="false" />
     <file path="/gallary_item.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366258328469" ignored="false" />
     <file path="/MyGestureDetector.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360081148985" ignored="false" />
     <file path="/a.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1359737365329" ignored="false" />
-    <file path="/GalleryAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366259317574" ignored="false" />
+    <file path="/GalleryAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366699856565" ignored="false" />
     <file path="/HotelOnItemClickListener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1360349825515" ignored="false" />
     <file path="/FlatActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364217358642" ignored="false" />
     <file path="/endless_list_footer.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361386396429" ignored="false" />
@@ -92,7 +93,7 @@
     <file path="/LikeOnItemClicklistener.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361111653098" ignored="false" />
     <file path="/booking.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364144173521" ignored="false" />
     <file path="/BookingActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364417136499" ignored="false" />
-    <file path="/ImageHelper.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366253089415" ignored="false" />
+    <file path="/ImageHelper.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366696706873" ignored="false" />
     <file path="/SettingsActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364186683611" ignored="false" />
     <file path="/StartActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363536599011" ignored="false" />
     <file path="/CitySelectionActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364148554321" ignored="false" />
@@ -100,12 +101,12 @@
     <file path="/moreDetails.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361295662869" ignored="false" />
     <file path="/base_layout.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363539022021" ignored="false" />
     <file path="/BaseHeaderActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363549601684" ignored="false" />
-    <file path="/BoundActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364186647394" ignored="false" />
+    <file path="/BoundActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366653482634" ignored="false" />
     <file path="/bound.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364150100663" ignored="false" />
     <file path="/BoundTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364186594425" ignored="false" />
     <file path="/SingleSlideGallery.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361702793036" ignored="false" />
     <file path="/flat_photo_gallery.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361807763548" ignored="false" />
-    <file path="/FlatPhotoGalleryActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366259500463" ignored="false" />
+    <file path="/FlatPhotoGalleryActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366747729202" ignored="false" />
     <file path="/FlatInfo.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361815633009" ignored="false" />
     <file path="/FlatInfoActivity.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361887160295" ignored="false" />
     <file path="/details.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1361820784332" ignored="false" />
@@ -160,7 +161,7 @@
     <file path="/ImageDownloaderType.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366259154922" ignored="false" />
     <file path="/calendar.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1365353766155" ignored="false" />
     <file path="/GetUnselectableDaysTask.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1364415700538" ignored="false" />
-    <file path="/Utils.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366187827651" ignored="false" />
+    <file path="/Utils.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366650044653" ignored="false" />
     <file path="/splash.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363519933252" ignored="false" />
     <file path="/menu_flats.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363522318769" ignored="false" />
     <file path="/menu_map_btn.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1363524219305" ignored="false" />
@@ -601,13 +602,14 @@
     <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable-hdpi/pointer_spot_hover_icon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
     <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable-mdpi/pointer_spot_hover_icon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
     <file path="C:/IDE/sdk/platforms/android-17/data/res/drawable-hdpi/pointer_spot_touch_icon.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366191233951" ignored="false" />
-    <file path="$PROJECT_DIR$/externals/Android-VKontakte-SDK/AndroidVkSdk/project.properties" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366193252955" ignored="false" />
-    <file path="$PROJECT_DIR$/externals/yandexmapkit-android/yandexmapkit-library/project.properties" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366193252955" ignored="false" />
-    <file path="$PROJECT_DIR$/externals/facebook/project.properties" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366193252955" ignored="false" />
     <file path="$USER_HOME$/Documents/GitHub/untitled/.idea/workspace.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366261697728" ignored="false" />
     <file path="$USER_HOME$/Documents/GitHub/untitled/.idea/compiler.xml" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366261697728" ignored="false" />
-    <file path="/DiskLruImageCache.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366282158365" ignored="false" />
+    <file path="/DiskLruImageCache.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366688225495" ignored="false" />
     <file path="/a.dummy" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366285335703" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/ru/hotel72/BuildConfig.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366654774796" ignored="false" />
+    <file path="/BitmapUtils.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366748061535" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/ru/hotel72/R.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366729249876" ignored="false" />
+    <file path="/ImagePagerAdapter.java" changelist="e1a9bb44-c342-43e7-b21e-22e2c923f520" time="1366739309472" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -705,6 +707,76 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/activities/BoundActivity.java" line="102" class="ru.hotel72.activities.BoundActivity" package="ru.hotel72.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/GalleryAdapter.java" line="71" class="ru.hotel72.activities.adapters.GalleryAdapter" package="ru.hotel72.activities.adapters">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/GalleryAdapter.java" line="102" class="ru.hotel72.activities.adapters.GalleryAdapter" package="ru.hotel72.activities.adapters">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatPhotoGalleryActivity.java" line="30" class="ru.hotel72.activities.FlatPhotoGalleryActivity" package="ru.hotel72.activities">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatPhotoGalleryActivity.java" line="13" class="FlatPhotoGalleryActivity.java" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -714,19 +786,10 @@
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="DiskLruImageCache.java" pinned="false" current="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/com/jakewharton/disklrucache/DiskLruImageCache.java">
+            <file leaf-file-name="GalleryAdapter.java" pinned="false" current="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/GalleryAdapter.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state line="132" column="70" selection-start="4671" selection-end="4671" vertical-scroll-proportion="0.8092399">
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="DiskLruCache.java" pinned="false" current="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/com/jakewharton/disklrucache/DiskLruCache.java">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state line="185" column="19" selection-start="8211" selection-end="8221" vertical-scroll-proportion="0.0">
+                  <state line="71" column="60" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.49407116">
                     <folding />
                   </state>
                 </provider>
@@ -742,7 +805,95 @@
     <favorites_list name="hotel72" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="ImageDownloader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/ImageDownloader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="91" column="38" selection-start="3037" selection-end="3037" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#3823#3836#0" expanded="true" />
+                <element signature="e#5361#6182#0" expanded="true" />
+                <element signature="e#6151#6152#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlatsListAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatsListAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="79" column="28" selection-start="3001" selection-end="3001" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#941#966#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BitmapUtils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/BitmapUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="22" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flat_photo_gallery.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/res/layout/flat_photo_gallery.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="17" selection-start="810" selection-end="810" vertical-scroll-proportion="0.3501094">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlatPhotoGalleryActivity.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatPhotoGalleryActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="40" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImagePagerAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/ImagePagerAdapter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="44" selection-start="3686" selection-end="3686" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2504#2999#0" expanded="true" />
+                <element signature="e#2984#2985#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImageHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/ImageHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="36" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiskLruImageCache.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/jakewharton/disklrucache/DiskLruImageCache.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="122" column="37" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -773,22 +924,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/BookingUserActivity.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/domains/Flat.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/utils/ImageDownloaderType.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatPhotoGalleryActivity.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/ImageDownloader.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/BoundActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/res/layout/flat.xml" />
+        <option value="$PROJECT_DIR$/externals/yandexmapkit-android/yandexmapkit-library/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/jakewharton/disklrucache/DiskLruImageCache.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/BookingTask.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/BoundTask.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/GetBookingDatesTask.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatsListAdapter.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/BookingUserActivity.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/BookingActivity.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/GetFlatsTask.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatListActivity.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/utils/ImageHelper.java" />
         <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/GalleryAdapter.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/LikeOnItemClickListener.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/domains/Photo.java" />
-        <option value="$PROJECT_DIR$/src/ru/hotel72/utils/InfoDialog.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatsListAdapter.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/adapters/ImagePagerAdapter.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/accessData/ImageDownloader.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/utils/BitmapUtils.java" />
+        <option value="$PROJECT_DIR$/src/ru/hotel72/activities/FlatPhotoGalleryActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/flat_photo_gallery.xml" />
       </list>
     </option>
   </component>
@@ -849,6 +1000,17 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hotel72" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -856,15 +1018,15 @@
               <option name="myItemId" value="hotel72" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="hotel72" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="yandexmapkit-library" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -906,100 +1068,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vkontakte" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel72" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homecity-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="twitter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel72" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homecity-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="facebook" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel72" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homecity-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="social" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel72" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homecity-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="extension" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel72" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="homecity-android" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="domains" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1070,6 +1138,10 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="disklrucache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1105,70 +1177,59 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hotel72" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="275" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="292" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="ExportedApkPath" value="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\hotel72.apk" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="recentsLimit" value="5" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="296" />
+    <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="ExportedApkPath" value="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\hotel72.apk" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="ExportedModule" value="hotel72" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="last_opened_file_path" value="C:/keystore.jks" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="299" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="978" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="971" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="292" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="285" />
-    <property name="DEBUGGABLE_PROCESS" value="ru.hotel72" />
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="Downloaded.Files.Path" value="C:\Users\Evgeny\IdeaProjects\hotel72\lib" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
-    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="AndroidRunProguardForReleaseBuild" value="false" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="OverrideImplement.combined" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
-    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
-    <property name="last_opened_file_path" value="C:/keystore.jks" />
-    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="hotel72" />
     <property name="DEBUGGABLE_DEVICE" value="C4F12DC1DEDA71F" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="hotel72" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="285" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="DEBUGGABLE_PROCESS" value="ru.hotel72" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
     <property name="AndroidTargetDevices" value="emulator-5556" />
-    <property name="MemberChooser.showClasses" value="true" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="Downloaded.Files.Path" value="C:\Users\Evgeny\IdeaProjects\hotel72\lib" />
+    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/ru/hotel72" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="C4F12DC1DEDA71F" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="AndroidRunProguardForReleaseBuild" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="options.searchVisible" value="true" />
@@ -1190,15 +1251,15 @@
       <recent name="ru.hotel72.activities" />
       <recent name="ru.hotel72.activities.adapters" />
     </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.infteh.calendarview" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\src\ru\hotel72\social\twitter" />
       <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\res\drawable" />
       <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\res\anim" />
       <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android" />
       <recent name="C:\Users\Evgeny\SkyDrive\android_develop\homecity-android\res\drawable-xhdpi" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.infteh.calendarview" />
     </key>
   </component>
   <component name="RunManager" selected="Android Application.hotel72">
@@ -1233,19 +1294,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -1271,6 +1319,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1327,7 +1388,7 @@
       <option name="ACTIVITY_CLASS" value="" />
       <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="USB_DEVICE" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="PREFERRED_AVD" value="" />
       <option name="COMMAND_LINE" value="" />
       <option name="WIPE_USER_DATA" value="false" />
@@ -1401,7 +1462,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.49573106" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32817504" sideWeight="0.6755319" order="7" side_tool="false" content_ui="tabs" />
@@ -1409,18 +1470,18 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33297873" sideWeight="0.4913886" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="true" weight="0.28936172" sideWeight="0.45299146" order="3" side_tool="false" content_ui="tabs" x="-816" y="161" width="737" height="904" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.28936172" sideWeight="0.45299146" order="3" side_tool="false" content_ui="tabs" x="-816" y="161" width="737" height="904" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29" sideWeight="0.5432692" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31914893" sideWeight="0.47438633" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.3212766" sideWeight="0.4850587" order="10" side_tool="false" content_ui="tabs" x="-1359" y="17" width="1186" height="1001" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="true" weight="0.3212766" sideWeight="0.4850587" order="10" side_tool="false" content_ui="tabs" x="-1927" y="6" width="1186" height="1001" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3280255" sideWeight="0.4956943" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1814301" sideWeight="0.49888888" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21024546" sideWeight="0.71595746" order="0" side_tool="true" content_ui="combo" x="40" y="96" width="338" height="900" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28404257" sideWeight="0.44236925" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21024546" sideWeight="0.68085104" order="0" side_tool="true" content_ui="combo" x="40" y="96" width="338" height="900" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28404257" sideWeight="0.44236925" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="true" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.30522946" sideWeight="0.6522222" order="3" side_tool="false" content_ui="tabs" x="1145" y="141" width="548" height="788" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="FLOATING" visible="false" weight="0.28655282" sideWeight="0.31170213" order="2" side_tool="false" content_ui="tabs" x="-644" y="86" width="537" height="940" />
@@ -1495,116 +1556,131 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/social/facebook/SessionStore.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/BookingActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="316" selection-end="316" vertical-scroll-proportion="0.0">
+        <state line="144" column="78" selection-start="4624" selection-end="4624" vertical-scroll-proportion="0.17410715">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/social/twitter/Constants.java">
+    <entry file="jar://C:/IDE/sdk/platforms/android-17/android.jar!/android/os/Looper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+        <state line="30" column="0" selection-start="968" selection-end="968" vertical-scroll-proportion="0.74121404">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/social/vkontakte/Account.java">
+    <entry file="jar://C:/IDE/sdk/platforms/android-17/android.jar!/java/lang/reflect/Method.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="13" selection-start="324" selection-end="324" vertical-scroll-proportion="0.0">
+        <state line="54" column="0" selection-start="2320" selection-end="2320" vertical-scroll-proportion="0.84339315">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/social/vkontakte/LoginActivity.java">
+    <entry file="jar://C:/IDE/sdk/platforms/android-10/android.jar!/android/content/ContextWrapper.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="0" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0">
+        <state line="154" column="0" selection-start="8389" selection-end="8389" vertical-scroll-proportion="0.84339315">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/DataTransfer.java">
+    <entry file="file://$PROJECT_DIR$/src/com/jakewharton/disklrucache/DiskLruImageCache.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="220" selection-end="220" vertical-scroll-proportion="0.0">
+        <state line="122" column="37" selection-start="4026" selection-end="4026" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/EndlessScrollListener.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/FlatsListAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+        <state line="79" column="28" selection-start="3001" selection-end="3001" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#941#966#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/IDE/sdk/platforms/android-10/android.jar!/android/view/ViewGroup.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="19" selection-start="5159" selection-end="5159" vertical-scroll-proportion="0.3323217">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/ImageDownloaderType.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/ImagePagerAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="12" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
+        <state line="110" column="44" selection-start="3686" selection-end="3686" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2504#2999#0" expanded="true" />
+            <element signature="e#2984#2985#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/IDE/sdk/platforms/android-10/android.jar!/android/app/Activity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="303" column="22" selection-start="13900" selection-end="13900" vertical-scroll-proportion="0.76508975">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/ImageHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="49" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+        <state line="21" column="36" selection-start="559" selection-end="559" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/InfoDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/accessData/ImageDownloader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="880" selection-end="880" vertical-scroll-proportion="0.0">
+        <state line="91" column="38" selection-start="3037" selection-end="3037" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#3823#3836#0" expanded="true" />
+            <element signature="e#5361#6182#0" expanded="true" />
+            <element signature="e#6151#6152#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/IDE/sdk/platforms/android-10/android.jar!/android/graphics/BitmapFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="42" selection-start="1354" selection-end="1354" vertical-scroll-proportion="0.40515932">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/MapBalloon.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/BitmapUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="493" selection-end="493" vertical-scroll-proportion="0.0">
+        <state line="52" column="22" selection-start="1449" selection-end="1449" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/FlatPhotoGalleryActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="40" selection-start="2428" selection-end="2428" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/RotateLinearLayout.java">
+    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/activities/adapters/GalleryAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+        <state line="71" column="60" selection-start="2596" selection-end="2596" vertical-scroll-proportion="0.49407116">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/SingleSlideGallery.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/flat_photo_gallery.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0">
+        <state line="20" column="17" selection-start="810" selection-end="810" vertical-scroll-proportion="0.3501094">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/TextViewPlus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/Typefaces.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="13" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="13" selection-start="404" selection-end="404" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ru/hotel72/utils/Validations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="193" selection-end="193" vertical-scroll-proportion="0.21428572">
-          <folding />
-        </state>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
   </component>
@@ -1624,7 +1700,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Android</last-edited>
+          <last-edited>Android (hotel72)|Android</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

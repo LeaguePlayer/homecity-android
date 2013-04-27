@@ -29,20 +29,12 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
     private Context context;
     private ArrayList<Flat> flats;
     private ViewHolder holder;
-    private GalleryAdapter galleryAdapter;
     private HashMap<Integer, GalleryAdapter> galleryCache = new HashMap<Integer, GalleryAdapter>();
-
-    private GestureDetector gestureDetector;
-    private View.OnTouchListener gestureListener;
 
     public FlatsListAdapter(Context context, int textViewResourceId, ArrayList<Flat> flats) {
         super(context, textViewResourceId, flats);
         this.context = context;
         this.flats = flats;
-    }
-
-    public void updateContext(Context context){
-        this.context = context;
     }
 
     private static class ViewHolder{
@@ -97,6 +89,7 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
 
                 holder.cost.setText(spanString);
             }
+            GalleryAdapter galleryAdapter;
             if(galleryCache.containsKey(flat.id)){
                 galleryAdapter = galleryCache.get(flat.id);
             }
@@ -118,6 +111,8 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
                 holder.tagPiece.setVisibility(holder.tagPiece.INVISIBLE);
             }
         }
+
+        System.gc();
 
         return convertView;
     }

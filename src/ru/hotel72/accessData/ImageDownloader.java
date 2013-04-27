@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.ImageView;
 import com.jakewharton.disklrucache.DiskLruImageCache;
 import ru.hotel72.R;
+import ru.hotel72.utils.BitmapUtils;
 import ru.hotel72.utils.ImageDownloaderType;
+import ru.hotel72.utils.Utils;
 
 import java.io.*;
 import java.net.URL;
@@ -24,13 +26,12 @@ import java.util.Stack;
 public class ImageDownloader {
 
     private static DiskLruImageCache cache;
+    private PhotosLoader photoLoaderThread = new PhotosLoader();
 
     private boolean useStab;
-    private Context context;
     private ImageDownloaderType downloaderType;
 
     public ImageDownloader(Context context, ImageDownloaderType type) {
-        this.context = context;
         downloaderType = type;
 
         if(cache == null)
@@ -42,11 +43,11 @@ public class ImageDownloader {
 
     final int stub_id = R.drawable.substrate;
 
-    public void DisplayImage(String url, String profilePic, Activity activity, ImageView imageView) {
-        DisplayImage(url, profilePic, activity, imageView, true);
+    public void DisplayImage(String url, String profilePic, ImageView imageView) {
+        DisplayImage(url, profilePic, imageView, true);
     }
 
-    public void DisplayImage(String url, String profilePic, Activity activity, ImageView imageView, boolean useStab) {
+    public void DisplayImage(String url, String profilePic, ImageView imageView, boolean useStab) {
         this.useStab = useStab;
 
         String key = String.format("%s_%s", downloaderType.name(), profilePic.replace(".jpg", "")).toLowerCase();
@@ -57,35 +58,19 @@ public class ImageDownloader {
             imageView.setVisibility(View.VISIBLE);
         }
         else {
-            queuePhoto(url, activity, imageView, key);
+            queuePhoto(url, imageView, key);
             if(useStab) {
-                imageView.setImageResource(stub_id);}
-            else {
+                imageView.setImageResource(stub_id);
+            } else {
                 imageView.setVisibility(View.INVISIBLE);
             }
         }
     }
 
-    private float getBitmapScalingFactor(Bitmap bm, ImageView image, Activity activity) {
-        // Get display width from device
-        int displayWidth = activity.getWindowManager().getDefaultDisplay().getWidth();
-
-//        // Get margin to use it for calculating to max width of the ImageView
-//        LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) image.getLayoutParams();
-//        int leftMargin = layoutParams.leftMargin;
-//        int rightMargin = layoutParams.rightMargin;
-//
-//        // Calculate the max width of the imageView
-//        int imageViewWidth = displayWidth - (leftMargin + rightMargin);
-
-        // Calculate scaling factor and return it
-        return ( (float) displayWidth / (float) bm.getWidth() );
-    }
-
-    private void queuePhoto(String url, Activity activity, ImageView imageView, String profilePic) {
+    private void queuePhoto(String url, ImageView imageView, String profilePic) {
         //This ImageView may be used for other images before. So there may be some old tasks in the queue. We need to discard them.
         photosQueue.Clean(imageView);
-        PhotoToLoad p = new PhotoToLoad(url, imageView, profilePic, activity);
+        PhotoToLoad p = new PhotoToLoad(url, imageView, profilePic);
         synchronized (photosQueue.photosToLoad) {
             photosQueue.photosToLoad.push(p);
             photosQueue.photosToLoad.notifyAll();
@@ -98,20 +83,13 @@ public class ImageDownloader {
 
     private Bitmap getBitmap(String url, String key) {
 
-        //from SD cache
-        if (cache.containsKey(key)) {
-            Bitmap b = cache.getBitmap(key);
-            if (b != null)
-                return b;
-        }
-
-        //from web
         try {
             Bitmap bitmap;
             InputStream is = new URL(url).openStream();
-            bitmap = decodeFile(is);
-            is.close();
 
+            byte[] data = Utils.readBytes(is);
+            is.close();
+            bitmap = BitmapUtils.scaleBitmap(data);
             cache.put(key, bitmap);
 
             return bitmap;
@@ -121,32 +99,6 @@ public class ImageDownloader {
         }
     }
 
-    //decodes image and scales it to reduce memory consumption
-    private Bitmap decodeFile(InputStream stream) {
-
-        //decode image size
-        BitmapFactory.Options o = new BitmapFactory.Options();
-        o.inJustDecodeBounds = true;
-//            return BitmapFactory.decodeStream(new FileInputStream(f), null, o);
-
-        //Find the correct scale value. It should be the power of 2.
-        final int REQUIRED_SIZE = 70;
-        int width_tmp = o.outWidth, height_tmp = o.outHeight;
-        int scale = 1;
-        while (true) {
-            if (width_tmp / 2 < REQUIRED_SIZE || height_tmp / 2 < REQUIRED_SIZE)
-                break;
-            width_tmp /= 2;
-            height_tmp /= 2;
-            scale *= 2;
-        }
-
-        //decode with inSampleSize
-        BitmapFactory.Options o2 = new BitmapFactory.Options();
-        o2.inSampleSize = scale;
-        return BitmapFactory.decodeStream(new BufferedInputStream(stream), null, o2);
-    }
-
     //Task for the queue
     private class PhotoToLoad {
         public String url;
@@ -154,11 +106,10 @@ public class ImageDownloader {
         public String key;
         public Activity activity;
 
-        public PhotoToLoad(String u, ImageView i, String key, Activity activity) {
+        public PhotoToLoad(String u, ImageView i, String key) {
             this.url = u;
             this.imageView = i;
             this.key = key;
-            this.activity = activity;
         }
     }
 
@@ -180,6 +131,8 @@ public class ImageDownloader {
                 else
                     ++j;
             }
+
+            System.gc();
         }
     }
 
@@ -193,18 +146,32 @@ public class ImageDownloader {
                             photosQueue.photosToLoad.wait();
                         }
                     if (photosQueue.photosToLoad.size() != 0) {
-                        PhotoToLoad photoToLoad;
+                        final PhotoToLoad photoToLoad;
                         synchronized (photosQueue.photosToLoad) {
                             photoToLoad = photosQueue.photosToLoad.pop();
                         }
-                        Bitmap bmp = getBitmap(photoToLoad.url, photoToLoad.key);
+                        final Bitmap bmp = getBitmap(photoToLoad.url, photoToLoad.key);
 
                         Activity a = (Activity) photoToLoad.imageView.getContext();
 
                         Object tag = photoToLoad.imageView.getTag();
-                        if (tag != null && ((String) tag).equals(photoToLoad.url)) {
-                            BitmapDisplayer bd = new BitmapDisplayer(bmp, photoToLoad.imageView, photoToLoad.activity);
-                            a.runOnUiThread(bd);
+                        if (tag != null && tag.equals(photoToLoad.url)) {
+//                            BitmapDisplayer bd = new BitmapDisplayer(bmp, photoToLoad.imageView);
+                            a.runOnUiThread(new Runnable() {
+                                @Override
+                                public void run() {
+                                    if (bmp != null) {
+                                        photoToLoad.imageView.setImageBitmap(bmp);
+                                        photoToLoad.imageView.setVisibility(View.VISIBLE);
+                                    } else {
+                                        if(useStab) {
+                                            photoToLoad.imageView.setImageResource(stub_id);
+                                        } else {
+                                            photoToLoad.imageView.setVisibility(View.INVISIBLE);
+                                        }
+                                    }
+                                }
+                            });
                         }
                     }
                     if (Thread.interrupted())
@@ -213,33 +180,28 @@ public class ImageDownloader {
             } catch (InterruptedException e) {
                 //allow thread to exit
             }
+            System.gc();
         }
     }
-
-    PhotosLoader photoLoaderThread = new PhotosLoader();
 
     //Used to display bitmap in the UI thread
     class BitmapDisplayer implements Runnable {
         Bitmap bitmap;
         ImageView imageView;
-        private Activity activity;
 
-        public BitmapDisplayer(Bitmap b, ImageView i, Activity activity) {
+        public BitmapDisplayer(Bitmap b, ImageView i) {
             bitmap = b;
             imageView = i;
-            this.activity = activity;
         }
 
         public void run() {
             if (bitmap != null) {
-//                float scalingFactor = getBitmapScalingFactor(bitmap, imageView, activity);
-//                Bitmap newBitmap = ImageHelper.ScaleBitmap(bitmap, scalingFactor);
                 imageView.setImageBitmap(bitmap);
                 imageView.setVisibility(View.VISIBLE);
             } else {
                 if(useStab) {
-                    imageView.setImageResource(stub_id);}
-                else {
+                    imageView.setImageResource(stub_id);
+                } else {
                     imageView.setVisibility(View.INVISIBLE);
                 }
             }

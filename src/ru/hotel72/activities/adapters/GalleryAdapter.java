@@ -2,6 +2,9 @@ package ru.hotel72.activities.adapters;
 
 import android.app.Activity;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.view.*;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
@@ -93,6 +96,17 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
     }
 
     private void setImage(ImageView view, String imgUrl){
+
+        Drawable drawable = view.getDrawable();
+
+        if(drawable != null){
+            if (drawable instanceof BitmapDrawable) {
+                BitmapDrawable bitmapDrawable = (BitmapDrawable) drawable;
+                Bitmap bitmap = bitmapDrawable.getBitmap();
+                bitmap.recycle();
+            }
+        }
+
         Size size = sizeHashMap.get(type);
         String url = String.format(
                 urlPattern,
@@ -105,6 +119,6 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
         }
 
         view.setTag(url);
-        ImageHelper.getImageDownloader(context, type).DisplayImage(url, imgUrl, (Activity) context, view, useStab);
+        ImageHelper.getImageDownloader(context, type).DisplayImage(url, imgUrl, view, useStab);
     }
 }

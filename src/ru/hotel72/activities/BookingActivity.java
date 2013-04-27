@@ -148,7 +148,7 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
         String imgUrl = flat.photos.get(0).url;
         String url = String.format("http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&w=%d&h=%d&zc=1&q=90", imgUrl, w, h);
         image.setTag(url);
-        ImageHelper.getImageDownloader(this, ImageDownloaderType.BOOKING).DisplayImage(url, imgUrl, BookingActivity.this, (ImageView) image);
+        ImageHelper.getImageDownloader(this, ImageDownloaderType.BOOKING).DisplayImage(url, imgUrl, (ImageView) image);
     }
 
     @Override

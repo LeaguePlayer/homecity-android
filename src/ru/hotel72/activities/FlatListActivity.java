@@ -94,4 +94,10 @@ public class FlatListActivity extends BaseActivity {
 
         flatsListAdapter.notifyDataSetChanged();
     }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        System.gc();
+    }
 }

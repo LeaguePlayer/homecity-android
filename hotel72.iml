@@ -47,6 +47,15 @@
     <orderEntry type="module" module-name="AndroidVkSdk" />
     <orderEntry type="module" module-name="AndroidTwitterConnect" />
     <orderEntry type="library" name="httpclient-4.0.1" level="project" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/externals/android-calendar-view/libs/android-support-v4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
   </component>
 </module>
 

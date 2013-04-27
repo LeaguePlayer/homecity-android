@@ -6,9 +6,12 @@ import android.graphics.BitmapFactory;
 import android.os.Environment;
 import android.util.Log;
 import ru.hotel72.BuildConfig;
+import ru.hotel72.utils.BitmapUtils;
 import ru.hotel72.utils.Utils;
 
 import java.io.*;
+
+import static java.lang.System.gc;
 
 /**
  * Created with IntelliJ IDEA.
@@ -97,6 +100,8 @@ public class DiskLruImageCache {
             }
         }
 
+        gc();
+
     }
 
     public Bitmap getBitmap( String key ) {
@@ -111,26 +116,11 @@ public class DiskLruImageCache {
             }
             final InputStream in = snapshot.getInputStream( 0 );
             if ( in != null ) {
-                BitmapFactory.Options o = new BitmapFactory.Options();
-                o.inJustDecodeBounds = true;
 
-                final int REQUIRED_SIZE = 70;
-                int width_tmp = o.outWidth, height_tmp = o.outHeight;
-                int scale = 1;
-                while (true) {
-                    if (width_tmp / 2 < REQUIRED_SIZE || height_tmp / 2 < REQUIRED_SIZE)
-                        break;
-                    width_tmp /= 2;
-                    height_tmp /= 2;
-                    scale *= 2;
-                }
+                byte[] data = Utils.readBytes(in);
+                in.close();
 
-                BitmapFactory.Options o2 = new BitmapFactory.Options();
-                o2.inSampleSize = scale;
-
-                final BufferedInputStream buffIn =
-                        new BufferedInputStream( in, Utils.IO_BUFFER_SIZE );
-                bitmap = BitmapFactory.decodeStream(buffIn, null, o2);
+                bitmap = BitmapUtils.scaleBitmap(data);
             }
         } catch ( IOException e ) {
             e.printStackTrace();
@@ -143,6 +133,8 @@ public class DiskLruImageCache {
         if ( BuildConfig.DEBUG ) {
             Log.d( "cache_test_DISK_", bitmap == null ? "" : "image read from disk " + key);
         }
+
+        gc();
 
         return bitmap;
 
@@ -162,6 +154,8 @@ public class DiskLruImageCache {
                 snapshot.close();
             }
         }
+
+        gc();
 
         return contained;
 
