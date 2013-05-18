@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Квартиры посуточно</string>
+    <string name="app_name">Посуточно</string>
     <string name="imgPathTemplate"></string>
     <string name="loadImgUrlTemplate"></string><string name="flatViewTitle">Каталог квартир</string>
     <string name="dataTransferFlatId">flatId</string>

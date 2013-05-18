@@ -15,7 +15,7 @@ import org.json.JSONObject;
  */
 public class GetBookingDatesTask extends GetUnselectableDaysTask {
 
-    private static String requestUrl = "http://72.admin-hotel.ru/api/getJsonOrder?id=%d&month=%d&year=%d";
+    private static String requestUrl = "http://72.admin-hotel.ru/api/getJsonOrder?id=%d&month=%d&year=%d&withoutLastDay=true";
     private int id;
 
     public GetBookingDatesTask(Context context, int id) {

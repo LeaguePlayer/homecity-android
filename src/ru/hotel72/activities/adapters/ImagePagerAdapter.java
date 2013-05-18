@@ -138,6 +138,6 @@ public class ImagePagerAdapter extends PagerAdapter {
         }
 
         view.setTag(url);
-        ImageHelper.getImageDownloader(context, type).DisplayImage(url, imgUrl, view, useStab);
+        ImageHelper.getImageDownloader(context).DisplayImage(url, imgUrl, view, type, useStab);
     }
 }

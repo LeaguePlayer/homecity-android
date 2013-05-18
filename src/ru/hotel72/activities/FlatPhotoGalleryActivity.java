@@ -46,7 +46,6 @@ public class FlatPhotoGalleryActivity extends Activity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         final String flatId = getIntent().getStringExtra(getString(R.string.dataTransferFlatId));
-        photos = ((Flat) DataTransfer.get(flatId)).photos;
 
         setContentView(R.layout.flat_photo_gallery);
 
@@ -63,16 +62,38 @@ public class FlatPhotoGalleryActivity extends Activity {
 //        ImagePagerAdapter adapter = new ImagePagerAdapter(this, photos, type, url, false);
 //        viewPager.setAdapter(adapter);
 
+        int position = getIntent().getIntExtra("position", 0);
+        Object tmp = getLastNonConfigurationInstance();
+        if (tmp != null) {
+            Bundle bundle = (Bundle) tmp;
+            if (bundle.containsKey("position"))
+                position = bundle.getInt("position");
+
+            if (bundle.containsKey("photos"))
+                photos = bundle.getParcelableArrayList("photos");
+
+        } else if(photos == null) {
+
+            Object f = DataTransfer.get(flatId);
+            if (f != null) {
+                photos = ((Flat) f).photos;
+            } else {
+                photos = new ArrayList<Photo>();
+            }
+        }
+
         galleryAdapter = new GalleryAdapter(this, R.layout.gallary_item, photos, type, url, false);
 
         gallery.setAdapter(galleryAdapter);
-        Object position = getLastNonConfigurationInstance();
-        if (position != null) {
-            gallery.setSelection((Integer) position);
-        }
+        gallery.setSelection(position);
     }
 
     public Object onRetainNonConfigurationInstance() {
-        return gallery.getFirstVisiblePosition();
+
+        Bundle bundle = new Bundle();
+        bundle.putInt("position", gallery.getFirstVisiblePosition());
+        bundle.putParcelableArrayList("photos", photos);
+
+        return bundle;
     }
 }

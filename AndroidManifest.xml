@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="ru.hotel72">
+          package="ru.hotel72"
+          android:versionCode="2"
+          android:versionName="1.0.1"
+          android:installLocation="auto">
 
     <uses-sdk android:minSdkVersion="9"/>
     <application
@@ -51,15 +54,6 @@
                   android:screenOrientation="portrait"/>
         <activity android:name=".activities.FlatPhotoGalleryActivity"/>
         <activity android:name=".social.vkontakte.LoginActivity"/>
-        <!--<activity android:name=".social.twitter.OAuthActivity"/>-->
-        <!--<activity android:name=".social.twitter.PrepareRequestTokenActivity" android:launchMode="singleTask">-->
-            <!--<intent-filter>-->
-                <!--<action android:name="android.intent.action.VIEW" />-->
-                <!--<category android:name="android.intent.category.DEFAULT" />-->
-                <!--<category android:name="android.intent.category.BROWSABLE" />-->
-                <!--<data android:scheme="twitterapp" android:host="OAuthActivity" />-->
-            <!--</intent-filter>-->
-        <!--</activity>-->
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -68,10 +62,7 @@
     <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
-    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
-    <!--<uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />-->
     <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
-    <!--<uses-permission android:name="android.permission.VIBRATE" />-->
-    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"></uses-feature>
 </manifest>

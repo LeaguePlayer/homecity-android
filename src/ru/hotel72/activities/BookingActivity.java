@@ -148,7 +148,7 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
         String imgUrl = flat.photos.get(0).url;
         String url = String.format("http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&w=%d&h=%d&zc=1&q=90", imgUrl, w, h);
         image.setTag(url);
-        ImageHelper.getImageDownloader(this, ImageDownloaderType.BOOKING).DisplayImage(url, imgUrl, (ImageView) image);
+        ImageHelper.getImageDownloader(this).DisplayImage(url, imgUrl, (ImageView) image, ImageDownloaderType.BOOKING);
     }
 
     @Override
@@ -243,6 +243,7 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
                                 endDate[2] < 10 ? String.format("0%d", endDate[2]) : endDate[2]));
                 intent.putExtra(getString(R.string.guests), mVisitors);
                 intent.putExtra(getString(R.string.dataTransferFlatId), flatId.toString());
+                DataTransfer.put(flat.id.toString(), flat);
                 startActivity(intent);
                 break;
         }

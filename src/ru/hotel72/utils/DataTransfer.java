@@ -15,6 +15,7 @@ public class DataTransfer {
     public static Object get(String key){
         if(data.containsKey(key)){
             Object obj = data.get(key);
+            data.remove(key);
             return obj;
         }
         return null;

@@ -8,6 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.view.*;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import ru.hotel72.R;
 import ru.hotel72.domains.Photo;
 import ru.hotel72.utils.ImageDownloaderType;
@@ -22,7 +23,7 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
     private ImageDownloaderType type;
     private ViewHolder holder;
     private static HashMap<ImageDownloaderType, Size> sizeHashMap;
-    private String urlPattern = "http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&w=%d&h=%d&zc=1&q=90";
+    private String urlPattern = "http://hotel72.ru/lib/thumb/phpThumb.php?src=/uploads/gallery/hotels/%s&w=%d&h=%d&zc=1&q=80";
     private Boolean useStab;
 
     public GalleryAdapter(Context context, int textViewResourceId, ArrayList<Photo> photos, ImageDownloaderType type) {
@@ -48,6 +49,7 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
 
     public static class ViewHolder{
         public ImageView image;
+        public ProgressBar progress;
     }
 
     @Override
@@ -58,6 +60,7 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
             convertView = mInflate.inflate(R.layout.gallary_item, parent, false);
             holder = new ViewHolder();
             holder.image = (ImageView) convertView.findViewById(R.id.galleryImage);
+            holder.progress = (ProgressBar) convertView.findViewById(R.id.progress);
 
             if (type == ImageDownloaderType.LANDSCAPE || type == ImageDownloaderType.PORTRAIT) {
                 holder.image.setScaleType(ImageView.ScaleType.CENTER);
@@ -70,6 +73,12 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
         }
         else {
             holder = (ViewHolder) convertView.getTag();
+        }
+
+        if (useStab) {
+            holder.progress.setVisibility(View.INVISIBLE);
+        } else {
+            holder.progress.setVisibility(View.VISIBLE);
         }
 
         final String imgUrl = photos.get(position).url;
@@ -119,6 +128,6 @@ public class GalleryAdapter extends ArrayAdapter<Photo> {
         }
 
         view.setTag(url);
-        ImageHelper.getImageDownloader(context, type).DisplayImage(url, imgUrl, view, useStab);
+        ImageHelper.getImageDownloader(context).DisplayImage(url, imgUrl, view, type, useStab);
     }
 }

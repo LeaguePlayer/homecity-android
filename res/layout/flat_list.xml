@@ -46,5 +46,6 @@
             android:layout_alignLeft="@+id/headerLayout"
             android:fadingEdge="none"
             android:layout_below="@+id/headerLayout"
-            android:cacheColorHint="#ffffff"/>
+            android:cacheColorHint="#ffffff"
+            android:scrollingCache="true"/>
 </LinearLayout>

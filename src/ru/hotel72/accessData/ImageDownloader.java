@@ -3,8 +3,10 @@ package ru.hotel72.accessData;
 import android.app.Activity;
 import android.content.Context;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
+import android.support.v4.util.LruCache;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import com.jakewharton.disklrucache.DiskLruImageCache;
 import ru.hotel72.R;
@@ -25,17 +27,34 @@ import java.util.Stack;
  */
 public class ImageDownloader {
 
-    private static DiskLruImageCache cache;
+    private DiskLruImageCache mDiskCache;
+    private LruCache<String, Bitmap> mMemoryCache;
+
     private PhotosLoader photoLoaderThread = new PhotosLoader();
 
     private boolean useStab;
     private ImageDownloaderType downloaderType;
 
-    public ImageDownloader(Context context, ImageDownloaderType type) {
-        downloaderType = type;
+    public ImageDownloader(Context context) {
 
-        if(cache == null)
-            cache = new DiskLruImageCache(context, "hotel72", 104857600, Bitmap.CompressFormat.JPEG, 100);
+        mDiskCache = new DiskLruImageCache(context, "hotel72", 104857600, Bitmap.CompressFormat.JPEG, 100);
+        // Get max available VM memory, exceeding this amount will throw an
+        // OutOfMemory exception. Stored in kilobytes as LruCache takes an
+        // int in its constructor.
+        final int maxMemory = (int) (Runtime.getRuntime().maxMemory() / 1024);
+
+        // Use 1/8th of the available memory for this memory cache.
+        final int cacheSize = maxMemory / 4;
+
+        mMemoryCache = new LruCache<String, Bitmap>(cacheSize) {
+            @Override
+            protected int sizeOf(String key, Bitmap bitmap) {
+                // The cache size will be measured in kilobytes rather than
+                // number of items.
+                return (bitmap.getRowBytes() * bitmap.getHeight()) / 1024;
+            }
+        };
+
 
         //Make the background thread low priority. This way it will not affect the UI performance
         photoLoaderThread.setPriority(Thread.NORM_PRIORITY - 1);
@@ -43,23 +62,22 @@ public class ImageDownloader {
 
     final int stub_id = R.drawable.substrate;
 
-    public void DisplayImage(String url, String profilePic, ImageView imageView) {
-        DisplayImage(url, profilePic, imageView, true);
+    public void DisplayImage(String url, String profilePic, ImageView imageView, ImageDownloaderType type) {
+        DisplayImage(url, profilePic, imageView, type, true);
     }
 
-    public void DisplayImage(String url, String profilePic, ImageView imageView, boolean useStab) {
+    public void DisplayImage(String url, String profilePic, ImageView imageView, ImageDownloaderType type, boolean useStab) {
+        this.downloaderType = type;
         this.useStab = useStab;
 
         String key = String.format("%s_%s", downloaderType.name(), profilePic.replace(".jpg", "")).toLowerCase();
 
-        if (cache.containsKey(key)){
-            Bitmap bitmap = cache.getBitmap(key);
-            imageView.setImageBitmap(bitmap);
+        if (mMemoryCache.snapshot().containsKey(key)) {
+            imageView.setImageBitmap(mMemoryCache.get(key));
             imageView.setVisibility(View.VISIBLE);
-        }
-        else {
+        } else {
             queuePhoto(url, imageView, key);
-            if(useStab) {
+            if (useStab) {
                 imageView.setImageResource(stub_id);
             } else {
                 imageView.setVisibility(View.INVISIBLE);
@@ -85,12 +103,19 @@ public class ImageDownloader {
 
         try {
             Bitmap bitmap;
-            InputStream is = new URL(url).openStream();
 
-            byte[] data = Utils.readBytes(is);
-            is.close();
-            bitmap = BitmapUtils.scaleBitmap(data);
-            cache.put(key, bitmap);
+            if (mDiskCache.containsKey(key)) {
+                bitmap = mDiskCache.getBitmap(key);
+            } else {
+
+                InputStream is = new URL(url).openStream();
+                byte[] data = Utils.readBytes(is);
+                is.close();
+                bitmap = BitmapUtils.scaleBitmap(data);
+                mDiskCache.put(key, bitmap);
+            }
+
+            mMemoryCache.put(key, bitmap);
 
             return bitmap;
         } catch (Exception ex) {
@@ -150,18 +175,19 @@ public class ImageDownloader {
                         synchronized (photosQueue.photosToLoad) {
                             photoToLoad = photosQueue.photosToLoad.pop();
                         }
+
                         final Bitmap bmp = getBitmap(photoToLoad.url, photoToLoad.key);
 
-                        Activity a = (Activity) photoToLoad.imageView.getContext();
+                        final Context context = photoToLoad.imageView.getContext();
+                        Activity a = (Activity) context;
 
                         Object tag = photoToLoad.imageView.getTag();
                         if (tag != null && tag.equals(photoToLoad.url)) {
-//                            BitmapDisplayer bd = new BitmapDisplayer(bmp, photoToLoad.imageView);
                             a.runOnUiThread(new Runnable() {
                                 @Override
                                 public void run() {
                                     if (bmp != null) {
-                                        photoToLoad.imageView.setImageBitmap(bmp);
+                                            ImageViewAnimatedChange(context, photoToLoad.imageView, bmp);
                                         photoToLoad.imageView.setVisibility(View.VISIBLE);
                                     } else {
                                         if(useStab) {
@@ -184,27 +210,24 @@ public class ImageDownloader {
         }
     }
 
-    //Used to display bitmap in the UI thread
-    class BitmapDisplayer implements Runnable {
-        Bitmap bitmap;
-        ImageView imageView;
-
-        public BitmapDisplayer(Bitmap b, ImageView i) {
-            bitmap = b;
-            imageView = i;
-        }
-
-        public void run() {
-            if (bitmap != null) {
-                imageView.setImageBitmap(bitmap);
-                imageView.setVisibility(View.VISIBLE);
-            } else {
-                if(useStab) {
-                    imageView.setImageResource(stub_id);
-                } else {
-                    imageView.setVisibility(View.INVISIBLE);
-                }
+    private static void ImageViewAnimatedChange(Context c, final ImageView v, final Bitmap new_image) {
+        final Animation anim_out = AnimationUtils.loadAnimation(c, android.R.anim.fade_out);
+        final Animation anim_in  = AnimationUtils.loadAnimation(c, android.R.anim.fade_in);
+        anim_out.setAnimationListener(new Animation.AnimationListener()
+        {
+            @Override public void onAnimationStart(Animation animation) {}
+            @Override public void onAnimationRepeat(Animation animation) {}
+            @Override public void onAnimationEnd(Animation animation)
+            {
+                v.setImageBitmap(new_image);
+                anim_in.setAnimationListener(new Animation.AnimationListener() {
+                    @Override public void onAnimationStart(Animation animation) {}
+                    @Override public void onAnimationRepeat(Animation animation) {}
+                    @Override public void onAnimationEnd(Animation animation) {}
+                });
+                v.startAnimation(anim_in);
             }
-        }
+        });
+        v.startAnimation(anim_out);
     }
 }

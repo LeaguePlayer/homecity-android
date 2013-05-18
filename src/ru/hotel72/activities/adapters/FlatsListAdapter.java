@@ -112,8 +112,6 @@ public class FlatsListAdapter extends ArrayAdapter<Flat> {
             }
         }
 
-        System.gc();
-
         return convertView;
     }
 

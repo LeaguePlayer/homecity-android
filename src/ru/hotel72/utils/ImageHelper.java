@@ -17,9 +17,9 @@ public class ImageHelper {
 
     private static ImageDownloader downloader;
 
-    public static ImageDownloader getImageDownloader(Context context, ImageDownloaderType type){
+    public static ImageDownloader getImageDownloader(Context context){
         if(downloader == null){
-            downloader = new ImageDownloader(context, type);
+            downloader = new ImageDownloader(context);
         }
 
         return downloader;

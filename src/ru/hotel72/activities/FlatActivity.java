@@ -97,6 +97,7 @@ public class FlatActivity extends BaseHeaderActivity implements View.OnClickList
                 Intent intent = new Intent(context, FlatPhotoGalleryActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 intent.putExtra("flatId", flat.id.toString());
+                intent.putExtra("position", i);
                 DataTransfer.put(flat.id.toString(), flat);
 
                 context.startActivity(intent);
