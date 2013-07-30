@@ -265,7 +265,6 @@ public class BookingActivity extends BaseHeaderActivity implements View.OnClickL
 
         long diff = calLeave.getTimeInMillis() - calIn.getTimeInMillis();
         int days = (int) diff / (24 * 60 * 60 * 1000);
-        days++;
         cost = days * flat.cost;
 
         price.setText(String.valueOf(cost));
